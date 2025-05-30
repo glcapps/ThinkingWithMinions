@@ -1,4 +1,4 @@
-## Making LLM Use Frictionless: The Plug-In Minion Future
+# Making LLM Use Frictionless: The Plug-In Minion Future
 
 A foundational shift in user experience is underway. The idea of “asking an AI for help” is moving out of the browser tab and into your workspace. LLMs are evolving from separate destinations into integrated elements of everyday tools.
 
@@ -8,7 +8,7 @@ It’s not just for developers. Let’s talk about how even non-technical busine
 
 ---
 
-### VS Code: Not Just for Code Anymore
+## VS Code: Not Just for Code Anymore
 
 VS Code is a text editor — but one flexible enough to become a personalized workspace for anyone who handles structured documents, notes, logs, drafts, or planning materials. With the ChatGPT desktop app plugged in, a business user can begin experimenting with **context-aware minions**.
 
@@ -34,7 +34,7 @@ While not yet seamless, this capability represents a meaningful step forward. Th
 
 ---
 
-### The Friction Falls Away
+## The Friction Falls Away
 
 What makes this notable isn’t the AI capability — we already knew LLMs could write, summarize, or explain.
 
@@ -48,7 +48,7 @@ Instead, the model sees what you see. It acts more like a **pair of helping hand
 
 ---
 
-### Embedded Assistant Model
+## Embedded Assistant Model
 
 The ChatGPT app’s system-wide availability signals something deeper: assistants are headed toward **pervasive presence**, not occasional visits.
 
@@ -66,7 +66,7 @@ We’re moving toward a world where the assistant is part of the *workspace*, no
 
 ---
 
-### Preview, Not Perfection
+## Preview, Not Perfection
 
 Yes — it’s clunky. The assistant might misfire. The formatting might be awkward. The text selection might confuse the model.
 

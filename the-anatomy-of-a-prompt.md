@@ -1,4 +1,4 @@
-## The Anatomy of a Prompt
+# The Anatomy of a Prompt
 
 Large Language Models (LLMs) can be valuable assets in business workflows — but their usefulness depends almost entirely on how they’re asked to help. In business, where clarity, repeatability, and reliability matter more than novelty, an imprecise prompt often leads to unclear or unusable results.
 
@@ -6,7 +6,7 @@ To get consistent, valuable results, prompts need to behave more like a **briefi
 
 ---
 
-### 1. Clarify the Task
+## 1. Clarify the Task
 
 Start by defining what kind of thinking or output you want. Be simple and honest:
 
@@ -21,7 +21,7 @@ Avoid pretending the LLM already knows what’s going on. Begin fresh each time.
 
 ---
 
-### 2. Provide Structured Reference
+## 2. Provide Structured Reference
 
 This is the **heart of the prompt**. Instead of relying on the LLM’s training or memory, give it what it needs to work from.
 
@@ -41,7 +41,7 @@ Treat this as supplying the model with authoritative reference material — not 
 
 ---
 
-### 3. Give a Direct Instruction
+## 3. Give a Direct Instruction
 
 Now that the model has its footing, be specific:
 
@@ -53,7 +53,7 @@ No flourish. No open-ended curiosity. Provide a clear directive using straightfo
 
 ---
 
-### 4. Set the Tone of the Answer
+## 4. Set the Tone of the Answer
 
 What professional tone should the response adopt?
 - A helpful internal policy advisor
@@ -68,7 +68,7 @@ This final element guides the tone and audience alignment of the response.
 
 ---
 
-### Example Prompt (Complete)
+## Example Prompt (Complete)
 
 Here’s what the full four-part structure might look like:
 
@@ -90,7 +90,7 @@ Write in the voice of a helpful internal advisor writing for a company FAQ page.
 
 ---
 
-### Final Thought
+## Final Thought
 
 This structure isn’t just about better answers — it’s about better conversations. When business users approach prompts as structured instructions — and treat LLM task briefing as a business process — they receive dependable, context-aware output.
 

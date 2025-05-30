@@ -1,10 +1,10 @@
-## How to Brief a Minion: Designing Prompts with Structure and Intent
+# How to Brief a Minion: Designing Prompts with Structure and Intent
 
 When people first use a large language model (LLM), their instinct is to type a question the same way they might into Google. But LLMs aren’t search engines. They’re more like eager junior analysts: capable, fast, but reliant on context and instruction. To get great results, you don’t just ask. You **brief**.
 
 Here’s how to think about it.
 
-### Why Briefing Matters
+## Why Briefing Matters
 
 Every business user knows the difference between a good delegation and a vague request. If you delegate a task without specifying the expectations, resources, or outcome criteria, you’ll likely get back something misaligned. The same is true for LLMs.
 
@@ -14,7 +14,7 @@ This article introduces a four-part method for writing serious, reusable prompts
 
 ---
 
-### 1. **Topic Clarification**  
+## 1. **Topic Clarification**  
 Start with a one- or two-sentence explanation of what the task is about. Think of it as the subject line of a memo.
 
 **Example:**  
@@ -24,7 +24,7 @@ Clarity here sets the stage. It tells the LLM what universe it’s operating in.
 
 ---
 
-### 2. **Structured Reference Material**  
+## 2. **Structured Reference Material**  
 This is the biggest upgrade from casual prompting. Rather than hoping the LLM already knows, you supply the background. And you format it clearly.
 
 Use:
@@ -49,7 +49,7 @@ This gives the model the structured context a trained assistant would expect bef
 
 ---
 
-### 3. **Task Prompt**  
+## 3. **Task Prompt**  
 Now, give the instruction. Keep it tight, but specific.
 
 **Examples:**
@@ -61,7 +61,7 @@ If you're combining this with tool use or multi-step flows, break it down step b
 
 ---
 
-### 4. **Answering Manner / Tone**  
+## 4. **Answering Manner / Tone**  
 This is your chance to shape the voice and style. It also sets boundaries.
 
 **Examples:**
@@ -73,7 +73,7 @@ This helps control for the LLM’s tendency to drift into overexplaining or stra
 
 ---
 
-### A Real Example
+## A Real Example
 
 Here’s a full brief using all four parts:
 
@@ -102,7 +102,7 @@ Use concise, neutral business language. Avoid legalese. Make the summary skimmab
 
 ---
 
-### Why This Works
+## Why This Works
 
 - **Reduces Guesswork:** The LLM doesn’t have to guess what kind of answer you want.
 - **Creates Repeatability:** You can reuse the same format for dozens of tasks.
@@ -112,7 +112,7 @@ It’s not about cleverness. It’s about clarity.
 
 ---
 
-### From Prompting to Workflow
+## From Prompting to Workflow
 
 The real goal here isn’t just to write better prompts — it’s to **think in systems**.
 

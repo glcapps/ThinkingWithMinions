@@ -1,4 +1,4 @@
-## Claude and the Rise of Desktop MCP
+# Claude and the Rise of Desktop MCP
 
 We are entering a moment where assistants are no longer just conversational. They are becoming **operational**. At the heart of this shift is the Model Context Protocol (MCP) — a structured way for language models to use tools, delegate steps, and perform multi-part tasks. And the arrival of Claude with MCP capabilities on the Mac desktop is more than a product launch. It’s a signal that AI delegation is crossing over from developers into the hands of everyday users.
 
@@ -6,7 +6,7 @@ This isn’t about code. It’s about control. And it's happening faster than mo
 
 ---
 
-### What Is MCP and Why Does It Matter?
+## What Is MCP and Why Does It Matter?
 
 Model Context Protocol — or MCP — is a standard that allows language models to interact with external tools in a modular and composable way. Think of it as a shared language between your assistant and your apps. Instead of dumping long prompts, you define tools: a calendar, a document store, a search index, a calculator. Each tool has inputs, outputs, and logic. The model learns how to use them in context — without being explicitly reprogrammed each time.
 
@@ -22,7 +22,7 @@ Now it’s in your Dock.
 
 ---
 
-### Claude on the Desktop: A Minion With Muscles
+## Claude on the Desktop: A Minion With Muscles
 
 Anthropic’s Claude for Mac includes early MCP functionality right inside its desktop experience. That means tools — like retrieving files, reading structured data, interacting with system folders or apps — are now usable directly by the assistant in a persistent way.
 
@@ -42,7 +42,7 @@ This model of interaction shifts the mindset:
 
 ---
 
-### What Happens When You Give a Minion Tools?
+## What Happens When You Give a Minion Tools?
 
 You stop thinking of the assistant as a chatbot. You start thinking of it as a workstation. This has several cascading effects:
 
@@ -64,7 +64,7 @@ You stop thinking of the assistant as a chatbot. You start thinking of it as a w
 
 ---
 
-### Speculative Futures (Closer Than You Think)
+## Speculative Futures (Closer Than You Think)
 
 This evolution points toward several near-future capabilities:
 
@@ -82,7 +82,7 @@ This evolution points toward several near-future capabilities:
 
 ---
 
-### The Platformization of Delegation
+## The Platformization of Delegation
 
 Claude’s implementation of MCP on the desktop isn’t just a neat feature — it’s a threshold.
 

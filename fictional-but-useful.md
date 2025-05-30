@@ -4,7 +4,7 @@
 
 ---
 
-### Context
+## Context
 
 Brightline Logistics is a 12-person freight coordination company operating out of Kansas City. They saw themselves as practical, not technical—but after one team member showed off a few ChatGPT results during a meeting, curiosity grew.
 
@@ -15,7 +15,7 @@ The operations manager, Kara, wondered aloud, “Could we have one of these mini
 
 ---
 
-### Phase One: Naive Optimism
+## Phase One: Naive Optimism
 
 They signed up for ChatGPT Team with four users and picked one weekly bulletin as a test case. Kara pasted the whole thing into the chat window and asked:
 
@@ -27,7 +27,7 @@ They laughed it off and said, “Maybe the minions need clearer instructions.”
 
 ---
 
-### Phase Two: Clarifying the Role
+## Phase Two: Clarifying the Role
 
 One team member, Devin, remembered something from a podcast: “You have to approach the minions like colleagues—give them clear, structured input.”
 
@@ -41,7 +41,7 @@ The results were dramatically better. The minion ignored fluff and focused on a 
 
 ---
 
-### Phase Three: Structured Context
+## Phase Three: Structured Context
 
 By week three, they’d created a simple format:
 
@@ -62,7 +62,7 @@ Kara said, “It’s not automatic brilliance, but it’s reliably useful. And m
 
 ---
 
-### Reflections
+## Reflections
 
 Brightline never set out to be early adopters. They didn’t know what RAG was. They didn’t write code or integrate systems.
 
@@ -77,7 +77,7 @@ They still read the minion’s output — but they now trust it enough to *start
 
 ---
 
-### The Takeaway
+## The Takeaway
 
 The future isn’t about automating everything.  
 It’s about giving people a way to manage complexity without burnout.
