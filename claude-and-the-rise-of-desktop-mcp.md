@@ -1,30 +1,3 @@
-
-
-
-# Claude and the Rise of Desktop MCP
-
-> **Prompt:**  
-> Write a 1200–1400 word article for *Thinking With Minions* on the growing appearance of MCP (Model Context Protocol) services in non-developer environments, using Claude for Mac as the centerpiece example.
->
-> Explore the following themes:
-> - What MCP is: a protocol for structured tool use by AI assistants
-> - Why Claude bringing MCP to the desktop is significant
-> - How this shifts user expectations from "chatting" to "delegating"
-> - What it means for business users to begin seeing tools and workflows emerge in their assistants
->
-> Frame this not as a technical tutorial, but a cultural milestone:  
-> "We’ve crossed the threshold where structured, multi-step minion workflows become part of normal desktop use."
->
-> Include speculation on what this enables next:
-> - Assistant-directed agents
-> - Custom workflows with reusable tools
-> - A growing expectation of modular, persistent context
->
-> End with the big idea:  
-> MCP going mainstream means the **platformization of delegation** has begun.
-
----
-
 ## Claude and the Rise of Desktop MCP
 
 We are entering a moment where assistants are no longer just conversational. They are becoming **operational**. At the heart of this shift is the Model Context Protocol (MCP) — a structured way for language models to use tools, delegate steps, and perform multi-part tasks. And the arrival of Claude with MCP capabilities on the Mac desktop is more than a product launch. It’s a signal that AI delegation is crossing over from developers into the hands of everyday users.

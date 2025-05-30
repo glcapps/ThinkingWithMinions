@@ -1,20 +1,3 @@
-# Timeline of Useful Minions
-
-> **Prompt:**  
-> Create a visual or narrative timeline highlighting key moments in the emergence of LLMs as truly **useful business tools**, not just research novelties.  
-> 
-> Focus not on release dates of models, but on the **inflection points** where they began to impact workflows, productivity, or decision-making for nontechnical users. Include:
->
-> - The first major shift in perception after ChatGPT (late 2022)
-> - The explosion of interest in 2023 from plugins, APIs, and small business adoption
-> - The rise of tooling (MCP, agents, vector DBs) in early 2024
-> - The emergence of desktop and IDE minions (2024–2025)
-> - The normalization of AI delegation and multi-agent coordination (2025)
->
-> The result should show that the “useful minion era” is **mid-2023 to present**, growing in depth and integration.
-
----
-
 ## Timeline: The Emergence of Useful Minions
 
 > From novelty to necessity — how LLM-powered assistants became business collaborators.

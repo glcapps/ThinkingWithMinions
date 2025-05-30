@@ -1,29 +1,3 @@
-# Model Smartness vs Cost Cheat Sheet
-
-> **Prompt:**  
-> Create a compact but informative guide to understanding how model competence (“smartness”) relates to size, quantization, version, and cost.  
->
-> Include:
-> - A description of how parameter count, quantization (e.g. 4-bit vs 16-bit), and versioning impact a model’s actual capabilities
-> - A reminder that newer versions often outperform older, larger models
-> - The surprising truth that a 600B model in 4-bit quantization may outperform a 70B model at full precision
->
-> Then present a **dollar-based framing**:
-> - “What can a business user get for $1 of inference time?”  
-> - Use real-world prices from OpenAI (GPT-4 Turbo), Fireworks (DeepSeek, LLaMA), and others from May 2025
-> - Tie price to task: one well-reasoned HR policy draft, or a multistep spreadsheet review
->
-> Format should include a visual-friendly comparison grid or checklist:
-> - Model name  
-> - Size  
-> - Version  
-> - Quantization  
-> - Cost per 1K tokens  
-> - Ideal use cases  
-> - What $1 will get you
-
----
-
 ## Understanding Model “Smartness” — Beyond Just Size
 
 When people hear that a model has 7 billion or 600 billion parameters, it’s easy to assume that more = better. But that’s only part of the story. Here’s what actually determines a model’s intelligence, efficiency, and cost in real-world tasks.

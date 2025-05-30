@@ -1,23 +1,3 @@
-# How to Brief a Minion
-
-> **Prompt:**  
-> Write a 1200–1400 word article titled **“How to Brief a Minion: Designing Prompts with Structure and Intent.”**  
->
-> The article should introduce a four-part structure for serious prompt design:
-> 
-> 1. **Topic Clarification** — A short, clear explanation of what the prompt is about  
-> 2. **Structured Reference Material** — Background data in Markdown, XML, JSON, or tables  
-> 3. **Task Prompt** — The action or instruction for the assistant to take  
-> 4. **Answering Manner / Tone** — The role, voice, or style the minion should adopt when replying
->
-> Emphasize how this structure elevates prompt writing from casual querying to repeatable delegation.  
-> Explain how each part reduces guesswork and improves consistency.  
-> Include examples, especially for structured inputs like XML or Markdown.  
-> 
-> Close with a reflection: this method helps users shift from ad hoc prompting to **a mindset of reusable workflows.**
-
----
-
 ## How to Brief a Minion: Designing Prompts with Structure and Intent
 
 When people first use a large language model (LLM), their instinct is to type a question the same way they might into Google. But LLMs aren’t search engines. They’re more like eager junior analysts: capable, fast, but reliant on context and instruction. To get great results, you don’t just ask. You **brief**.

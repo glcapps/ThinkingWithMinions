@@ -1,6 +1,3 @@
-
-
-
 ## The Anatomy of a Prompt
 
 Large Language Models (LLMs) can be valuable assets in business workflows — but their usefulness depends almost entirely on how they’re asked to help. In business, where clarity, repeatability, and reliability matter more than novelty, an imprecise prompt often leads to unclear or unusable results.

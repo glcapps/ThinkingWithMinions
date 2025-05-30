@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thinking With Minions</title>
+  <script src="https://unpkg.com/htmx.org@1.9.5"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      htmx.on("htmx:afterSwap", (e) => {
+        if (e.detail.target.id === "content") {
+          const converter = new showdown.Converter({
+            simpleLineBreaks: true,
+            literalMidWordUnderscores: true,
+            strikethrough: true,
+            tables: true,
+            openLinksInNewWindow: true,
+            emoji: true
+          });
+          const html = converter.makeHtml(e.detail.xhr.responseText);
+
+          // Extract the first heading as title
+          const tempDiv = document.createElement("div");
+          tempDiv.innerHTML = html;
+          const firstHeading = tempDiv.querySelector("h1, h2");
+          if (firstHeading) {
+            firstHeading.classList.add("text-3xl", "font-bold", "mb-4", "border-b", "pb-2");
+          }
+
+          document.getElementById("content").innerHTML = tempDiv.innerHTML;
+        }
+      });
+    });
+  </script>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans p-4">
+
+  <header class="mb-8">
+    <h1 class="text-4xl font-bold mb-2">Thinking With Minions</h1>
+    <p class="mb-4">A business-centric magazine about living and working with AI as your assistant.</p>
+  </header>
+
+  <main class="grid grid-cols-1 md:grid-cols-4 gap-4">
+    <nav class="space-y-2 md:col-span-1">
+      <h2 class="text-xl font-semibold mb-2">Table of Contents</h2>
+      <ul class="space-y-1">
+        <li><a href="#" hx-get="the-minion-ethos.md" hx-target="#content" class="text-blue-600 hover:underline">The Minion Ethos</a></li>
+        <li><a href="#" hx-get="how-to-brief-a-minion.md" hx-target="#content" class="text-blue-600 hover:underline">How to Brief a Minion</a></li>
+        <li><a href="#" hx-get="what-a-dollar-buys-in-llm-time.md" hx-target="#content" class="text-blue-600 hover:underline">What a Dollar Buys in LLM Time</a></li>
+        <li><a href="#" hx-get="avoiding-the-rag-trap.md" hx-target="#content" class="text-blue-600 hover:underline">Avoiding the RAG Trap</a></li>
+        <li><a href="#" hx-get="the-new-spreadsheet-moment.md" hx-target="#content" class="text-blue-600 hover:underline">The New Spreadsheet Moment</a></li>
+        <li><a href="#" hx-get="securing-your-ai-use.md" hx-target="#content" class="text-blue-600 hover:underline">Securing Your AI Use</a></li>
+        <li><a href="#" hx-get="minion-integration-is-coming.md" hx-target="#content" class="text-blue-600 hover:underline">Minion Integration Is Coming</a></li>
+        <li><a href="#" hx-get="business-grade-llms-for-small-teams.md" hx-target="#content" class="text-blue-600 hover:underline">Business-Grade LLMs for Small Teams</a></li>
+        <li><a href="#" hx-get="using-chatgpt-on-mac-with-vs-code.md" hx-target="#content" class="text-blue-600 hover:underline">Using ChatGPT on Mac with VS Code</a></li>
+        <li><a href="#" hx-get="fictional-but-useful.md" hx-target="#content" class="text-blue-600 hover:underline">Fictional but Useful</a></li>
+        <li><a href="#" hx-get="buzzwords---use--misuse.md" hx-target="#content" class="text-blue-600 hover:underline">Buzzwords — Use & Misuse</a></li>
+        <li><a href="#" hx-get="claude-and-the-rise-of-desktop-mcp.md" hx-target="#content" class="text-blue-600 hover:underline">Claude and the Rise of Desktop MCP</a></li>
+        <li><a href="#" hx-get="dont-just-rag.md" hx-target="#content" class="text-blue-600 hover:underline">Don't Just RAG</a></li>
+        <li><a href="#" hx-get="enterprise-grade-minions.md" hx-target="#content" class="text-blue-600 hover:underline">Enterprise-Grade Minions</a></li>
+        <li><a href="#" hx-get="making-llm-use-frictionless.md" hx-target="#content" class="text-blue-600 hover:underline">Making LLM Use Frictionless</a></li>
+        <li><a href="#" hx-get="model-smartness-vs-cost-cheat-sheet.md" hx-target="#content" class="text-blue-600 hover:underline">Model Smartness vs. Cost Cheat Sheet</a></li>
+        <li><a href="#" hx-get="the-anatomy-of-a-prompt.md" hx-target="#content" class="text-blue-600 hover:underline">The Anatomy of a Prompt</a></li>
+        <li><a href="#" hx-get="timeline-of-useful-minions.md" hx-target="#content" class="text-blue-600 hover:underline">Timeline of Useful Minions</a></li>
+      </ul>
+    </nav>
+
+    <section id="content" class="prose max-w-none md:col-span-3 bg-white p-6 rounded shadow overflow-auto">
+      <div class="text-center">
+        <img src="SemanticGrounding.png" alt="Semantic Grounding Comic" class="mx-auto max-w-md border rounded shadow" />
+        <p class="mt-4 text-gray-600">Select an article from the table of contents to begin reading.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

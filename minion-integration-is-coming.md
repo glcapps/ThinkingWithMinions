@@ -1,23 +1,3 @@
-# Minion Integration is Coming
-
-> **Prompt:**  
-> Write an article that explains how developers are rapidly building the foundation for **LLMs to integrate with nearly every aspect of business software**, and why this matters for business users now.  
->
-> This is not a deeply technical article — the focus is on the **pattern and direction**:
-> - Why AI assistants are moving beyond chat windows  
-> - How plugins, tool use APIs, and embedded workflows are becoming normal  
-> - Examples from email, spreadsheets, customer portals, internal dashboards  
->
-> Highlight:
-> - The analogy to the rise of websites and apps in the 2000s — this is the same wave  
-> - What to expect next: CRM integration, internal process helpers, and delegated workflows  
-> - That most of this is still early-stage but accelerating quickly
->
-> End with a message to business leaders:  
-> “Integration will soon be the expectation. Now’s the time to ask what parts of your business should talk to a minion.”
-
----
-
 ## Minion Integration Is Coming
 
 Not long ago, using AI meant opening a website, interacting through isolated chat interfaces with unpredictable results. But that’s changing — fast.

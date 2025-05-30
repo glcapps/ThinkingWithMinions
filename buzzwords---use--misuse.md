@@ -1,28 +1,3 @@
-
-
-
-
-# Buzzwords: Use & Misuse
-
-> **Prompt:**  
-> Write a short, punchy article (700–900 words) cataloging common AI and LLM-related buzzwords in current business and tech conversation. For each term, briefly explain its proper use, its common misuse, and the misunderstanding or confusion that often follows.  
->  
-> The tone should be playful but corrective — you're educating a smart but slightly overconfident audience.  
->  
-> Include terms like:  
-> - Training  
-> - Fine-tuning  
-> - Prompt engineering  
-> - Hallucination  
-> - Context  
-> - Token  
-> - RAG  
-> - Smart  
->  
-> Consider giving each buzzword its own mini-section, and cap with a short list of “Buzzwords You’re Probably Misusing” with one-sentence corrections.
-
----
-
 ## Buzzwords: Use & Misuse
 
 If AI had a business card, it would say “Buzzword Factory.” The rise of large language models (LLMs) has flooded conversations with jargon — some earned, some misunderstood, some... just filler. In this article, we’ll clear the fog around the most common terms you’ve likely heard in boardrooms, brainstorms, and pitches. Let’s separate the signal from the smog.

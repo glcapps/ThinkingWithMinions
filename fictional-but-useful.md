@@ -1,13 +1,4 @@
-
-
-
-## Prompt
-
-Write a clearly labeled fictional case study that is explicitly hypothetical — not disguised as real. It should demonstrate how a small business or team explores using LLMs (referred to as "minions") to improve one specific workflow, such as onboarding, customer response drafting, internal documentation, or summarizing regulations. The story should emphasize practical exploration, early limitations, and how the team frames the prompts and context to improve results. The tone should be narrative, not instructional, and should help business readers visualize how this might apply in their own context. The purpose is not to impress but to make the experience feel relatable and possible.
-
----
-
-## Fictional Case Study: The Trial Run at Brightline Logistics
+# Fictional Case Study: The Trial Run at Brightline Logistics
 
 *Note: This case study is entirely hypothetical. It is meant to illustrate how a small business might begin exploring LLM tools in a realistic, non-technical way.*
 

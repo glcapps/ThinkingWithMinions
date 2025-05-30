@@ -1,23 +1,3 @@
-# What a Dollar Buys in LLM Time
-
-> **Prompt:**  
-> Write an article that helps business users understand what **a single dollar** can realistically buy in LLM usage — focusing on **realistic, single-use tasks**, not bulk token processing.  
->
-> Emphasize that a dollar might afford a **complete agentic workflow**, not just a prompt.  
-> Include examples of task types at different tiers of model sophistication:
->
-> - A small model ($0.001–$0.01 per 1K tokens) can draft a letter, parse a short CSV, or convert formats
-> - A medium model ($0.03–$0.15 per 1K tokens) can perform analysis with follow-up queries, or create documents with reasoning
-> - A high-end model (GPT-4 or Claude Opus) might do a full synthetic meeting, customer insight summary, or financial policy drafting
->
-> Include specific examples using OpenAI, Fireworks.ai, or other real pricing from May 2025:
-> - GPT-4 Turbo: $0.01/1K input, $0.03/1K output
-> - Claude 3 Opus: ~$15/million tokens (input+output)
->
-> Emphasize that **minion cost ≠ task value** — many $1 chores are worth hundreds in saved labor or decision accuracy.
-
----
-
 ## What a Dollar Buys in LLM Time
 
 What if we told you that a single dollar could buy you an assistant's full attention — for the length of a task, not just a reply?

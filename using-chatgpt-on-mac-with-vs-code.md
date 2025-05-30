@@ -1,28 +1,3 @@
-# Using ChatGPT on Mac with VS Code
-
-> **Prompt:**  
-> Write an article that introduces business users to the idea that AI integration is starting to appear directly inside everyday productivity tools — not just in browsers or separate apps.  
->
-> Use the example of the **ChatGPT macOS app** and its ability to work alongside **VS Code** and **Terminal**.  
->
-> Avoid focusing on coding — instead, describe how:
-> - The assistant can read or summarize text in the current file  
-> - It can help clean up, format, or edit prose, reports, or notes  
-> - It might serve as a sidekick while documenting tasks or planning next steps
->
-> Emphasize that while Office tools aren’t yet writable by the assistant, VS Code becomes a kind of **universal notepad**.  
->
-> Encourage readers to imagine workflows like:
-> - Writing a quarterly update  
-> - Summarizing a meeting  
-> - Cleaning up bullet points from a brainstorm  
->
-> End with the message:  
-> “It’s a bit clunky today — but this is the sneak peek of what AI-assisted workflow will soon feel like everywhere.”
-
-
----
-
 ## Using ChatGPT on Mac with VS Code
 
 Many business users view ChatGPT primarily as a browser-based tool. A separate place where you interact with independently. But that is rapidly evolving.

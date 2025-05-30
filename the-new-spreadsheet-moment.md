@@ -1,29 +1,3 @@
-# The New Spreadsheet Moment
-
-> **Prompt:**  
-> Write an article comparing the current rise of LLM-integrated work to the historical arrival of spreadsheets in business.  
->
-> Explain how spreadsheets:
-> - Changed who could model, calculate, and simulate  
-> - Flattened hierarchies by giving junior staff power to analyze  
-> - Became indispensable in nearly every department  
->
-> Draw parallels to LLMs:
-> - Changing who can query, summarize, and interpret data  
-> - Giving new kinds of agency to non-technical roles  
-> - Enabling rapid iteration on drafts, plans, emails, and workflows
->
-> Emphasize the early tension:  
-> - In the spreadsheet era, people feared errors and disruption  
-> - In the LLM era, people fear hallucination and “faking it”  
-> - But both are tools of leverage when used well
->
-> Frame this as a recognizable **era change** for business folks:
-> “If you remember the first time Excel changed your job — you already know what’s coming.”
-
-
----
-
 ## The New Spreadsheet Moment
 
 In the early days of business computing, the spreadsheet didn’t just streamline accounting — it transformed how business professionals interacted with numerical analysis.

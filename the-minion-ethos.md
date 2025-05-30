@@ -1,9 +1,3 @@
-## Prompt
-
-Write an article that lays out the core philosophy of "thinking with minions" — treating LLMs not as magic oracles, but as diligent assistants that think *with* you, not *for* you. Emphasize the shift in mindset from trying to make an AI do something, to working collaboratively with a contextual tool. Include how this approach reduces frustration, avoids hype, and supports practical business usage. Contrast it with both naive prompting and overly technical engineering. The audience is curious business professionals who may feel left out of the AI wave but want to participate meaningfully.
-
----
-
 ## The Minion Ethos
 
 Many first-time users approach AI tools as if they were unpredictable magic—asking vague questions and hoping for meaningful answers.

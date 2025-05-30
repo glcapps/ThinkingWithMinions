@@ -1,21 +1,3 @@
-# Making LLM Use Frictionless
-
-> **Prompt:**  
-> Write an article that explores the current tools and approaches being developed to make LLM use smoother and more “invisible” for business users.  
-> Focus on the emerging norm of **integrated assistance**, with a spotlight on the **ChatGPT app for macOS** and its ability to interact with IDEs and Terminal apps.
->
-> Use VS Code as an example, but shift focus away from code — instead show:
-> - How an LLM can help write documentation
-> - How it can review business logic or spreadsheet operations described in plain text
-> - How it might summarize meetings, tasks, or goals pasted into the editor
->
-> Emphasize the idea that **a chat assistant tied to apps** is now the new frontier of AI help — not a separate window, but integrated into the tools people already use.
->
-> Frame this as a **preview of the future**, not a polished reality:  
-> “It’s a little clunky now — but this is how the next generation of minion use begins.”
-
----
-
 ## Making LLM Use Frictionless: The Plug-In Minion Future
 
 A foundational shift in user experience is underway. The idea of “asking an AI for help” is moving out of the browser tab and into your workspace. LLMs are evolving from separate destinations into integrated elements of everyday tools.
