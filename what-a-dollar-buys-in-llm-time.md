@@ -22,7 +22,6 @@ Here are real-world examples by model tier:
 **Chore**: Turn an 800-word messy email thread into a clean customer summary, highlighting the timeline, issues discussed, responses, and unresolved questions.
 
 📈 **Value**: Replaces manual account management prep; improves clarity for support and follow-up  
-🪙 **Approximate cost**: about $1
 
 ---
 
@@ -32,7 +31,6 @@ Here are real-world examples by model tier:
 **Chore**: Summarize a 2-page vendor contract into a plain-English email that highlights key obligations, options, and renewal conditions for a client stakeholder.
 
 📈 **Value**: Speeds up internal and external communication of legal/ops content  
-🪙 **Approximate cost**: about $1
 
 ---
 
@@ -42,7 +40,6 @@ Here are real-world examples by model tier:
 **Chore**: Given a formal customer complaint and 3 previous support logs (~3,000 words), generate an empathetic resolution email and an internal summary note with flagged risks.
 
 📈 **Value**: Synthesizes complex history into action-ready communication  
-🪙 **Approximate cost**: about $1
 
 ---
 
