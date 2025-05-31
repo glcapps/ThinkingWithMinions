@@ -1,4 +1,4 @@
-# Using ChatGPT on Mac with VS Code
+## Using ChatGPT on Mac with VS Code
 
 Many business users view ChatGPT primarily as a browser-based tool. A separate place where you interact with independently. But that is rapidly evolving.
 
@@ -8,7 +8,7 @@ Let’s explore how.
 
 ---
 
-## VS Code: A Universal Notepad
+### VS Code: A Universal Notepad
 
 While traditionally used by developers, VS Code also offers a versatile space for **writing, planning, and organizing** — particularly when combined with ChatGPT’s capabilities.
 
@@ -27,7 +27,7 @@ While traditionally used by developers, VS Code also offers a versatile space fo
 
 ---
 
-## Terminal and Clipboard Support
+### Terminal and Clipboard Support
 
 The ChatGPT macOS app also integrates with:
 - **Your clipboard**: It can summarize copied text, including from applications that do not permit editing.
@@ -35,7 +35,7 @@ The ChatGPT macOS app also integrates with:
 
 ---
 
-## Real Use Cases (No Code Required)
+### Real Use Cases (No Code Required)
 
 Here are several examples where this setup excels for business tasks:
 - ✏️ Composing an internal policy update
@@ -45,7 +45,7 @@ Here are several examples where this setup excels for business tasks:
 
 ---
 
-## The Future Is Clunky — For Now
+### The Future Is Clunky — For Now
 
 At present, the experience still involves some friction. You must manage windows, be aware of the active file, and occasionally perform more copy and paste than desired.
 

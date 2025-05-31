@@ -1,4 +1,4 @@
-# What a Dollar Buys in LLM Time
+## What a Dollar Buys in LLM Time
 
 What if we told you that a single dollar could buy you an assistant's full attention — for the length of a task, not just a reply?
 
@@ -8,7 +8,7 @@ Let’s break it down.
 
 ---
 
-## 💡 One Dollar, One Task: The New Mental Model
+### 💡 One Dollar, One Task: The New Mental Model
 
 We’re used to thinking of dollars buying hours, gigabytes, or miles. In LLM terms, your dollar buys a **slice of focused, intelligent effort**, often for a **complete task**.
 
@@ -16,7 +16,7 @@ Here are real-world examples by model tier:
 
 ---
 
-## 🧮 Small Models ($0.001–$0.01 per 1K tokens)
+### 🧮 Small Models ($0.001–$0.01 per 1K tokens)
 *Examples: LLaMA 3 8B on Fireworks, DeepSeek-V3*
 
 **Chore**: Turn an 800-word messy email thread into a clean customer summary, highlighting the timeline, issues discussed, responses, and unresolved questions.
@@ -25,7 +25,7 @@ Here are real-world examples by model tier:
 
 ---
 
-## 📊 Medium Models ($0.03–$0.15 per 1K tokens)
+### 📊 Medium Models ($0.03–$0.15 per 1K tokens)
 *Examples: Claude Sonnet, GPT-3.5 Turbo*
 
 **Chore**: Summarize a 2-page vendor contract into a plain-English email that highlights key obligations, options, and renewal conditions for a client stakeholder.
@@ -34,7 +34,7 @@ Here are real-world examples by model tier:
 
 ---
 
-## 🧠 High-End Models (GPT-4 Turbo, Claude Opus)
+### 🧠 High-End Models (GPT-4 Turbo, Claude Opus)
 *Costs: GPT-4 Turbo at ~$0.01 in / $0.03 out; Opus at ~$15/million tokens*
 
 **Chore**: Given a formal customer complaint and 3 previous support logs (~3,000 words), generate an empathetic resolution email and an internal summary note with flagged risks.
@@ -43,7 +43,7 @@ Here are real-world examples by model tier:
 
 ---
 
-## 🧠 It’s Not About Token Count — It’s About Value
+### 🧠 It’s Not About Token Count — It’s About Value
 
 A dollar spent on the right model for the right task is often a **force multiplier**:
 
@@ -54,7 +54,7 @@ A dollar spent on the right model for the right task is often a **force multipli
 
 ---
 
-## 💬 Final Thought
+### 💬 Final Thought
 
 Don’t think of your minion in terms of “how many words it can say.”  
 Think in terms of:  

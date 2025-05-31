@@ -1,4 +1,4 @@
-# Enterprise-Grade Minions: What AI Looks Like When It Knows Your Business
+## Enterprise-Grade Minions: What AI Looks Like When It Knows Your Business
 
 When people think of AI in the workplace, they often envision something conversational or novelty-driven: perhaps ChatGPT drafting emails or brainstorming headlines. But the real story—the one transforming how businesses operate—is quieter, more structured, and substantially more impactful.
 
@@ -8,7 +8,7 @@ These are not generic AI chatbots. These are AI systems with structured access t
 
 ---
 
-## What Is Microsoft Fabric?
+### What Is Microsoft Fabric?
 
 Microsoft Fabric is an integrated data platform that combines everything from data movement and lakehouses to real-time analytics and business intelligence—all in one unified product. It's not just a tool for data engineers or BI analysts anymore. With recent updates, it’s become deeply infused with **LLM-driven** capabilities that allow **natural language interaction with structured data**.
 
@@ -16,7 +16,7 @@ It’s where your systems transition from probabilistic guesses to data-informed
 
 ---
 
-## The LLM Capabilities in Fabric
+### The LLM Capabilities in Fabric
 
 Here’s where the “AI” part gets real. Fabric isn’t just a warehouse. It’s a **thinking assistant** with access to your numbers, your trends, your tools. Here’s what that looks like:
 
@@ -38,7 +38,7 @@ This is what enterprise-grade minions look like: **systems that operate within y
 
 ---
 
-## What It Costs to Get Started
+### What It Costs to Get Started
 
 This kind of power used to require an enterprise budget. Not anymore.
 
@@ -55,7 +55,7 @@ That’s roughly what you’d spend on a few software licenses or a cloud file-s
 
 ---
 
-## What This Means in Practice
+### What This Means in Practice
 
 Imagine you’re running a small operation — a four-person marketing consultancy. You’ve got CRM data, campaign performance spreadsheets, sales goals in various documents, and maybe some Google Analytics exports.
 
@@ -71,7 +71,7 @@ That’s **not a hallucination**. That’s **business knowledge.** And the minio
 
 ---
 
-## Serious, Governable AI
+### Serious, Governable AI
 
 What sets enterprise-grade tools like Fabric apart isn’t just their output. It’s the governance, security, and reproducibility:
 
@@ -84,7 +84,7 @@ You’re not throwing prompts at a mystery box. You’re building with tools tha
 
 ---
 
-## The Bottom Line
+### The Bottom Line
 
 AI isn’t just for the tech giants anymore. With a few hundred dollars a month, a small business can now:
 - Talk directly to its data  

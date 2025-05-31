@@ -1,10 +1,10 @@
-# Buzzwords: Use & Misuse
+## Buzzwords: Use & Misuse
 
 If AI had a business card, it would say “Buzzword Factory.” The rise of large language models (LLMs) has flooded conversations with jargon — some earned, some misunderstood, some... just filler. In this article, we’ll clear the fog around the most common terms you’ve likely heard in boardrooms, brainstorms, and pitches. Let’s separate the signal from the smog.
 
 ---
 
-## 🧠 Training  
+### 🧠 Training  
 **What it *means*:** The original, expensive process of creating a model. Billions of words. Massive infrastructure. Think of it as raising a brain from scratch.
 
 **How it’s *misused*:** “We trained ChatGPT to write our reports.”  
@@ -14,7 +14,7 @@ No, you didn’t. You *used* ChatGPT. You may have *guided* it. But unless you'r
 
 ---
 
-## 🔧 Fine-Tuning  
+### 🔧 Fine-Tuning  
 **What it *means*:** Taking a pre-trained model and adjusting it slightly to specialize it. Like teaching a fluent speaker technical jargon for your industry.
 
 **How it’s *misused*:** “Let’s fine-tune it with some emails.”  
@@ -24,7 +24,7 @@ Unless you’ve got engineers, GPU clusters, and $100k lying around, no — you�
 
 ---
 
-## 🎯 Prompt Engineering  
+### 🎯 Prompt Engineering  
 **What it *means*:** Designing precise instructions that help the model do what you want — especially when the stakes or complexity are high.
 
 **How it’s *misused*:** “You just need the right prompt and it’ll solve anything.”  
@@ -34,7 +34,7 @@ Prompts matter, but they’re not magic incantations. A vague prompt plus a buzz
 
 ---
 
-## 🤯 Hallucination  
+### 🤯 Hallucination  
 **What it *means*:** When the model confidently makes things up — inventing names, dates, quotes, or just fabricating answers.
 
 **How it’s *misused*:** “The AI lied to us!”  
@@ -44,7 +44,7 @@ No, it hallucinated. It doesn’t know truth from fiction — it’s predicting 
 
 ---
 
-## 📚 Context  
+### 📚 Context  
 **What it *means*:** The total amount of information the model can “hold in mind” during a session — like working memory.
 
 **How it’s *misused*:** “This model has lots of context, so it knows everything.”  
@@ -54,7 +54,7 @@ Nope. Context is *temporary.* Once the chat ends or the limit is hit, it’s gon
 
 ---
 
-## 🔡 Token  
+### 🔡 Token  
 **What it *means*:** A chunk of text — not quite a word, not quite a syllable. Models read and respond in tokens. “Elephant” is one token. “Antidisestablishmentarianism” might be four.
 
 **How it’s *misused*:** “It can read my 100-page report.”  
@@ -64,7 +64,7 @@ Not if that report is more tokens than the model’s limit. Know your model’s 
 
 ---
 
-## 📦 RAG (Retrieval-Augmented Generation)  
+### 📦 RAG (Retrieval-Augmented Generation)  
 **What it *means*:** A technique that feeds external knowledge into the model in real time — like giving it notes before it speaks.
 
 **How it’s *misused*:** “We do RAG, so accuracy is solved.”  
@@ -74,7 +74,7 @@ RAG is helpful — but not a silver bullet. Poor documents in, poor answers out.
 
 ---
 
-## 🤖 Smart  
+### 🤖 Smart  
 **What it *means*:** …we don’t know. Depends on who’s saying it.
 
 **How it’s *misused*:** “This is the smartest AI yet.”  

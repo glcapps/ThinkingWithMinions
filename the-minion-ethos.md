@@ -1,4 +1,4 @@
-# The Minion Ethos
+## The Minion Ethos
 
 Many first-time users approach AI tools as if they were unpredictable magic—asking vague questions and hoping for meaningful answers.
 
@@ -8,7 +8,7 @@ But those who succeed in using LLMs for serious business work know something oth
 
 ---
 
-## Not Magic. Not a Genius. A Minion.
+### Not Magic. Not a Genius. A Minion.
 
 Think back to the *Despicable Me* films — the minions don’t read minds. They need direction. But when given the right tools, clear goals, and some structure, they work tirelessly, creatively, and loyally toward a task.
 
@@ -18,7 +18,7 @@ The breakthrough comes not from using a smarter model — but from treating the 
 
 ---
 
-## Shifting the Mindset
+### Shifting the Mindset
 
 Too many people fall into one of two camps:
 
@@ -37,7 +37,7 @@ The minion ethos is something else:
 
 ---
 
-## Thinking *With* the LLM
+### Thinking *With* the LLM
 
 This doesn’t mean being passive.
 
@@ -51,7 +51,7 @@ Sound familiar? It’s the same structure as writing a good task description for
 
 ---
 
-## Why This Reduces Frustration
+### Why This Reduces Frustration
 
 Most AI frustrations come from unclear roles:
 - “Why is it hallucinating?”
@@ -64,7 +64,7 @@ Thinking with minions means creating that world — clearly, briefly, and collab
 
 ---
 
-## Practical Outcomes
+### Practical Outcomes
 
 When you adopt the minion ethos:
 - You begin using the tools with purpose and predictability.
@@ -75,7 +75,7 @@ The results are reliable, scalable, and understandable — exactly what business
 
 ---
 
-## Final Thought
+### Final Thought
 
 You don’t need to become a prompt engineer.
 

@@ -1,4 +1,4 @@
-# Don’t Just RAG: Why Retrieval Isn’t Enough for Serious Work
+## Don’t Just RAG: Why Retrieval Isn’t Enough for Serious Work
 
 Retrieval-Augmented Generation (RAG) has become the go-to acronym in the AI playbook. If you've heard a pitch about “smarter AI” or “context-aware assistants,” chances are it leaned on RAG: a system where your assistant looks up relevant documents or snippets and uses them to answer your question.
 
@@ -6,7 +6,7 @@ RAG is a useful tool, but it has clear limitations. And it’s not enough — no
 
 ---
 
-## What RAG *Can* Do
+### What RAG *Can* Do
 
 Let’s give RAG its due:
 - It pulls in fresh, domain-specific information from your data  
@@ -17,7 +17,7 @@ Used correctly, RAG is like having an assistant that quickly surveys large volum
 
 ---
 
-## But Here’s the Catch
+### But Here’s the Catch
 
 1. **RAG is a probabilistic shortcut.**  
    The results depend heavily on how the user phrased the query — a small change in wording can lead to wildly different snippets being retrieved.
@@ -33,7 +33,7 @@ Used correctly, RAG is like having an assistant that quickly surveys large volum
 
 ---
 
-## The Alternative: Determinative Context Management
+### The Alternative: Determinative Context Management
 
 If RAG is a librarian, determinative context is a **workflow assistant**. It’s not just about pulling documents — it’s about feeding structured, essential inputs into a system that executes with precision.
 
@@ -50,7 +50,7 @@ Here’s how to think about it:
 
 ---
 
-## Real-World Scenarios
+### Real-World Scenarios
 
 | Situation | Don’t Just RAG | Use Structure Instead |
 |----------|----------------|------------------------|
@@ -61,7 +61,7 @@ Here’s how to think about it:
 
 ---
 
-## From Search to System
+### From Search to System
 
 Treating AI like a search engine puts the burden on the user to ask the “right” question. Treating it like a **system component** flips that: you define the data and steps, and the assistant performs.
 
@@ -72,7 +72,7 @@ This changes the role of AI in your org:
 
 ---
 
-## Final Advice
+### Final Advice
 
 - Use **RAG for ideas.**
 - Use **structure for decisions.**

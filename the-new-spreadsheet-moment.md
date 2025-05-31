@@ -1,4 +1,4 @@
-# The New Spreadsheet Moment
+## The New Spreadsheet Moment
 
 In the early days of business computing, the spreadsheet didn’t just streamline accounting — it transformed how business professionals interacted with numerical analysis.
 
@@ -8,7 +8,7 @@ We’re now seeing the same thing happen again — only broader.
 
 ---
 
-## What Spreadsheets Did for Numbers, LLMs Are Doing for Language
+### What Spreadsheets Did for Numbers, LLMs Are Doing for Language
 
 Spreadsheets let people simulate. LLMs let people **summarize, explain, draft, and refine** — often in seconds.
 
@@ -22,7 +22,7 @@ This shift means more than convenience. It’s leverage.
 
 ---
 
-## Flattening Hierarchies — Again
+### Flattening Hierarchies — Again
 
 The spreadsheet gave junior employees the power to analyze without waiting. The LLM gives anyone the power to **synthesize and communicate** with more clarity.
 
@@ -32,7 +32,7 @@ Just as Excel empowered those willing to explore rows and formulas, LLMs empower
 
 ---
 
-## Same Tensions, New Form
+### Same Tensions, New Form
 
 Early spreadsheet adoption wasn’t smooth. People feared:
 - Formula errors that would cascade silently
@@ -50,7 +50,7 @@ We are developing parallel practices for validating LLM output.
 
 ---
 
-## A Familiar Feeling
+### A Familiar Feeling
 
 If you remember the first time Excel changed your job — you already know what’s coming.
 

@@ -1,10 +1,10 @@
-# Understanding Model “Smartness” — Beyond Just Size
+## Understanding Model “Smartness” — Beyond Just Size
 
 When people hear that a model has 7 billion or 600 billion parameters, it’s easy to assume that more = better. But that’s only part of the story. Here’s what actually determines a model’s intelligence, efficiency, and cost in real-world tasks.
 
 ---
 
-## 📏 Key Factors
+### 📏 Key Factors
 
 | Factor           | What It Means | Why It Matters |
 |------------------|---------------|----------------|
@@ -15,7 +15,7 @@ When people hear that a model has 7 billion or 600 billion parameters, it’s ea
 
 ---
 
-## 🤯 A Surprising Truth
+### 🤯 A Surprising Truth
 
 A **600B parameter model quantized to 4-bit** may perform better on reasoning tasks than a **70B full-precision** model — because the training data, layout, and versioning matter more than raw size.
 
@@ -23,7 +23,7 @@ Don’t shop by size. Shop by **fit to task**.
 
 ---
 
-# 💵 What Does $1 Buy You?
+## 💵 What Does $1 Buy You?
 
 Here’s a real-world breakdown of how far $1 can go in May 2025:
 
@@ -39,13 +39,13 @@ _Note: Prices are approximations as of May 2025 and may change._
 
 ---
 
-## 🛠️ Don’t Overpay for Power
+### 🛠️ Don’t Overpay for Power
 
 If your task is simple (rewriting instructions, summarizing an email, checking a formula), a small quantized model can do the job faster and cheaper — and sometimes more *reliably* than a large, over-parameterized one.
 
 ---
 
-## ✅ TL;DR Checklist
+### ✅ TL;DR Checklist
 
 - ✅ Newer versions beat older giants
 - ✅ Quantized models are cheaper & still strong
