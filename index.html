@@ -44,6 +44,11 @@
             document.getElementById("content").innerHTML = image;
             return;
           }
+          if (url.endsWith("ArtisinalSynonyms.png")) {
+            const image = `<img src="ArtisinalSynonyms.png" alt="Artisinal Synonyms Cartoon" class="mx-auto my-6 rounded shadow" />`;
+            document.getElementById("content").innerHTML = image;
+            return;
+          }
           const converter = new showdown.Converter({
             simpleLineBreaks: true,
             simplifiedAutoLink: true,
@@ -140,6 +145,7 @@
         <li><a href="#" hx-get="using-chatgpt-on-mac-with-vs-code.md" hx-target="#content" class="text-blue-600 hover:underline">Using ChatGPT on Mac with VS Code</a></li>
         <li><a href="#" hx-get="fictional-but-useful.md" hx-target="#content" class="text-blue-600 hover:underline">Fictional but Useful</a></li>
         <li><a href="#" hx-get="buzzwords---use--misuse.md" hx-target="#content" class="text-blue-600 hover:underline">Buzzwords — Use & Misuse</a></li>
+        <li><a href="#" hx-get="ArtisinalSynonyms.png" hx-target="#content" class="text-blue-600 hover:underline">Artisanal Synonyms Cartoon</a></li>
         <li><a href="#" hx-get="claude-and-the-rise-of-desktop-mcp.md" hx-target="#content" class="text-blue-600 hover:underline">Claude and the Rise of Desktop MCP</a></li>
         <li><a href="#" hx-get="dont-just-rag.md" hx-target="#content" class="text-blue-600 hover:underline">Don't Just RAG</a></li>
         <li><a href="#" hx-get="enterprise-grade-minions.md" hx-target="#content" class="text-blue-600 hover:underline">Enterprise-Grade Minions</a></li>
