@@ -8,17 +8,16 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.0/flowbite.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/showdown@2.1.0/dist/showdown.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
-      // Load article from hash if present on page load
+      // Load article from hash if present on page load, or default to SemanticGrounding.png
       const initialHash = window.location.hash.slice(1);
-      if (initialHash) {
-        let articlePath = initialHash;
-        if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(initialHash)) {
-          articlePath += ".md";
-        }
-        htmx.ajax("GET", articlePath, "#content");
+      let articlePath = initialHash || "SemanticGrounding.png";
+      if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(articlePath)) {
+        articlePath += ".md";
       }
+      htmx.ajax("GET", articlePath, "#content");
 
       // Update hash on navigation click
       document.querySelectorAll("a[hx-get]").forEach(link => {
@@ -34,18 +33,18 @@
       htmx.on("htmx:afterSwap", (e) => {
         if (e.detail.target.id === "content") {
           const url = e.detail.xhr.responseURL || "";
-          if (url.endsWith("SemanticGrounding.png")) {
-            const image = `<img src="SemanticGrounding.png" alt="Semantic Grounding Cartoon" class="mx-auto my-6 rounded shadow" />`;
+          if (!window.location.hash || url.endsWith("SemanticGrounding.png")) {
+            const image = `<img src="SemanticGrounding.png" alt="Semantic Grounding Cartoon" class="mx-auto my-6 rounded shadow" style="max-height: 100vh; max-width: 100vw;" />`;
             document.getElementById("content").innerHTML = image;
             return;
           }
           if (url.endsWith("HalChart.png")) {
-            const image = `<img src="HalChart.png" alt="Hal Chart Cartoon" class="mx-auto my-6 rounded shadow" />`;
+            const image = `<img src="HalChart.png" alt="Hal Chart Cartoon" class="mx-auto my-6 rounded shadow" style="max-height: 100vh; max-width: 100vw;" />`;
             document.getElementById("content").innerHTML = image;
             return;
           }
           if (url.endsWith("ArtisinalSynonyms.png")) {
-            const image = `<img src="ArtisinalSynonyms.png" alt="Artisinal Synonyms Cartoon" class="mx-auto my-6 rounded shadow" />`;
+            const image = `<img src="ArtisinalSynonyms.png" alt="Artisinal Synonyms Cartoon" class="mx-auto my-6 rounded shadow" style="max-height: 100vh; max-width: 100vw;" />`;
             document.getElementById("content").innerHTML = image;
             return;
           }
@@ -127,38 +126,54 @@
   <header class="mb-8">
     <h1 class="text-4xl font-bold mb-2">Thinking With Minions</h1>
     <p class="mb-4">A business-centric magazine about living and working with AI as your assistant.</p>
+    <p class="mb-2">
+      <a href="https://github.com/glcapps/ThinkingWithMinions" target="_blank" class="text-blue-600 hover:underline">
+        View this project on GitHub
+      </a>
+    </p>
   </header>
 
   <main class="grid grid-cols-1 md:grid-cols-4 gap-4">
     <nav class="space-y-2 md:col-span-1">
       <h2 class="text-xl font-semibold mb-2">Table of Contents</h2>
-      <ul class="space-y-1">
-        <li><a href="#" hx-get="SemanticGrounding.png" hx-target="#content" class="text-blue-600 hover:underline">Semantic Grounding Cartoon</a></li>
-        <li><a href="#" hx-get="the-minion-ethos.md" hx-target="#content" class="text-blue-600 hover:underline">The Minion Ethos</a></li>
-        <li><a href="#" hx-get="how-to-brief-a-minion.md" hx-target="#content" class="text-blue-600 hover:underline">How to Brief a Minion</a></li>
-        <li><a href="#" hx-get="what-a-dollar-buys-in-llm-time.md" hx-target="#content" class="text-blue-600 hover:underline">What a Dollar Buys in LLM Time</a></li>
-        <li><a href="#" hx-get="avoiding-the-rag-trap.md" hx-target="#content" class="text-blue-600 hover:underline">Avoiding the RAG Trap</a></li>
-        <li><a href="#" hx-get="the-new-spreadsheet-moment.md" hx-target="#content" class="text-blue-600 hover:underline">The New Spreadsheet Moment</a></li>
-        <li><a href="#" hx-get="securing-your-ai-use.md" hx-target="#content" class="text-blue-600 hover:underline">Securing Your AI Use</a></li>
-        <li><a href="#" hx-get="minion-integration-is-coming.md" hx-target="#content" class="text-blue-600 hover:underline">Minion Integration Is Coming</a></li>
-        <li><a href="#" hx-get="business-grade-llms-for-small-teams.md" hx-target="#content" class="text-blue-600 hover:underline">Business-Grade LLMs for Small Teams</a></li>
-        <li><a href="#" hx-get="using-chatgpt-on-mac-with-vs-code.md" hx-target="#content" class="text-blue-600 hover:underline">Using ChatGPT on Mac with VS Code</a></li>
-        <li><a href="#" hx-get="fictional-but-useful.md" hx-target="#content" class="text-blue-600 hover:underline">Fictional but Useful</a></li>
-        <li><a href="#" hx-get="buzzwords---use--misuse.md" hx-target="#content" class="text-blue-600 hover:underline">Buzzwords — Use & Misuse</a></li>
-        <li><a href="#" hx-get="ArtisinalSynonyms.png" hx-target="#content" class="text-blue-600 hover:underline">Artisanal Synonyms Cartoon</a></li>
-        <li><a href="#" hx-get="claude-and-the-rise-of-desktop-mcp.md" hx-target="#content" class="text-blue-600 hover:underline">Claude and the Rise of Desktop MCP</a></li>
-        <li><a href="#" hx-get="dont-just-rag.md" hx-target="#content" class="text-blue-600 hover:underline">Don't Just RAG</a></li>
-        <li><a href="#" hx-get="enterprise-grade-minions.md" hx-target="#content" class="text-blue-600 hover:underline">Enterprise-Grade Minions</a></li>
-        <li><a href="#" hx-get="making-llm-use-frictionless.md" hx-target="#content" class="text-blue-600 hover:underline">Making LLM Use Frictionless</a></li>
-        <li><a href="#" hx-get="model-smartness-vs-cost-cheat-sheet.md" hx-target="#content" class="text-blue-600 hover:underline">Model Smartness vs. Cost Cheat Sheet</a></li>
-        <li><a href="#" hx-get="the-anatomy-of-a-prompt.md" hx-target="#content" class="text-blue-600 hover:underline">The Anatomy of a Prompt</a></li>
-        <li><a href="#" hx-get="timeline-of-useful-minions.md" hx-target="#content" class="text-blue-600 hover:underline">Timeline of Useful Minions</a></li>
-        <li><a href="#" hx-get="HalChart.png" hx-target="#content" class="text-blue-600 hover:underline">Hal Chart Cartoon</a></li>
-    </ul>
+      <ul class="space-y-1" x-data="{ articles: [
+        { file: 'SemanticGrounding.png', title: 'Semantic Grounding Cartoon' },
+        { file: 'the-minion-ethos.md', title: 'The Minion Ethos' },
+        { file: 'how-to-brief-a-minion.md', title: 'How to Brief a Minion' },
+        { file: 'what-a-dollar-buys-in-llm-time.md', title: 'What a Dollar Buys in LLM Time' },
+        { file: 'avoiding-the-rag-trap.md', title: 'Avoiding the RAG Trap' },
+        { file: 'the-new-spreadsheet-moment.md', title: 'The New Spreadsheet Moment' },
+        { file: 'securing-your-ai-use.md', title: 'Securing Your AI Use' },
+        { file: 'minion-integration-is-coming.md', title: 'Minion Integration Is Coming' },
+        { file: 'business-grade-llms-for-small-teams.md', title: 'Business-Grade LLMs for Small Teams' },
+        { file: 'using-chatgpt-on-mac-with-vs-code.md', title: 'Using ChatGPT on Mac with VS Code' },
+        { file: 'fictional-but-useful.md', title: 'Fictional but Useful' },
+        { file: 'buzzwords---use--misuse.md', title: 'Buzzwords — Use & Misuse' },
+        { file: 'ArtisinalSynonyms.png', title: 'Artisanal Synonyms Cartoon' },
+        { file: 'claude-and-the-rise-of-desktop-mcp.md', title: 'Claude and the Rise of Desktop MCP' },
+        { file: 'dont-just-rag.md', title: 'Don\'t Just RAG' },
+        { file: 'enterprise-grade-minions.md', title: 'Enterprise-Grade Minions' },
+        { file: 'making-llm-use-frictionless.md', title: 'Making LLM Use Frictionless' },
+        { file: 'model-smartness-vs-cost-cheat-sheet.md', title: 'Model Smartness vs. Cost Cheat Sheet' },
+        { file: 'the-anatomy-of-a-prompt.md', title: 'The Anatomy of a Prompt' },
+        { file: 'timeline-of-useful-minions.md', title: 'Timeline of Useful Minions' },
+        { file: 'HalChart.png', title: 'Hal Chart Cartoon' }
+      ]}">
+        <template x-for="article in articles" :key="article.file">
+          <li>
+            <a :href="'#' + article.file.replace(/\.md$/, '')"
+               :hx-get="article.file"
+               hx-target="#content"
+               class="text-blue-600 hover:underline"
+               x-text="article.title">
+            </a>
+          </li>
+        </template>
+      </ul>
     </nav>
 
-    <section id="content" class="prose prose-lg max-w-none md:col-span-3 bg-white p-6 rounded shadow overflow-auto">
-      <div class="text-center text-gray-600">Select an article from the table of contents to begin reading.</div>
+    <section id="content" class="prose prose-lg max-w-none md:col-span-3 bg-white p-6 rounded shadow overflow-auto" x-data="{ fontSize: 'prose-lg' }" :class="fontSize">
+      <div></div>
     </section>
   </main>
 
