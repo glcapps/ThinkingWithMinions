@@ -124,7 +124,7 @@
 <body class="bg-gray-100 text-gray-800 font-sans p-4">
 
   <header class="mb-8">
-    <h1 class="text-4xl font-bold mb-2">Thinking With Minions</h1>
+    <h1 class="text-4xl font-bold mb-2">Thinking With Minions for Developers</h1>
     <p class="mb-4">A business-centric magazine about living and working with AI as your assistant.</p>
     <p class="mb-2">
       <a href="https://github.com/glcapps/ThinkingWithMinions" target="_blank" class="text-blue-600 hover:underline">
@@ -132,8 +132,8 @@
       </a>
     </p>
     <p class="mb-2">
-      <a href="/developers/" class="text-blue-600 hover:underline">
-        IT, Tech and Developer Topics
+      <a href="/" class="text-blue-600 hover:underline">
+        Business Topics
       </a>
     </p>
   </header>
@@ -143,36 +143,26 @@
       <h2 class="text-xl font-semibold mb-2">Table of Contents</h2>
       <ul class="space-y-1" x-data="{ articles: [
         { file: 'SemanticGrounding.png', title: 'Semantic Grounding Cartoon' },
-        { file: 'the-minion-ethos.md', title: 'The Minion Ethos' },
-        { file: 'how-to-brief-a-minion.md', title: 'How to Brief a Minion' },
-        { file: 'what-a-dollar-buys-in-llm-time.md', title: 'What a Dollar Buys in LLM Time' },
-        { file: 'avoiding-the-rag-trap.md', title: 'Avoiding the RAG Trap' },
-        { file: 'the-new-spreadsheet-moment.md', title: 'The New Spreadsheet Moment' },
-        { file: 'securing-your-ai-use.md', title: 'Securing Your AI Use' },
-        { file: 'minion-integration-is-coming.md', title: 'Minion Integration Is Coming' },
-        { file: 'business-grade-llms-for-small-teams.md', title: 'Business-Grade LLMs for Small Teams' },
-        { file: 'using-chatgpt-on-mac-with-vs-code.md', title: 'Using ChatGPT on Mac with VS Code' },
-        { file: 'fictional-but-useful.md', title: 'Fictional but Useful' },
-        { file: 'buzzwords---use--misuse.md', title: 'Buzzwords — Use & Misuse' },
-        { file: 'ArtisinalSynonyms.png', title: 'Artisanal Synonyms Cartoon' },
-        { file: 'claude-and-the-rise-of-desktop-mcp.md', title: 'Claude and the Rise of Desktop MCP' },
-        { file: 'dont-just-rag.md', title: 'Don\'t Just RAG' },
-        { file: 'enterprise-grade-minions.md', title: 'Enterprise-Grade Minions' },
-        { file: 'making-llm-use-frictionless.md', title: 'Making LLM Use Frictionless' },
-        { file: 'model-smartness-vs-cost-cheat-sheet.md', title: 'Model Smartness vs. Cost Cheat Sheet' },
-        { file: 'the-anatomy-of-a-prompt.md', title: 'The Anatomy of a Prompt' },
-        { file: 'timeline-of-useful-minions.md', title: 'Timeline of Useful Minions' },
-        { file: 'llm-roles-and-job-descriptions.md', title: 'LLM Roles and Job Descriptions' },
-        { file: 'policies-for-llm-in-the-workplace.md', title: 'Policies for LLM in the Workplace' },
-        { file: 'llm-is-not-a-search-bar.md', title: 'LLM is Not a Search Bar' },
-        { file: 'how-llms-fail-and-why-thats-ok.md', title: 'How LLMs Fail and Why That’s OK' },
-        { file: 'training-your-minion-without-training-the-model.md', title: 'Training Your Minion Without Training the Model' },
-        { file: 'memory-costs-and-context-loops.md', title: 'Memory Costs and Context Loops' },
-        { file: 'llms-as-thinking-partners.md', title: 'LLMs as Thinking Partners' },
-        { file: 'not-everything-is-a-minion-task.md', title: 'Not Everything is a Minion Task' },
-        { file: 'the-office-of-llms.md', title: 'The Office of LLMs' },
-        { file: 'HalChart.png', title: 'Hal Chart Cartoon' },
-        { file: 'Ego-Free-Questions.md', title: 'Ego-Free Questions and Onboarding' }
+        { file: 'your-first-assistant-isnt-a-genius.md', title: 'Your First Assistant Isn’t a Genius' },
+        { file: 'llm-pair-programming-without-the-theater.md', title: 'LLM Pair Programming Without the Theater' },
+        { file: 'what-the-model-cant-see.md', title: 'What the Model Can’t See' },
+        { file: 'ai-is-not-a-new-team-member.md', title: 'AI Is Not a New Team Member' },
+        { file: 'grep-but-make-it-curious.md', title: 'Grep but Make It Curious' },
+        { file: 'explain-this-commit-like-im-a-stakeholder.md', title: 'Explain This Commit Like I’m a Stakeholder' },
+        { file: 'the-shell-script-whisperer.md', title: 'The Shell Script Whisperer' },
+        { file: 'semantic-logs.md', title: 'Semantic Logs' },
+        { file: 'smuggling-context-into-every-prompt.md', title: 'Smuggling Context into Every Prompt' },
+        { file: 'context-chains-not-retrieval-hacks.md', title: 'Context Chains Not Retrieval Hacks' },
+        { file: 'just-enough-memory.md', title: 'Just Enough Memory' },
+        { file: 'budgeting-for-thinking.md', title: 'Budgeting for Thinking' },
+        { file: 'the-postmortem-writes-itself.md', title: 'The Postmortem Writes Itself' },
+        { file: 'explain-this-service-like-im-new-here.md', title: 'Explain This Service Like I’m New Here' },
+        { file: 'documentation-that-feeds-back.md', title: 'Documentation That Feeds Back' },
+        { file: 'smarter-ci-is-a-prompt-away.md', title: 'Smarter CI Is a Prompt Away' },
+        { file: 'semantic-prompts-beat-clever-ones.md', title: 'Semantic Prompts Beat Clever Ones' },
+        { file: 'think-aloud-mode-for-coders.md', title: 'Think Aloud Mode for Coders' },
+        { file: 'slow-down-summarize.md', title: 'Slow Down, Summarize' },
+        { file: 'assistant-interrupted.md', title: 'Assistant, Interrupted' }
       ]}">
         <template x-for="article in articles" :key="article.file">
           <li>
