@@ -1,8 +1,8 @@
-## Making LLM Use Frictionless: The Plug-In Minion Future
+## Making LLM Use Frictionless: The Plug‑In Minion Pattern
 
 A foundational shift in user experience is underway. The idea of “asking an AI for help” is moving out of the browser tab and into your workspace. LLMs are evolving from separate destinations into integrated elements of everyday tools.
 
-That future is already showing signs of life in the macOS version of the ChatGPT app. With its ability to integrate into developer tools, terminal windows, and system context, it offers a glimpse into how large language models (LLMs) might one day be ambient — ready to help the moment you gesture at a need.
+That future is already showing signs of life in tools like the macOS version of the ChatGPT app. These integrations hint at a shift toward LLMs that feel *present* in your workspace—close at hand when you need help, but not demanding attention.
 
 It’s not just for developers. Let’s talk about how even non-technical business users might soon see value in this shift, starting with a familiar but powerful example: **VS Code**.
 
@@ -10,7 +10,9 @@ It’s not just for developers. Let’s talk about how even non-technical busine
 
 ### VS Code: Not Just for Code Anymore
 
-VS Code is a text editor — but one flexible enough to become a personalized workspace for anyone who handles structured documents, notes, logs, drafts, or planning materials. With the ChatGPT desktop app plugged in, a business user can begin experimenting with **context-aware minions**.
+VS Code is a text editor — but one flexible enough to become a personalized workspace for anyone who handles structured documents, notes, logs, drafts, or planning materials. With the ChatGPT desktop app plugged in, a business user can begin experimenting with **context-aware minions**—small, task-focused helpers that work directly on selected material.
+
+You can think of these minions as lightweight helpers that respond to clearly framed requests, rather than independent problem-solvers.
 
 Examples that don’t involve writing a line of code:
 
@@ -44,13 +46,13 @@ What’s new is that you no longer have to:
 - Lose your place while switching tools
 - Hope the model “gets” what you mean without the file in front of it
 
-Instead, the model sees what you see. It acts more like a **pair of helping hands** than a distant assistant.
+Instead, the model operates on what you have in front of you. It can *feel* like a pair of helping hands—useful shorthand for thinking about interaction—even though the work is still entirely driven by explicit input.
 
 ---
 
 ### Embedded Assistant Model
 
-The ChatGPT app’s system-wide availability signals something deeper: assistants are headed toward **pervasive presence**, not occasional visits.
+The ChatGPT app’s system-wide availability signals something deeper: assistance is becoming ambient. Not autonomous, not opinionated—but readily available when summoned.
 
 Today, this looks like:
 - Right-click and send to assistant
@@ -60,7 +62,7 @@ Today, this looks like:
 Tomorrow, it may look like:
 - Hover-to-suggest help in any text field  
 - Automatically recognizing patterns (e.g., draft contracts, invoices, reports)  
-- Anticipating needs based on app and file type  
+- Offering suggestions based on app and file type  
 
 We’re moving toward a world where the assistant is part of the *workspace*, not the *workflow*.
 
@@ -72,8 +74,8 @@ Yes — it’s clunky. The assistant might misfire. The formatting might be awkw
 
 But incremental integrations like these mark the gradual emergence of embedded AI support.
 
-If you’ve ever said, “I wish I had someone to help me finish this doc,” that’s exactly what this next wave of tooling is about. LLMs are learning to live in your tools, not just respond to your questions.
+If you’ve ever said, “I wish I had a little help finishing this doc,” that instinct maps well to how these tools are best used: as on-demand assistance that reduces friction without taking ownership of the work.
 
 ---
 
-> **“Frictionless doesn’t mean invisible. It means contextual, available, and unobtrusive. For the first time, AI is embedded within your tools—signaling the beginning of a new phase in digital assistance.”**
+> **“Frictionless doesn’t mean invisible. It means being close at hand, context-aware, and easy to invoke—supportive without being presumptive.”**

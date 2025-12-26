@@ -1,11 +1,11 @@
 ## Buzzwords: Use & Misuse
 
-If AI had a business card, it would say “Buzzword Factory.” The rise of large language models (LLMs) has flooded conversations with jargon — some earned, some misunderstood, some... just filler. In this article, we’ll clear the fog around the most common terms you’ve likely heard in boardrooms, brainstorms, and pitches. Let’s separate the signal from the smog.
+As language-model tooling has spread into business and technical discussions, its vocabulary has followed. Some terms are precise. Others are used loosely, imprecisely, or as placeholders for understanding. In this article, we’ll clear the fog around the most common terms you’ve likely heard in boardrooms, brainstorms, and pitches. This article clarifies common terms by separating definition from misuse.
 
 ---
 
 ### 🧠 Training  
-**What it *means*:** The original, expensive process of creating a model. Billions of words. Massive infrastructure. Think of it as raising a brain from scratch.
+**What it *means*:** The original, expensive process of creating a model. Billions of words. Massive infrastructure. It is the process by which a model’s parameters are learned from large datasets.
 
 **How it’s *misused*:** “We trained ChatGPT to write our reports.”  
 No, you didn’t. You *used* ChatGPT. You may have *guided* it. But unless you're OpenAI, you're not doing training.
@@ -18,7 +18,7 @@ No, you didn’t. You *used* ChatGPT. You may have *guided* it. But unless you'r
 **What it *means*:** Taking a pre-trained model and adjusting it slightly to specialize it. Like teaching a fluent speaker technical jargon for your industry.
 
 **How it’s *misused*:** “Let’s fine-tune it with some emails.”  
-Unless you’ve got engineers, GPU clusters, and $100k lying around, no — you’re probably just providing examples in a prompt.
+Fine-tuning requires specialized infrastructure and expertise and is not the same as providing examples at runtime.
 
 **Common confusion:** Fine-tuning is *not* copy-pasting your company wiki into the prompt box. That’s a different kind of enhancement — and usually not necessary.
 
@@ -30,7 +30,7 @@ Unless you’ve got engineers, GPU clusters, and $100k lying around, no — you�
 **How it’s *misused*:** “You just need the right prompt and it’ll solve anything.”  
 Prompts matter, but they’re not magic incantations. A vague prompt plus a buzzword doesn’t equal insight.
 
-**Common confusion:** It’s not about syntax tricks — it’s about delegation. Think of it like writing a great creative brief.
+**Common confusion:** It’s not about syntax tricks — it’s about delegation. It is closer to specifying requirements than issuing commands.
 
 ---
 
@@ -38,14 +38,14 @@ Prompts matter, but they’re not magic incantations. A vague prompt plus a buzz
 **What it *means*:** When the model confidently makes things up — inventing names, dates, quotes, or just fabricating answers.
 
 **How it’s *misused*:** “The AI lied to us!”  
-No, it hallucinated. It doesn’t know truth from fiction — it’s predicting plausible sequences of words.
+No, it hallucinated. The model generates plausible output without verifying correctness against an external source.
 
 **Common confusion:** People expect models to be like search engines. They’re not. They’re text predictors with no grounding unless you give it to them.
 
 ---
 
 ### 📚 Context  
-**What it *means*:** The total amount of information the model can “hold in mind” during a session — like working memory.
+**What it *means*:** The total amount of information the model can “hold in mind” during a session — the information made available to the model during a single interaction.
 
 **How it’s *misused*:** “This model has lots of context, so it knows everything.”  
 Nope. Context is *temporary.* Once the chat ends or the limit is hit, it’s gone.
@@ -55,17 +55,17 @@ Nope. Context is *temporary.* Once the chat ends or the limit is hit, it’s gon
 ---
 
 ### 🔡 Token  
-**What it *means*:** A chunk of text — not quite a word, not quite a syllable. Models read and respond in tokens. “Elephant” is one token. “Antidisestablishmentarianism” might be four.
+**What it *means*:** A chunk of text — not quite a word, not quite a syllable. Models read and respond in tokens.
 
 **How it’s *misused*:** “It can read my 100-page report.”  
 Not if that report is more tokens than the model’s limit. Know your model’s budget.
 
-**Common confusion:** Tokens cost money. Every message has a price. Ignoring token counts can turn a cheap experiment into a surprise invoice.
+**Common confusion:** Tokens represent processing units. Larger inputs consume more capacity.
 
 ---
 
 ### 📦 RAG (Retrieval-Augmented Generation)  
-**What it *means*:** A technique that feeds external knowledge into the model in real time — like giving it notes before it speaks.
+**What it *means*:** A technique that feeds external knowledge into the model in real time by retrieving and supplying external material as part of the generation process.
 
 **How it’s *misused*:** “We do RAG, so accuracy is solved.”  
 RAG is helpful — but not a silver bullet. Poor documents in, poor answers out.
@@ -75,7 +75,7 @@ RAG is helpful — but not a silver bullet. Poor documents in, poor answers out.
 ---
 
 ### 🤖 Smart  
-**What it *means*:** …we don’t know. Depends on who’s saying it.
+**What it *means*:** There is no single technical definition. The term is often used as a proxy for capability without specifying which capability is being discussed.
 
 **How it’s *misused*:** “This is the smartest AI yet.”  
 “Smart” is vague. Are we talking about creativity? Logic? Memory? Cost-efficiency? Be specific.
@@ -90,8 +90,8 @@ RAG is helpful — but not a silver bullet. Poor documents in, poor answers out.
 - **Fine-tuning:** Unless you hired a lab, you’re not.
 - **Hallucination:** It’s not lying. It’s guessing.
 - **Token:** Think of it like text budget, not words.
-- **Smart:** Describe what you mean instead.
+- **Smart:** Specify the capability or behavior being referenced.
 
 ---
 
-Buzzwords aren’t bad — they just need supervision. Like minions.
+Buzzwords are not inherently harmful. Precision is what makes them useful.

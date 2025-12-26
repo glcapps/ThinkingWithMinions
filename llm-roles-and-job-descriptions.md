@@ -1,35 +1,37 @@
 # LLM Roles and Job Descriptions
 
-As LLMs become integral to more and more business workflows, it’s time to rethink our internal job descriptions—not just for people, but for the “minions” we now hire in silicon. What roles do these models fill? And how do we responsibly assign them tasks?
+As language models become embedded in more business workflows, it is useful to define the kinds of tasks they are delegated to perform. This is not about assigning jobs or agency, but about making responsibility, scope, and review explicit.
 
-## Not Replacements—Colleagues with Limitations
+## Not replacements—delegated capabilities
 
-First, we need to stop framing LLMs as magic replacements for workers. They aren’t here to replace your staff—they’re here to work alongside them, when used with intention and clarity. That means defining their duties as clearly as you would a junior hire.
+Language models are not replacements for staff, nor are they collaborators. They are delegated capabilities that operate within defined scope and constraints. Treating them as such helps prevent overreach, misplaced trust, and silent failure.
 
-So: what is this minion for?
+That means defining their tasks as clearly as any other system component.
 
-## Five Common LLM “Job Titles”
+So: what task is being delegated?
 
-1. **Draft Assistant**  
+## Common delegated task patterns
+
+1. **Draft generation**  
    Used to create first-pass versions of emails, reports, product descriptions, and proposals. The goal here isn’t perfection—it’s momentum.
 
-2. **Summarizer**  
-   Given transcripts, documents, or data outputs, the minion highlights key ideas, action items, or discrepancies. Best used with templated outputs.
+2. **Summarization**  
+   Given transcripts, documents, or data outputs, this task highlights key ideas, action items, or discrepancies. Best used with templated outputs.
 
-3. **Process Explicator**  
-   Able to explain workflows or policies in plainer language, useful in training or compliance review. Often paired with reference material.
+3. **Process explanation**  
+   Provides explanations of workflows or policies in plainer language, useful in training or compliance review. Often paired with reference material.
 
-4. **Transformer**  
-   Used to convert content between formats—text to JSON, table to markdown, PDF to HTML, and so on. Careful prompt design required.
+4. **Content transformation**  
+   Converts content between formats—text to JSON, table to markdown, PDF to HTML, and so on. Careful prompt design required.
 
-5. **Data Interrogator**  
-   Works with structured data, logs, or business documents to extract meaning or spot issues. This role borders on analytics support but remains language-based.
+5. **Language-based data analysis**  
+   Works with structured data, logs, or business documents to extract meaning or spot issues. This task borders on analytics support but remains language-based.
 
 ## Don’t Just Say “Use AI”
 
-A responsible business leader doesn’t tell staff to “use Google”—they teach how to search, how to evaluate sources, and when to ask a colleague instead. The same must be true with LLMs.
+A responsible organization does not simply say “use AI”—they teach how to search, how to evaluate sources, and when to ask a colleague instead. The same must be true with language models.
 
-Each job description must include:
+Each delegated task definition should include:
 - The type of task it’s meant for
 - The limitations of the role
 - How to check or refine the output
@@ -37,12 +39,12 @@ Each job description must include:
 
 ## Cross-Training Encouraged
 
-Some minions can do several of these jobs in sequence, especially when integrated into workflows. But clarity is still essential. Don't expect the assistant to summarize and extract and transform and file and notify without scaffolding.
+Some systems can support multiple task patterns in sequence when integrated into workflows. Do not expect multiple task patterns to be performed reliably without explicit sequencing and scaffolding.
 
 Design modular tasks. Let each “role” build on the last.
 
 ## Summary
 
-The best use of LLMs starts with clearly defined roles. Assign your minions thoughtfully—and train your team to treat them as interns with impressive skills but definite blind spots.
+Effective use of language models starts with clearly defined task boundaries. Delegation works when scope, constraints, and review are explicit—and when responsibility remains with the people and systems that define the work.
 
 ---

@@ -1,16 +1,16 @@
 # Semantic Logs: When Output Is Your Interface
 
-Traditional logging answers: What happened? When? Where did it go wrong?
+Traditional logging answers questions like: What happened? When? Where did it fail?
 
-Semantic logs ask: What *was* that? What does it *mean*? Was it *reasonable*?
+Semantic logs answer a different set of questions: What was produced? How should it be interpreted? Was the outcome reasonable within the system’s intent?
 
-In the era of LLM-driven tooling, the output isn't just for debugging—it's your primary interface for understanding, verifying, and iterating on behavior.
+In systems where behavior is expressed through generated output, logs are no longer just for debugging—they are the primary interface for understanding, verifying, and iterating on behavior.
 
 ## From Printf to Prompt-Feedback
 
-Developers have long used `print()` statements, log levels, and structured logs. But when your system includes or communicates with a large language model, the text it emits is the only reliable clue you have to what's going on. The semantic content *is* the behavior.
+Developers have long used `print()` statements, log levels, and structured logs. When a system produces text, summaries, classifications, or structured descriptions as part of its operation, that output is the behavior. There is no lower-level signal to inspect.
 
-If you ask a model to summarize, explain, or route, your "log" may be:
+In such systems, a “log” may take the form of:
 
 - A paragraph of generated prose
 - A JSON blob describing an inferred state
@@ -20,17 +20,13 @@ These aren't debug strings. They're functional artifacts.
 
 ## Logging as Insight, not Audit
 
-In traditional logs, clarity is a bonus. In semantic systems, it's a requirement. You can't fix what you can't parse, and models can't help with outputs they don’t “understand” either. If you're building a system with LLMs, your logs need to be:
+In traditional logs, clarity is a bonus. In semantic systems, it's a requirement. If output cannot be interpreted reliably, neither humans nor tools can reason about it. Semantic clarity is not cosmetic; it determines whether behavior can be evaluated or corrected.
 
-- Legible (to humans and models)
-- Contextual
-- Faithful to the interaction
-
-Logs are no longer just a trail—they're a live, inspectable memory.
+Logs become a live, inspectable record of system behavior.
 
 ## Designing for Readability
 
-Treat every line your system produces as if it's going to be used in a user interface—even if that UI is just you in the terminal at 2 a.m.
+Treat every line your system produces as if it will be read, reused, or acted upon.
 
 This means:
 
@@ -38,11 +34,11 @@ This means:
 - Use markdown or JSON if it aids downstream consumption
 - Annotate with intent, not just structure
 
-For example, instead of logging `Result: success`, consider `Task 'summarize-ticket' returned plausible summary.`
+For example, instead of logging `Result: success`, consider `Task 'summarize-ticket' produced a summary consistent with input constraints.`
 
-## LLM-Compatible Logs
+## Machine-readable semantic logs
 
-If you want LLMs to *assist* with logs (e.g., summarize, alert, label anomalies), structure them in ways that support semantic parsing:
+If logs are expected to be reused by tools, they must support interpretation as well as inspection.
 
 - Avoid dense nesting
 - Use consistent field names
@@ -54,6 +50,6 @@ A log that reads like a prompt will be easier to act on than one that reads like
 
 When dealing with autonomous tools, self-healing agents, or multi-agent workflows, the semantic output is the *only* source of ground truth. Observability becomes interpretation.
 
-In these systems, "semantic logging" isn't optional—it's the architecture.
+In systems where output is the observable behavior, semantic logging is not optional. It is the mechanism by which behavior can be understood over time.
 
-And that means your logs might outlive your code.
+Logs may outlive implementations. Design them accordingly.

@@ -1,24 +1,24 @@
 # What the Model Can’t See
 
-Large language models can be brilliant collaborators, but their brilliance has limits. Some of those limits are obvious—like not knowing what’s on your screen. Others are subtle and often overlooked by even experienced users.
+Large language models operate within strict boundaries. Some of those boundaries are obvious—such as not having access to your screen or running processes. Others are more subtle and are often overlooked in practice.
 
-This article explores the invisible boundaries of LLM reasoning, especially for developers and IT professionals who depend on context, environment, and visual cues in their work.
+This article describes those boundaries, with a focus on how missing context, state, and signals affect reliability in development and IT workflows.
 
 ---
 
-## No Eyes, No State
+## No direct access to your environment
 
 A model can’t read your terminal, your screen, or your editor window. It doesn’t see which file you’re in, which variable is highlighted, or what output just scrolled by. This is different from human collaboration, where even a glance can change everything.
 
-If you don’t say it, the model doesn’t know it. The model might guess, but guessing isn’t knowing.
+If information is not explicitly provided, it is not available. The model may infer or approximate, but inference is not access.
 
 ---
 
 ## No Memory of What You Didn’t Say
 
-There’s a temptation to assume a model "remembers" prior work or internalizes your intent. But unless that context is included in the current conversation window—or stored in some kind of memory or retrieval system—it doesn’t exist to the model.
+Models do not retain context unless it is supplied or explicitly stored by surrounding systems. Assumptions about continuity across sessions or tasks lead to gaps in behavior.
 
-This matters especially when you're working across multiple sessions or switching between projects. Without the right breadcrumbs, your assistant is operating blind.
+This matters especially when you're working across multiple sessions or switching between projects. Without explicit carryover, reasoning starts from an incomplete picture.
 
 ---
 
@@ -26,29 +26,29 @@ This matters especially when you're working across multiple sessions or switchin
 
 Unlike your IDE or your debugger, the model isn’t connected to the execution state of your application. It can’t tell which breakpoints are set, what your stack trace says, or what line threw the error. That has to be relayed manually, or through tools that bind model interaction to your environment.
 
-This also means it won’t know if you’ve already solved the problem, unless you tell it. Its helpfulness depends on your updates.
+Execution state, breakpoints, and runtime errors are not visible unless they are surfaced as input. Integration can bridge this gap, but the limitation exists by default.
 
 ---
 
-## The Danger of Illusory Understanding
+## The risk of inferred understanding
 
-Models are good at sounding confident. They complete patterns. That can lead to situations where they seem to understand your problem—until their advice breaks your build.
+Models produce coherent output even when underlying assumptions are wrong. Apparent confidence is a property of fluent generation, not verification.
 
-This isn’t just a risk; it’s a design constraint. LLMs are not agents with a mental model of your work. They operate only on what they were given. Be specific. Say what you assume they already know.
+This is not a flaw to be fixed. It is a constraint to design around.
 
 ---
 
 ## Practical Advice
 
-- Narrate your context clearly: “I’m working on a React component that’s failing to re-render after a state update.”
-- Include recent output or stack traces as text—not screenshots.
-- Avoid pronouns and vague references like “this” or “that” when you mean a specific function or file.
-- Think of your prompts as setting the stage. If you leave the lights off, the model works in the dark.
+- State the task and environment explicitly.
+- Provide relevant output, logs, or traces as text.
+- Refer to concrete files, functions, or symbols rather than pronouns.
+- Treat prompts as environment descriptions, not questions alone.
 
 ---
 
-## Closing Thought
+## Closing
 
-The model isn’t watching over your shoulder. It’s waiting to be shown. Treat it like a sharp but blindfolded partner: precise in reasoning, but entirely dependent on your cues.
+Models do not observe your work. They operate on what is presented.
 
-Make your context visible, and the model will repay you with insight.
+Making context explicit is not verbosity. It is how reliability is achieved.

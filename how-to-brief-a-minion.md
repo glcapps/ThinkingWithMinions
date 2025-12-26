@@ -1,16 +1,16 @@
 ## How to Brief a Minion: Designing Prompts with Structure and Intent
 
-When people first use a large language model (LLM), their instinct is to type a question the same way they might into Google. But LLMs aren’t search engines. They’re more like eager junior analysts: capable, fast, but reliant on context and instruction. To get great results, you don’t just ask. You **brief**.
+When people first use a large language model (LLM), their instinct is to type a question the same way they might into Google. But LLMs aren’t search engines. They function as delegated tools: fast, capable within scope, but entirely dependent on the context and instructions you provide. To get reliable results, you don’t just ask. You **brief**.
 
 Here’s how to think about it.
 
 ### Why Briefing Matters
 
-Every business user knows the difference between a good delegation and a vague request. If you delegate a task without specifying the expectations, resources, or outcome criteria, you’ll likely get back something misaligned. The same is true for LLMs.
+Every business user knows the difference between a well-scoped delegation and a vague request. If you delegate a task without specifying the expectations, resources, or outcome criteria, you’ll likely get back something misaligned. The same is true for LLMs.
 
-The best prompts aren’t improvised queries. They’re clear structures.
+The best prompts are not improvised queries. They are structured instructions.
 
-This article introduces a four-part method for writing serious, reusable prompts. Whether you’re drafting emails, reviewing contracts, or summarizing meeting notes, this format helps you treat your LLM as a capable collaborator.
+This article introduces a four-part method for writing structured, reusable task instructions. Whether you’re drafting emails, reviewing contracts, or summarizing meeting notes, this format helps you treat your LLM as a capable collaborator.
 
 ---
 
@@ -20,7 +20,7 @@ Start with a one- or two-sentence explanation of what the task is about. Think o
 **Example:**  
 “This prompt is about summarizing customer support calls into internal performance reports.”
 
-Clarity here sets the stage. It tells the LLM what universe it’s operating in.
+Clarity here sets the stage. It establishes the scope and domain the task applies to.
 
 ---
 
@@ -45,24 +45,24 @@ Use:
 - Outcome: Escalated to Tier 2
 ```
 
-This gives the model the structured context a trained assistant would expect before beginning a task.
+This supplies the explicit reference material required for the task to be completed correctly.
 
 ---
 
 ### 3. **Task Prompt**  
-Now, give the instruction. Keep it tight, but specific.
+Now, specify the task. Keep it narrow, explicit, and testable.
 
 **Examples:**
 - “Summarize the feedback in a professional internal memo.”  
 - “Draft a follow-up email based on the above.”  
 - “Rewrite this to be more persuasive but retain factual accuracy.”
 
-If you're combining this with tool use or multi-step flows, break it down step by step. But in most business settings, a well-phrased task is enough.
+If you're combining this with tool use or multi-step flows, break it down step by step. In most business settings, a clearly scoped task is sufficient.
 
 ---
 
 ### 4. **Answering Manner / Tone**  
-This is your chance to shape the voice and style. It also sets boundaries.
+This defines the expected presentation style and constraints on the output.
 
 **Examples:**
 - “Respond as a calm and professional customer service manager.”  
@@ -106,9 +106,9 @@ Use concise, neutral business language. Avoid legalese. Make the summary skimmab
 
 - **Reduces Guesswork:** The LLM doesn’t have to guess what kind of answer you want.
 - **Creates Repeatability:** You can reuse the same format for dozens of tasks.
-- **Improves Trust:** Colleagues begin to see consistent quality from your LLM work.
+- **Improves Confidence:** Outputs become more consistent and easier to review.
 
-It’s not about cleverness. It’s about clarity.
+It is not about cleverness. It is about explicitness.
 
 ---
 
@@ -116,10 +116,10 @@ It’s not about cleverness. It’s about clarity.
 
 The real goal here isn’t just to write better prompts — it’s to **think in systems**.
 
-Each time you use this format, you're building a repeatable workflow. One that can be stored, shared, and improved. One that lets someone else (human or minion) follow the same steps.
+Each time you use this format, you are reinforcing a repeatable workflow. One that can be stored, shared, and improved. One that allows the same steps to be followed consistently by people or tools.
 
 When documented and reused, this structure becomes a component of your knowledge workflow. It supports consistency across teams and helps futureproof your use of AI as business processes evolve.
 
-This is how minions grow from novelty to necessity.
+This is how delegated tools move from novelty to operational usefulness.
 
 So next time you open a chat window, approach your prompts as you would any professional instruction—clearly, consistently, and with intent.

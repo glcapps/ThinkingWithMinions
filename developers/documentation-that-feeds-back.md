@@ -1,28 +1,30 @@
 # Documentation That Feeds Back
 
-Most developer documentation is a one-way mirror. You write it for the next person, but it never speaks again. What if it could?
+Most developer documentation is written once and read passively. It explains, but it does not participate.
 
-With LLMs embedded in your tooling, documentation becomes an *active participant* in the development cycle.
+When LLMs are part of the toolchain, documentation can become an input to ongoing work rather than a static artifact.
 
 ## Start with structured notes
 
-When writing documentation—be it inline comments, README files, or usage guides—consider the LLM as part of your audience.
+When writing documentation—inline comments, README files, or usage guides—assume it will be consumed by both people and systems.
 
 - Use consistent headings
 - Prefer examples over prose
 - Clarify assumptions, inputs, and outcomes
 
-You're not just helping a human skim. You're building a predictable information surface for your AI tooling to grab hold of.
+The goal is not verbosity. It is consistency. Predictable structure makes documentation usable beyond human skimming.
 
-## Add feedback loops
+## Design for reuse
 
-Where it gets interesting is *when that same documentation becomes training data*. Not for a full retrain—but for prompt scaffolds, embedding sources, or memory anchoring.
+Documentation becomes more valuable when it can be reused by tools, not just read by people.
 
-- **Prompt scaffolding**: Your doc strings become parts of multi-step instructions.
-- **Embedding source**: Your architecture docs support semantic search.
-- **Memory cues**: Past explanations are referenced as working memory in tools.
+This does not require retraining models.
 
-In a well-wired workflow, your assistant can learn *how your team explains things*, not just what your code does.
+- Prompt inputs: documentation is incorporated into structured instructions
+- Retrieval material: architecture and usage notes support lookup and reference
+- Memory cues: prior explanations are reused to maintain continuity
+
+Over time, this allows tools to reflect established explanations and conventions without inventing new ones.
 
 ## Examples
 
@@ -34,6 +36,6 @@ In a well-wired workflow, your assistant can learn *how your team explains thing
 
 When your documentation is written with the assistant in mind—and your assistant is designed to consume it—knowledge doesn’t rot. It cycles. It informs.
 
-Write docs that don’t just sit there.
+Documentation that feeds back does not replace understanding. It reinforces it.
 
-Write docs that *talk back*.
+Write documentation that can be used, not just read.

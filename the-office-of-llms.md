@@ -1,13 +1,10 @@
-
-
-
 # The Office of LLMs
 
-As language models embed themselves into business workflows, a new kind of department is emerging—not in title, but in function. It’s not IT, not HR, not Marketing, yet it touches all of them. Think of it as the **Office of LLMs**.
+As language models become more common in business workflows, a new kind of coordination function often emerges—not in title, but in practice. Think of it as the **Office of LLMs**—a loose but useful way to describe where this work tends to land.
 
 ## What Is It?
 
-The Office of LLMs isn’t always literal. In some businesses, it might be one power user in Operations. In others, a small cross-functional group. But the idea is the same: someone (or some team) tends the garden.
+The Office of LLMs isn’t always literal. In some businesses, it might be one power user in Operations. In others, a small cross-functional group. But the idea is the same: someone (or some team) takes responsibility for coordination and shared understanding.
 
 This includes:
 - Coordinating use of LLM tools across departments
@@ -23,19 +20,19 @@ Without a centralized perspective, LLM use can become:
 - Risky (no shared security norms)
 - Shallow (only basic uses get adopted)
 
-The Office of LLMs helps a business **scale** its thinking. It brings order, reuse, and insight across scattered experiments.
+The Office of LLMs helps a business scale its *use* of language tools in a more deliberate way. It brings order, reuse, and insight across scattered experiments.
 
 ## Responsibilities
 
 - **Governance**: Align usage with data policy and tool access
 - **Enablement**: Help teams get started, answer questions, track good examples
 - **Tool Vetting**: Evaluate plugins, hosted options, and hosted models
-- **Internal Research**: Stay on top of what works and what doesn’t in real tasks
-- **Feedback**: Close the loop between users and model/tool developers
+- **Internal Learning**: Track what works and what doesn’t in real tasks
+- **Feedback**: Close the loop between users, tools, and internal stakeholders
 
 ## Who Belongs There?
 
-This office doesn’t need to be staffed by AI researchers. What matters is curiosity, pragmatism, and communication. Often, the best early candidates are:
+This office doesn’t need to be staffed by AI researchers. What matters is curiosity, pragmatism, and communication. This is a literacy and coordination role more than a technical or decision-making one. Often, the best early candidates are:
 
 - Ops leads
 - Product managers
@@ -45,6 +42,6 @@ This office doesn’t need to be staffed by AI researchers. What matters is curi
 
 ## Summary
 
-You don’t need an AI department—but you probably need an Office of LLMs.
+You don’t need an AI department—but many organizations benefit from an Office of LLMs.
 
-Not to centralize power, but to nurture understanding and capability. A place in the org where the minions can report for duty—and be given the right tasks.
+Not to centralize power, but to nurture shared understanding and capability. A place in the org where minion-style tools are coordinated, supported, and given appropriately scoped tasks.

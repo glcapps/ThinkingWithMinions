@@ -1,6 +1,6 @@
 ## Timeline: The Emergence of Useful Minions
 
-> From novelty to necessity — how LLM-powered assistants became business collaborators.
+> From novelty to necessity — how LLM-powered helpers became embedded in everyday work.
 
 ---
 
@@ -16,14 +16,14 @@
 - Explosion of interest across industries, including small businesses
 - **Plugins for ChatGPT** begin to show workflow potential (e.g. browsing, code interpretation)
 - **APIs become usable by non-specialists** through low-code/no-code tools
-- Surge of AI “adjacent” roles in org charts: prompt specialists, AI liaisons, LLM integrators
+- Surge of AI-adjacent roles in org charts: prompt specialists, AI liaisons, early LLM integrators
 
 ---
 
 ### 🧠 Late 2023 – The Infrastructure Layer Appears
 - Widespread experimentation with **agentic systems** and **vector search tools**
 - Rise of “bring your docs to the model” workflows
-- Early versions of **Model Context Protocols (MCP)** and memory-enhanced chat interfaces
+- Early, exploratory versions of **Model Context Protocols (MCP)** and memory-enhanced chat interfaces
 - First serious attempts to align LLMs with business logic and task structure
 
 ---
@@ -40,15 +40,23 @@
 - AI moves inside workflows, not next to them
 - Business software starts shipping with built-in assistants by default
 - Claude on desktop explores **MCP as a native user capability**
-- The assistant isn’t summoned — it’s just *there*
+- Assistance becomes closer to the work, easier to invoke, and less theatrical
 
 ---
 
-### 🤝 2025 – Delegation Becomes Default
-- Agents and memory features allow **task threads** to carry context over days or weeks
-- Team workflows begin to center around **human+minion collaboration**
-- “I’ll have the minion draft it” becomes normal
-- Business leaders start funding AI utility like they did websites in the 2000s
+### 🤝 2025 – Delegation Becomes Common
+- Agents and memory features support **task threads** that persist context across sessions
+- Some team workflows begin to incorporate human-plus-tool delegation patterns
+- Phrases like “I’ll have the minion draft it” enter everyday language in some orgs
+- Business leaders increasingly budget for AI utility alongside other productivity tools
+
+---
+
+### 🔄 2026 and Beyond – Normalization and Differentiation
+- AI assistance becomes expected in many tools, but varies widely in quality and reliability
+- Differentiation shifts from *having* AI to *how well it is integrated*
+- Attention moves from novelty to governance, cost control, and task fit
+- Teams become more selective about when minions help — and when they get in the way
 
 ---
 
@@ -57,5 +65,6 @@
 - 2023: Possibility  
 - 2024: Tooling  
 - 2025: Delegation  
+- 2026+: Normalization  
 
-Each step marked by **greater integration, broader access, and deeper trust.**
+Each step marked by **greater integration, broader access, and more deliberate use.**

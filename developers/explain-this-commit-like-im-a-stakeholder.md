@@ -1,8 +1,8 @@
 # Explain This Commit Like I’m a Stakeholder
 
-It’s not enough to write a clear commit message. Not when your organization is working alongside large language models. Now the question becomes:
+Clear commit messages matter whenever software is built by more than one person. The moment changes need to be explained outside the code itself, the audience expands.
 
-Can your commit message explain the change in terms that an assistant—or a stakeholder—can work with?
+Can your commit message explain the change in terms that someone outside the code can work with?
 
 ## The Problem with Standard Commit Messages
 
@@ -10,9 +10,9 @@ Traditional commit messages focus on the *what*:
 
 > “Fix null pointer in user lookup”
 
-That’s fine for someone reading the Git history. But it’s not enough for a project manager asking, “Why did this happen?” or for an LLM assistant summarizing progress for a weekly report.
+That’s fine for someone scanning Git history. It’s less helpful for anyone asking why the change exists, what it affects, or whether it matters beyond the immediate fix.
 
-## Richer Context in Commits
+## Context that survives reuse
 
 Stakeholder-grade commit messages should include:
 
@@ -21,20 +21,20 @@ Stakeholder-grade commit messages should include:
 - **What it impacts** — downstream systems, UI, reports, etc.
 - **How it was tested** — in simple language
 
-This doesn’t have to be long. Just deliberate.
+This doesn’t require length. It requires intent.
 
 > “Fix null pointer in user lookup by ensuring default group assignment. This was breaking new user onboarding. Impacts registration flow and admin dashboard metrics. Covered by updated registration tests.”
 
-That’s a message a tool can summarize, explain, and even *revert intelligently* if needed.
+That’s a message that can be summarized, explained, and reasoned about without reopening the code.
 
-## Assistants Read Your Git Log
+## Commits are reused
 
-Increasingly, developer assistants use Git logs for:
+Commit history is rarely read only once or by only developers.
 
-- Changelog generation
-- Summarizing work for standups
-- Writing internal release notes
-- Explaining architectural changes to newcomers
+- Generating changelogs and release notes
+- Explaining progress to non-technical stakeholders
+- Reconstructing decisions during debugging or audits
+- Onboarding new contributors
 
 Every commit is a chance to leave a breadcrumb.
 
@@ -44,4 +44,6 @@ Ask yourself: *If someone asked me what this commit was about, what would I say 
 
 Now write *that*.
 
-It’s a better fit for stakeholders. And it’s a better fit for your assistant, too.
+Good commit messages reduce the need for follow-up explanation.
+
+They travel well.

@@ -1,6 +1,6 @@
 ## The Anatomy of a Prompt
 
-Large Language Models (LLMs) can be valuable assets in business workflows — but their usefulness depends almost entirely on how they’re asked to help. In business, where clarity, repeatability, and reliability matter more than novelty, an imprecise prompt often leads to unclear or unusable results.
+Large Language Models (LLMs) can be valuable assets in business workflows — but their usefulness depends largely on how they’re asked to help. In business, where clarity, repeatability, and reliability matter more than novelty, an imprecise prompt often leads to unclear or unusable results.
 
 To get consistent, valuable results, prompts need to behave more like a **briefing packet** than a one-line question. Here’s a practical structure that any business user can follow — even without technical training.
 
@@ -15,7 +15,7 @@ Start by defining what kind of thinking or output you want. Be simple and honest
 - “Draft a checklist for this process”
 - “Ask clarifying questions about this policy”
 
-This is the **framing**. You're not giving an answer or asking a question — you’re stating what the model should be doing, as if briefing a junior analyst for a deliverable.
+This is the **framing**. You're not giving an answer or asking a question — you’re stating what the model should be doing, much like briefing a junior analyst on a specific deliverable.
 
 Avoid pretending the LLM already knows what’s going on. Begin fresh each time.
 
@@ -37,7 +37,7 @@ Example:
 
 This tells the LLM: *"Here's your source material. Work within it."*
 
-Treat this as supplying the model with authoritative reference material — not just hoping the AI "knows enough."
+Treat this as supplying the model with the reference material it should work from — rather than hoping it infers the right details.
 
 ---
 
@@ -49,20 +49,20 @@ Now that the model has its footing, be specific:
 - “Identify any ambiguous rules in this policy”
 - “Convert this to employee-facing language”
 
-No flourish. No open-ended curiosity. Provide a clear directive using straightforward language.
+Keep it direct. Avoid unnecessary flourish or open-ended curiosity. Provide a clear directive using straightforward language.
 
 ---
 
 ### 4. Set the Tone of the Answer
 
-What professional tone should the response adopt?
+What professional tone or role should the response adopt?
 - A helpful internal policy advisor
 - A small business consultant
 - A legal summary writer
 
 Specify this in a final line, for example:
 
-> Respond as if writing a memo to a department manager unfamiliar with this topic.
+> Respond as if drafting a memo for a department manager unfamiliar with this topic.
 
 This final element guides the tone and audience alignment of the response.
 
@@ -73,7 +73,7 @@ This final element guides the tone and audience alignment of the response.
 Here’s what the full four-part structure might look like:
 
 ```
-You are assisting with policy onboarding.
+This task supports policy onboarding.
 
 ## Reference Material
 ### PTO Policy
@@ -92,6 +92,6 @@ Write in the voice of a helpful internal advisor writing for a company FAQ page.
 
 ### Final Thought
 
-This structure isn’t just about better answers — it’s about better conversations. When business users approach prompts as structured instructions — and treat LLM task briefing as a business process — they receive dependable, context-aware output.
+This structure isn’t just about better answers — it’s about better conversations. When business users approach prompts as structured instructions — and treat LLM task briefing as a repeatable business process — they receive more dependable, context-aware output.
 
-Think of it less like “prompt engineering” and more like **LLM task briefing**. That’s the new skill. And it’s learnable.
+Think of it less like “prompt engineering” and more like **LLM task briefing**. That’s a useful modern skill — and it’s learnable.

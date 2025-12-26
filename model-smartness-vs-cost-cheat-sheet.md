@@ -1,4 +1,6 @@
+
 ## Understanding Model “Smartness” — Beyond Just Size
+Here, “smartness” is a practical shorthand for how capable a model feels in real use: how well it reasons, adapts, and delivers useful output for a given task.
 
 When people hear that a model has 7 billion or 600 billion parameters, it’s easy to assume that more = better. But that’s only part of the story. Here’s what actually determines a model’s intelligence, efficiency, and cost in real-world tasks.
 
@@ -17,7 +19,7 @@ When people hear that a model has 7 billion or 600 billion parameters, it’s ea
 
 ### 🤯 A Surprising Truth
 
-A **600B parameter model quantized to 4-bit** may perform better on reasoning tasks than a **70B full-precision** model — because the training data, layout, and versioning matter more than raw size.
+A **very large model that’s aggressively quantized** can, in practice, outperform a **smaller full‑precision model** on some reasoning tasks — because training data quality, architecture, and iteration often matter more than raw size alone.
 
 Don’t shop by size. Shop by **fit to task**.
 
@@ -27,21 +29,21 @@ Don’t shop by size. Shop by **fit to task**.
 
 Here’s a real-world breakdown of how far $1 can go in May 2025:
 
-| Model                  | Size  | Quant. | Price / 1K Tokens | Ideal Use Cases                          | ~$1 Gets You                        |
-|------------------------|-------|--------|-------------------|------------------------------------------|-------------------------------------|
-| GPT-4 Turbo (OpenAI)   | ~1.8T?| 16-bit | $0.01 in / $0.03 out | Legal drafting, strategic reasoning       | Drafting a full HR policy or executive memo |
-| GPT-3.5 Turbo          | 175B  | 16-bit | $0.0005 in / $0.0015 out | Rapid brainstorm, code support           | Chat-style support for a full day  |
-| DeepSeek-V3 (Fireworks)| 40B?  | Q4_K_M | $0.0008 / $0.0015 | Spreadsheet formula reviews, doc summaries | A few solid task explanations or one large doc analysis |
-| LLaMA 3 8B (Fireworks) | 8B    | Q4_K_M | ~$0.0005 / $0.001 | Short-form writing, command explanations | One well-structured email + summary |
-| Claude Haiku          | ~10B? | Mixed? | Free for now      | Lightweight summarization, basic planning | 2-3 meeting note summaries         |
+| Model                  | Size            | Quant.          | Price / 1K Tokens         | Ideal Use Cases                            | ~$1 Gets You                                     |
+|------------------------|-----------------|-----------------|--------------------------|--------------------------------------------|--------------------------------------------------|
+| GPT-4 Turbo (OpenAI)   | ~1–2T (est.)    | 16-bit          | $0.01 in / $0.03 out     | Legal drafting, strategic reasoning        | Drafting a substantial HR policy or executive‑level memo |
+| GPT-3.5 Turbo          | 175B            | 16-bit          | $0.0005 in / $0.0015 out | Rapid brainstorm, code support             | Ongoing chat-style support across many short interactions |
+| DeepSeek-V3 (Fireworks)| 40B             | Q4_K_M          | $0.0008 / $0.0015        | Spreadsheet formula reviews, doc summaries | Several solid task explanations or one medium‑to‑large document analysis |
+| LLaMA 3 8B (Fireworks) | 8B              | Q4_K_M          | ~$0.0005 / $0.001        | Short-form writing, command explanations   | One well-structured email + summary              |
+| Claude Haiku           | ~10B            | Mixed precision | Included / limited free tier | Lightweight summarization, basic planning    | 2-3 meeting note summaries                       |
 
-_Note: Prices are approximations as of May 2025 and may change._
+_Note: Prices are rough market estimates as of May 2025._
 
 ---
 
 ### 🛠️ Don’t Overpay for Power
 
-If your task is simple (rewriting instructions, summarizing an email, checking a formula), a small quantized model can do the job faster and cheaper — and sometimes more *reliably* than a large, over-parameterized one.
+If your task is simple (rewriting instructions, summarizing an email, checking a formula), a small quantized model can often do the job faster and cheaper — and, for these tasks, just as reliably as a much larger one.
 
 ---
 
@@ -54,4 +56,4 @@ If your task is simple (rewriting instructions, summarizing an email, checking a
 
 ---
 
-> Use the right minion for the job. Smartness isn’t about size — it’s about context, version, and purpose.
+> Use the right minion for the job. Smartness isn’t just about size — it’s about version, context, and purpose.

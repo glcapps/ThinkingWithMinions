@@ -1,21 +1,26 @@
-# Smarter CI Is a Prompt Away
+# Smarter CI Starts With Intent
 
-Continuous Integration (CI) used to be a realm where only scripts and YAML ruled the land. But increasingly, developer workflows are being augmented by LLMs in ways that don’t replace CI pipelines, but make them more intelligent, more explainable, and more flexible.
+Continuous Integration (CI) is often expressed through scripts and configuration files. These artifacts are precise, but they are not always expressive.
 
-This is not about generating a `.yml` file from scratch, though that’s a fair enough use. The real gain is in translating intent.
+As CI systems grow more complex, the gap between what a team intends and what a pipeline actually does becomes harder to reason about.
 
-Say you’re tweaking test thresholds or refactoring the way a monorepo builds across multiple environments. Instead of editing a brittle config manually, you might describe your goal conversationally to an LLM: “Ensure all builds triggered by a commit to the frontend directory run the linter but skip the integration tests.”
+The core challenge is not file generation. It is translating intent into reliable, inspectable configuration.
 
-This alone isn’t new. What’s new is that the LLM can keep the intent clear while expressing it in the precise dialect of whatever CI provider you’re using. It can surface caveats — like a caching step that’s no longer valid — and even flag legacy patterns that are deprecated. And because it's not an opaque shell script but a conversationally sourced suggestion, it’s more auditable by team members who aren’t specialists.
+Consider a change in behavior rather than a change in syntax. For example: adjusting which tests run based on branch patterns, or altering how builds are triggered across parts of a repository.
 
-Smarter CI isn’t just automation — it’s a fluid translation between human goals and technical steps.
+What matters is preserving intent while expressing it in the specific rules and constraints of a given CI system. When intent is explicit, it becomes easier to surface edge cases, deprecated patterns, or unintended side effects.
 
-And that means a pull request can start not with a config file, but with a plain statement of what needs to happen. The CI config becomes the second step, not the first.
+Smarter CI is not just automation. It is alignment between goals and execution.
 
-# Prompt Example
+When intent is written down first, configuration becomes an implementation detail rather than the starting point. Review shifts from syntax to behavior.
 
-> “When a developer pushes a commit to a branch starting with `feat/`, run the linter and the unit tests. Only run deployment steps if the branch is `main`. Include caching for `node_modules`, but skip it on branches marked `wip/`.”
+# Intent example
 
-In the future, CI becomes not a bottleneck to learn but a domain where LLMs scaffold the structure, then get out of the way.
+Intent:
+- For branches prefixed with `feat/`, run linting and unit tests.
+- Run deployment steps only on `main`.
+- Enable dependency caching, except on branches prefixed with `wip/`.
 
-It’s not about making CI less powerful — it’s about making it more reachable.
+CI systems become easier to reason about when intent is explicit and configurations are treated as derived artifacts.
+
+This does not reduce power. It reduces friction.

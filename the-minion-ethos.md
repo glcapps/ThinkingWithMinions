@@ -4,17 +4,17 @@ Many first-time users approach AI tools as if they were unpredictable magic—as
 
 Ask it anything. Hope for the best. Be amazed — or disappointed. Repeat.
 
-But those who succeed in using LLMs for serious business work know something others don’t. They’ve embraced a collaborative mindset—what we call **“thinking with minions”**—focused on structure and partnership rather than spectacle.
+But those who succeed in using LLMs for serious business work know something others don’t. They’ve embraced a different mindset—what we call **“thinking with minions”**—focused on structure, delegation, and usefulness rather than spectacle.
 
 ---
 
 ### Not Magic. Not a Genius. A Minion.
 
-Think back to the *Despicable Me* films — the minions don’t read minds. They need direction. But when given the right tools, clear goals, and some structure, they work tirelessly, creatively, and loyally toward a task.
+Think back to the *Despicable Me* films — the minions don’t read minds. They need direction. But when given the right tools, clear goals, and some structure, they become surprisingly effective at carrying out a task.
 
 That’s exactly how productive LLM usage operates.
 
-The breakthrough comes not from using a smarter model — but from treating the model **as a collaborator**. Not a genie. Not a replacement. A minion.
+The breakthrough comes not from using a smarter model — but from treating the model as a **well-briefed helper**. Not a genie. Not a replacement. A minion.
 
 ---
 
@@ -33,7 +33,7 @@ Both miss the point.
 The minion ethos is something else:
 - You direct with context, not commands.
 - You don’t hope. You *structure.*
-- You don’t chase magic. You *shape thinking.*
+- You don’t chase magic. You *shape the work.*
 
 ---
 
@@ -41,13 +41,13 @@ The minion ethos is something else:
 
 This doesn’t mean being passive.
 
-You guide the process like a senior manager guiding a team:
+You guide the process much like a senior manager briefing a task:
 - Provide a clear and scoped objective
 - Supply concise and relevant reference materials
 - State the required task or transformation
 - Define the tone, format, or delivery method
 
-Sound familiar? It’s the same structure as writing a good task description for a human.
+Sound familiar? It’s the same structure as writing a clear task description—human or otherwise.
 
 ---
 
@@ -58,7 +58,7 @@ Most AI frustrations come from unclear roles:
 - “Why did it give such a generic answer?”
 - “Why didn’t it use the material I pasted?”
 
-Because the model lacked boundaries and structure, leading to unreliable responses.
+Because the task lacked boundaries and structure, leading to unreliable responses.
 
 Thinking with minions means creating that world — clearly, briefly, and collaboratively.
 
@@ -69,7 +69,7 @@ Thinking with minions means creating that world — clearly, briefly, and collab
 When you adopt the minion ethos:
 - You begin using the tools with purpose and predictability.
 - You get more *consistent*, not just more creative.
-- You think in *systems* and *briefings*, not “prompt hacking.”
+- You think in *systems* and *briefings*, not one-off prompt tinkering.
 
 The results are reliable, scalable, and understandable — exactly what business workflows demand.
 
@@ -81,8 +81,8 @@ You don’t need to become a prompt engineer.
 
 You don’t need to memorize tokens or tweak model parameters.
 
-You just need to learn how to **think with minions** — how to shape the context, delegate with clarity, and collaborate with tools that work best when treated like a new kind of teammate.
+You just need to learn how to **think with minions** — how to shape the context, delegate with clarity, and work with tools that perform best when treated as clearly scoped helpers.
 
-This isn’t speculative technology—it’s an emerging standard in knowledge work.
+This isn’t speculative technology—it’s an increasingly common pattern in knowledge work.
 
 And it’s already happening.

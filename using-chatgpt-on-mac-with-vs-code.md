@@ -1,8 +1,8 @@
 ## Using ChatGPT on Mac with VS Code
 
-Many business users view ChatGPT primarily as a browser-based tool. A separate place where you interact with independently. But that is rapidly evolving.
+Many business users were first introduced to ChatGPT as a browser-based tool — a separate place you visit to ask questions or draft text. That framing is already starting to change.
 
-The **ChatGPT macOS app** now offers a new kind of experience: one that **integrates directly into your desktop environment**, especially VS Code and Terminal. For non-coders, this may seem unfamiliar — yet it represents one of the most adaptable environments available for AI assistance.
+The **ChatGPT macOS app** offers a different kind of experience: one that brings assistance closer to your desktop environment, including VS Code and Terminal. For non-coders, this may seem unfamiliar — yet it represents one of the most adaptable environments available for AI assistance.
 
 Let’s explore how.
 
@@ -20,10 +20,10 @@ While traditionally used by developers, VS Code also offers a versatile space fo
   - Convert bullet points into prose
 
 - **Use it as a workspace for unstructured thinking**  
-  VS Code is responsive, clean, and neutral — it imposes no templates or formatting constraints. It serves as an ideal blank canvas for brainstorming with your AI assistant.
+  VS Code is responsive, clean, and neutral — it imposes no templates or formatting constraints. It serves as an ideal blank canvas for brainstorming with AI assistance close at hand.
 
 - **Documentation sidekick**  
-  As you record ideas, you can request ChatGPT to propose headings, refine structure, or outline follow-up actions.
+  As you record ideas, you can ask for help proposing headings, refining structure, or outlining follow-up actions.
 
 ---
 
@@ -31,7 +31,7 @@ While traditionally used by developers, VS Code also offers a versatile space fo
 
 The ChatGPT macOS app also integrates with:
 - **Your clipboard**: It can summarize copied text, including from applications that do not permit editing.
-- **The terminal**: Useful if you employ basic scripts, though most business users may not require this — it nevertheless demonstrates the depth of integration the assistant is achieving.
+- **The terminal**: Useful if you employ basic scripts, though many business users may not need this — it nevertheless demonstrates how deeply assistance can be integrated into everyday tools.
 
 ---
 
@@ -51,6 +51,6 @@ At present, the experience still involves some friction. You must manage windows
 
 However, this is the **sneak peek**.
 
-This illustrates what future AI-integrated workflows will resemble — where every application, document, and workspace includes a helpful assistant ready to support your work.
+This offers a glimpse of how AI-integrated workflows may continue to evolve — with assistance becoming easier to invoke inside the tools people already use.
 
-> Today’s setup is a preview—slightly awkward, but a clear signal of the integrated AI workflows to come.
+> Today’s setup is a preview — slightly awkward, but a useful signal of how assistance is moving closer to everyday work.

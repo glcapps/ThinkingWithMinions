@@ -1,31 +1,33 @@
 # LLM Pair Programming Without the Theater
 
-There’s a kind of performance art to some LLM pair programming demos: big screens, verbose prompts, constant narration. But behind the curtain, practical developers are already integrating these tools in quieter, more deliberate ways.
+Some demonstrations of LLM-assisted pair programming lean heavily on performance: large prompts, constant narration, and visible theatrics.
 
-This article is about how to skip the theater and get straight to the utility. No standing ovations necessary.
+This article focuses on practical use: integrating these tools quietly and deliberately into everyday development work.
 
 ## Forget the Monologue
 
-You don’t need to narrate your every move or craft prompts like sonnets. Real-world use of LLMs by developers is more like pair programming with someone who’s extremely fast at typing, decent at guessing your intent, and sometimes a little overconfident.
+In practice, this resembles working alongside a fast but fallible assistant that operates entirely on what you show and specify.
 
-Keep your interactions conversational and context-rich. The real skill isn’t verbosity, it’s relevance.
+Effective use looks less like narration and more like collaboration through shared artifacts. The useful skill is not verbosity, but relevance.
 
 ## Use Files, Not Just Prompts
 
-One strength of modern IDE integration is that your minion can see your code. Use that. Highlight a block, give a short command: “Refactor this with error handling.” The file context and your brevity are enough.
+IDE integration works best when the model is given concrete artifacts to operate on.
 
-And when it isn’t enough? The back-and-forth loop is fast. Use it.
+One strength of IDE integration is direct access to the code being edited. Use that. Highlight a block, give a short command: “Refactor this with error handling.” The file context and your brevity are enough.
+
+When that context is insufficient, short correction cycles are usually enough to realign the output.
 
 ## Stop Explaining Yourself (to Yourself)
 
 You already know what you’re building. You don’t need to pitch your ideas to the AI like it’s a VC. Just give it code and your next step.
 
-LLMs are surprisingly good at filling in the blanks—as long as you’re willing to clarify when they guess wrong.
+Provide the code, state the next operation, and review the result. Clarification is part of the workflow, not a failure mode.
 
 ## Build the Habits, Not the Hype
 
-You’re not here for a revolution. You’re here for one less frustrating bug. One quicker rewrite. One helper that doesn’t sleep.
+This is not about spectacle or transformation. It is about small, repeatable improvements: fewer mechanical edits, quicker rewrites, and reduced friction.
 
-If you treat LLMs like a real partner—not a stage prop—you’ll find they’re more useful than advertised.
+Used this way, LLMs function as tools within a development loop, not as performers or partners.
 
-Just skip the theater.
+Skip the theater. Keep the utility.

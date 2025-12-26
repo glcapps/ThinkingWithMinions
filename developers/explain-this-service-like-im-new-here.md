@@ -1,12 +1,12 @@
 # Explain This Service Like I’m New Here
 
-When someone joins your team—whether they’re an engineer, a contractor, or even an LLM—the most disorienting question they face is: *What is this service and why does it exist?*
+When someone joins a team—whether they’re an engineer, a contractor, or a new collaborator—the most disorienting question they face is: *What is this service and why does it exist?*
 
 Let’s fix that.
 
 ## Describe the “Why” Before the “How”
 
-Most documentation dives into endpoints, data formats, and config knobs. But newcomers—and assistants—first need context.
+Most documentation dives into endpoints, data formats, and config knobs. But newcomers first need context.
 
 Start by answering:
 
@@ -18,7 +18,7 @@ This orientation makes every other detail more meaningful.
 
 ## Create an “Explain Like I’m New” Snapshot
 
-We recommend a top-level section in your README or docs called “Service Overview (ELINH)”—Explain Like I’m New Here.
+A useful practice is to include a short, top-level overview section in your README or service documentation—something a new reader can absorb in under a minute.
 
 Include:
 
@@ -28,13 +28,13 @@ Include:
 - **Outputs:** What does it affect or emit?
 - **Lifecycle:** Is this always on? Event-based? Batch?
 
-## Add a 30-second Prompt Summary
+## Add a 30-second summary
 
-For LLM integrations, include a plaintext prompt like:
+A short, plain-language summary helps others explain the service accurately without rereading the full documentation.
 
-> You are a helpful assistant learning about the Email Notification Service. It receives event payloads from the orders system, formats them with templates, and sends them via SES. It’s critical for post-purchase user communication.
+> The Email Notification Service receives event payloads from the orders system, formats them using templates, and sends messages through SES. It supports post-purchase communication and retry handling for delivery failures.
 
-Now your assistant can speak about this system in team standups, support chats, or code reviews.
+This makes it easier for others to discuss the service in standups, support conversations, or code reviews without misrepresenting its role.
 
 ## Bonus: Document the “Gotchas”
 
@@ -46,4 +46,4 @@ Add a short section for footguns, legacy assumptions, or upstream quirks.
 
 Remember: your new team member is trying to *think in system-shaped concepts*, not memorize endpoints.
 
-A great ELINH summary saves time for everyone—and trains both people and minions faster.
+A clear “new here” summary saves time for everyone and reduces misunderstandings as systems evolve.

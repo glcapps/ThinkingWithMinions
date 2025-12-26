@@ -1,12 +1,16 @@
 # Think-Aloud Mode for Coders
 
-Most developers know the feeling: you’re stuck staring at a chunk of unfamiliar logic, trying to decipher what the past version of you—or someone else entirely—was trying to accomplish. Pair programming can help, but what if your pair is an LLM?
+Most developers know the feeling: staring at unfamiliar logic and trying to reconstruct what it is meant to do. This happens with legacy code, rushed changes, and even work written recently under pressure.
 
-This article explores how coders can benefit from treating language models as thinking partners, particularly through a "think-aloud" approach.
+One reliable way to regain clarity is to articulate the problem out loud. Explaining intent, assumptions, and uncertainty forces hidden gaps to surface.
 
-## Why Talk Through the Code?
+This article explores how articulating reasoning—sometimes called a “think‑aloud” approach—can be supported by external tools that respond to explicit statements of intent and uncertainty.
 
-Explaining what you’re doing, even to a rubber duck, helps you notice flaws, missing steps, and assumptions. An LLM doesn’t just sit there, though—it listens, responds, questions, and sometimes even corrects your logic. It’s like pair programming with a colleague who has infinite patience, doesn’t judge, and is available 24/7.
+## Why articulation helps
+
+Explaining what you are doing, even to an inanimate listener, helps reveal missing steps and unchecked assumptions.
+
+When an external system reflects your explanation back—by restating it, questioning it, or highlighting implications—it becomes easier to see where reasoning is incomplete or fragile.
 
 ## What It Looks Like
 
@@ -18,21 +22,27 @@ The LLM might respond:
 
 > “One issue could be that new records inserted between requests shift the offset. Have you considered using a cursor-based approach instead?”
 
-The process is collaborative, but guided by your explanation. The model isn’t just guessing what you want—it’s responding to your explicit reasoning process.
+The usefulness comes from making reasoning explicit. The response is shaped by what you choose to say, not by guessing intent.
 
 ## Coders at Every Level Benefit
 
-Junior developers get clarity and a second brain. Senior developers get a chance to untangle legacy code or experiment with architectural ideas by verbalizing their reasoning. Either way, you build muscle memory for talking through problems—useful in interviews, mentoring, and high-stakes debugging.
+This practice benefits developers at different experience levels for different reasons.
 
-## Tips for Maximizing This Practice
+Less experienced developers gain structure and feedback. More experienced developers use articulation to untangle complex systems, test architectural ideas, or surface implicit constraints.
 
-- Narrate your goal, not just your code.
-- Be honest about uncertainty. LLMs shine when you say, “I don’t know.”
-- Try alternating between verbal reasoning and code snippets.
-- Ask the LLM to repeat back what it thinks you’re doing—you’ll spot misalignments fast.
+Either way, you build muscle memory for talking through problems—useful in interviews, mentoring, and high-stakes debugging.
 
-## A New Kind of Flow State
+## Practical guidance
 
-Once you get used to it, the rhythm becomes natural. You write a bit, you talk a bit. The LLM becomes less of a tool and more of a sparring partner. The benefit isn’t just the output—it’s the clarity of thought you get along the way.
+- State the goal before describing the implementation.
+- Call out uncertainty explicitly.
+- Alternate between explanation and concrete artifacts such as code or diagrams.
+- Ask for a restatement of your intent to expose misalignment.
 
-In short: don’t just type code—talk it through.
+## Externalized reasoning
+
+With practice, articulating reasoning becomes part of the development loop. Writing, explaining, reviewing, and revising reinforce one another.
+
+The benefit is not the responses themselves, but the clarity produced by externalizing thought.
+
+Don’t just write code. Make the reasoning visible.

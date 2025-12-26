@@ -1,42 +1,43 @@
 # Context Chains, Not Retrieval Hacks
 
-There's a tendency to treat context in LLM workflows like RAM: shove as much data in as possible and hope the model figures it out. The popular fix? Retrieval-Augmented Generation (RAG), where relevant documents are pulled in to give the model more to work with.
+There’s a common impulse to treat context in LLM workflows like raw memory: include as much information as possible and assume the model will sort it out.
 
-That works—sometimes. But it’s brittle. And for developers trying to build dependable systems, it's often the wrong abstraction.
+One response to this has been retrieval-based approaches, where external material is pulled in to expand what the model can see. That can be useful, but it is not the same thing as reasoning.
 
-## Retrieval is for documents. Context is for reasoning.
+## Retrieval and reasoning solve different problems
 
-What a model needs isn’t *all the facts*—it’s *the right facts in the right order with the right framing*. That’s a different job.
+What a model needs is not maximum information, but appropriately prepared information.
 
-Think of it this way:
+Retrieval gathers material. Reasoning depends on sequencing, framing, and relevance. Confusing these roles leads to prompts that are large but unfocused.
 
-- RAG is a **filing clerk** dumping documents on your desk.
-- Context chaining is a **research assistant** summarizing key points, translating jargon, and surfacing what's relevant *to this moment*.
+Retrieval surfaces candidate material.
 
-## Chain your thoughts
+Context construction decides what to keep, what to discard, and how to present it so the next step can succeed.
 
-Instead of dumping context, build chains of prompts where each stage prepares the next:
+## Build context incrementally
 
-1. Start with a **primer**: Teach the model about this project or domain.
+Instead of assembling a single, comprehensive prompt, context can be built in stages, with each step preparing the next:
+
+1. Provide a concise primer describing the relevant domain or task
 2. Follow with **extraction**: Pull out only what’s needed from a larger source.
 3. Add **focus**: Narrow down the current task and constrain the style or goal.
 4. Deliver the final **action prompt**: Now the model is ready to perform.
 
 This approach builds context *on the fly* and makes each step testable and debuggable.
 
-## Benefits over RAG
+## Why incremental context helps
 
-- Works with less powerful models—because the prompt is tuned, not bloated
-- Easier to observe and correct errors in understanding
-- Supports progressive interaction—useful in agentic workflows
-- More human-readable: every step produces output a person can understand
+- Reduces unnecessary context and cognitive load
+- Makes assumptions and misunderstandings visible earlier
+- Supports interruption, correction, and redirection
+- Produces intermediate artifacts that are readable and testable
 
 ## When retrieval helps
 
-To be clear: retrieval isn’t bad. It’s just one tool. Use it to *gather*, not to *explain*. Once you retrieve relevant pieces, *process them*. Summarize. Filter. Turn them into prompt-friendly formats before handing them to the model.
+To be clear: retrieval isn’t bad. It’s just one tool. Use it to *gather*, not to *explain*. Once relevant material is retrieved, it still needs to be interpreted. Summarization, filtering, and restructuring turn raw material into usable context.
 
-## Not a hack. A habit.
+## Method, not shortcut
 
-Context chaining isn't a trick. It's a methodology. And it mirrors how humans solve complex problems: we don’t read the whole library—we collect, digest, summarize, and iterate.
+Incremental context construction is not a workaround for model limitations. It is a general method for aligning information, intent, and action.
 
-Don’t just retrieve. *Reason*.
+Don’t just retrieve. Prepare.

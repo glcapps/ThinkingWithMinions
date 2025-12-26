@@ -1,14 +1,16 @@
 # Semantic Prompts Beat Clever Ones
 
-In the early days of prompt engineering, cleverness was the name of the game. Tricks, indirect suggestions, fake chat history — all were paraded as techniques for wrangling LLMs into useful behavior. But as models evolved, a simple truth has emerged: clarity wins.
+Some approaches to prompting rely on cleverness: tricks, indirect suggestions, or elaborate framing intended to coax a specific response. In practice, these techniques are fragile. Clarity is more reliable.
 
-A semantic prompt is one that describes the intent and the structure of the task in plain, legible language. Rather than manipulate the model into producing the right shape of output, it simply tells the model what that shape is and why it's desired.
+A semantic prompt is one that describes the intent and the structure of the task in plain, legible language. Rather than relying on indirection, it states the expected output and the reason for it directly.
 
-This isn’t just a stylistic preference — it’s a robustness tactic. Semantic prompts are easier to test, to vary, and to reason about. They degrade more gracefully across models. They are also easier for humans to read and adjust.
+This is not a stylistic preference. It is a robustness strategy.
 
-In business settings, this means the difference between a brittle one-off and a repeatable tool. A clever prompt might impress, but a semantic one gets adopted.
+Semantic prompts are easier to test, vary, and reason about. They degrade more predictably across environments and remain understandable to people who did not write them.
 
-When you treat the prompt as a contract — not a magic trick — you make the system more legible to collaborators and more maintainable over time.
+In practical settings, this distinction determines whether a prompt becomes a reusable component or a one-off experiment.
+
+Treating the prompt as a contract makes the system easier to maintain and easier to explain.
 
 # How to Write Semantic Prompts
 
@@ -17,7 +19,7 @@ Semantic prompting is a mindset as much as a technique. Some tips:
 - **Start with the goal**: What is the actual business task or user need?
 - **Specify structure**: If the output should be a list of steps or a JSON block, say so clearly.
 - **Avoid emotional tone or tricks**: Be direct, transparent, and grounded.
-- **Write it like you’re briefing a junior employee**: What would they need to know to do this right?
+- **Assume no shared context**: Include only what is required for the task to succeed.
 
 # Examples
 
@@ -35,6 +37,10 @@ Better (semantic):
 
 # Why This Matters
 
+When prompts are reused inside systems, their clarity becomes a design concern.
+
 As minions (LLM assistants) become standard in business tools, the prompts used to drive them are no longer the realm of LLM tinkerers alone. They are the new scripting layer — and legibility matters. Semantic prompts are legible. They can be audited. They can be tuned.
 
-They aren't clever. They're competent. And that’s what you want.
+Semantic prompts are legible, auditable, and adaptable.
+
+They are not clever. They are dependable.

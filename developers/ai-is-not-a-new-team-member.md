@@ -1,26 +1,29 @@
 # AI Is Not a New Team Member
 
-It’s easy—tempting, even—to imagine your LLM assistant as a quirky but brilliant new colleague: one who never sleeps, never questions orders, and always has an answer. But this framing misses the mark.
+It’s tempting to talk about AI systems as if they were new hires — tireless, fast, and always available. That metaphor is appealing, but it consistently leads people astray.
 
-The truth is: your LLM is not a person, not a hire, and not a collaborator in the traditional sense. It’s more like a well-behaved but easily confused intern crossed with a search engine and a syntax generator. If you treat it like a person, you’ll be misled. If you treat it like a tool, you can do great work.
+LLMs and agentic systems are neither people nor teammates. They also aren’t simple, passive tools. Treating them as humans leads to misplaced trust. Treating them as utilities leaves capability unused.
+
+The mistake isn’t optimism or skepticism. It’s using the wrong mental model.
 
 ## Human metaphors cause real problems
 
-When developers start to believe their LLM “knows” something, or is “thinking,” their expectations shift. They get frustrated when it hallucinates. They try to get it to "admit" mistakes. They imagine it's “not trying hard enough” or “being stubborn.” These are traps.
+When people start to believe an AI “knows” things, “understands intent,” or is “trying,” expectations quietly shift. Errors feel personal. Hallucinations feel deceptive. Inconsistency feels willful.
 
-It’s not being anything. It’s just producing language in response to language, based on likelihoods. There’s no ego, no memory (unless you build one), and no goals. Every time you ask, it starts again.
+None of that is happening.
 
-## It’s a great tool when you use it as one
+These systems generate outputs based on statistical relationships over language and actions. Even when wrapped with tools, memory, or planning layers, they do not possess intent or awareness. Apparent persistence comes from system design, not internal motivation.
 
-That doesn’t make it useless—far from it. A well-scaffolded LLM can:
+## It can participate in workflows
 
-- Review a log file for unusual errors
-- Rewrite a README for a non-technical stakeholder
-- Sketch out a data migration strategy
-- Reframe a function to be more testable
-- Translate technical diagrams into bullet points
+An LLM can do more than autocomplete or rewrite text when it is embedded into a larger system. Within a well-defined scope, it can:
 
-What it can’t do is own a project, follow long-term nuance, or understand your team dynamics.
+- Execute multi-step tasks through tools and APIs
+- Coordinate structured steps using prompts and state
+- Propose plans and refinements within constraints
+- Operate continuously inside bounded problem domains
+
+These behaviors don’t imply agency. They reflect how much structure you provide.
 
 ## The right metaphor: a short-term apprentice
 
@@ -28,8 +31,16 @@ Imagine a one-day contractor who is technically skilled, very fast, and needs de
 
 Think of prompting like configuring a tool, not delegating to a mind.
 
-## Collaboration looks different
+AI doesn’t mature. Systems around it do.
 
-Some of your work with an LLM will look like conversation. That’s okay. It can be conversational and still be tool use. You’re not bonding—you’re configuring.
+The system evolves. The model does not.
 
-The more you practice this frame, the better your outcomes will be. And the fewer frustrating arguments you’ll have with a machine that doesn’t argue.
+## A better mental model
+
+A useful way to think about AI is as a high-capability, low-agency collaborator.
+
+It can generate, summarize, plan, and act within boundaries you define, but it does not own goals, judgment, or responsibility. Those remain human concerns.
+
+Conversation can be a convenient interface, but it is not collaboration. Prompting configures behavior; it does not delegate authority.
+
+AI fits into systems. It does not join teams.
