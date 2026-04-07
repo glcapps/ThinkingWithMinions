@@ -1,41 +1,107 @@
-# Just Enough Memory
+# Just Enough Memory: From Prompt Discipline to Agentic Systems
 
-There is a common assumption that more memory always leads to better results. In practice, usefulness depends less on quantity and more on selection.
+There is a common assumption that more memory always leads to better results. In practice, usefulness depends less on quantity and more on selection within capacity.
 
-Language models do not retain history on their own. Any sense of memory comes from what is explicitly provided. This constraint shifts the problem from remembering everything to deciding what should be carried forward.
+Language models do not retain history on their own. Any sense of memory comes from what is explicitly provided. This constraint does not go away with larger models. It becomes more important.
 
-## When Less Memory is More Useful
+The problem is not remembering everything. It is deciding what must be present when reasoning occurs.
 
-Memory feels like a luxury, but in practice, it’s often a liability. Persistent memory introduces the risk of stale context, privacy leaks, and unpredictable influence on model behavior. For tasks that change rapidly—like drafting an email, debugging a script, or brainstorming a pitch—you want an LLM that reacts to now, not then.
+## From Prompts to Working State
 
-Short, focused prompts with deliberate framing often outperform long memory chains. The goal is not continuity for its own sake, but relevance to the task at hand.
+For short tasks—drafting an email, debugging a script, brainstorming—focused prompts often outperform long memory chains. The goal is immediate relevance, not continuity.
 
-## Building Smarter Contexts
+Agentic systems introduce a different requirement. An agent needs to hold a working set that may include:
 
-Developers can create “just enough memory” by:
+- a slice of the repository  
+- relevant logs  
+- the current objective  
 
-- Using structured references: a JSON or Markdown block that captures current facts.
-- Inserting relevant history on-demand instead of passively relying on stored memory.
-- Layering summaries from previous steps rather than entire transcripts.
+This is not memory in the traditional sense. It is working state.
+
+When that state does not fit, logs overwrite intent, intent overwrites code, and the objective drifts.
+
+## Capacity and Discipline
+
+Two factors now shape behavior:
+
+- capacity: how much working state can be held  
+- discipline: how that state is selected and structured  
+
+Capacity enables reasoning across steps. Discipline determines whether that reasoning remains correct.
+
+The available capacity is not abstract. It is bounded by hardware.
+
+The table below maps typical configurations to the kinds of workloads they can sustain.
+
+| VRAM / RAM | Smartest Choice Model | Architecture | Quantization | Context | Achievable Workload |
+|-----------|----------------------|-------------|--------------|--------|----------------------|
+| 8GB | Gemma 4 E4B | Dense | Q8_0 | 64k | Reactive CLI helper |
+| 12GB | Mistral NeMo (12B) | Dense | Q4_K_M | 64k | Short-loop agent |
+| 16GB | Qwen2.5-Coder (14B) | Dense (Code) | Q6_K | 64k | Surgical coding tasks |
+| 16GB (Experimental) | Devstral-Small 2 (24B) | Dense (Agent-tuned) | IQ3_M | 64k | Limited step planning (guarded) |
+| 20GB | Gemma 4 26B | Dense | IQ3_M | 128k | Sustained debugging with context |
+| 24GB | Devstral-Small 2 (24B) | Dense (Agent-tuned) | Q4_K_M | 128k | Multi-file coordination |
+| 32GB | Gemma 4 31B | Dense | IQ3_M | 128k | Planning and structured reasoning |
+| 48GB | Llama 3.1 70B | Dense | Q4_K_M | 128k | Cross-system reasoning |
+| 64GB | Mixtral 8x22B | MoE | IQ3_M | 128k | Domain-specialized orchestration |
+| 96GB | DeepSeek V3.2 / Nemotron-3 Super | MoE / Hybrid | Q4_K_M | 128k+ | Multi-system orchestration |
+
+This is not a performance ranking. It is a constraint map. Each tier reflects how much working state can be maintained before reasoning degrades.
+
+## When Less Memory Is Still Better
+
+Unstructured memory is often a liability. Persistent context can introduce stale information, irrelevant details, and unintended influence on outputs.
+
+Short, well-framed inputs often outperform long, unfiltered context. This remains true even in larger systems.
+
+The goal is not to minimize memory, but to avoid carrying forward what no longer matters.
+
+## Building Just Enough Context
+
+Developers can construct effective working state by:
+
+- using structured references (JSON or Markdown blocks) to capture current facts  
+- inserting relevant history on demand instead of passing full transcripts  
+- summarizing prior steps into decisions and outcomes rather than raw logs  
 
 This mirrors how notes are used: selectively, purposefully, and with revision.
 
-## Workflow, Not Wishful Thinking
+## External Memory and Control
 
-Agentic workflows often assume memory will solve coordination. But the most reliable workflows use intermediate storage (like scratchpad files or lightweight databases) and pass only relevant excerpts into context. This makes the system auditable and adjustable.
+Agentic workflows should not rely on context windows alone. They benefit from intermediate storage such as:
 
-The system does not need familiarity. It needs clear, inspectable inputs.
+- scratchpad files  
+- lightweight databases  
+- structured outputs from previous steps  
 
-## Design responsibility
+These allow the system to store full state externally and pass only relevant excerpts into context.
 
-Managing memory is part of designing systems that behave predictably. What is included, excluded, or summarized directly shapes outcomes.
+The result is behavior that is easier to audit and adjust.
 
-For tech teams, managing memory is part of designing trustworthy systems. Just-enough-memory means you can:
+## Workflow, Not Accumulation
 
-- Audit what the model sees
-- Minimize surprises in its responses
-- Prevent unintentional leakage of sensitive history
+Larger context windows do not remove the need for structure. Reliable systems use:
 
-If something must be remembered, it should be recorded explicitly and passed forward intentionally. That discipline improves both system behavior and human understanding.
+- explicit task decomposition  
+- controlled execution loops  
+- validation between steps  
 
-Effective systems do not remember everything. They carry forward what matters.
+The model does not need familiarity. It needs clear, inspectable inputs.
+
+## Design Responsibility
+
+Managing memory is part of designing predictable systems. What is included, excluded, or summarized directly shapes outcomes.
+
+Systems that behave well tend to:
+
+- expose what the model sees  
+- minimize hidden or persistent state  
+- carry forward only what is necessary  
+
+If something must be remembered, it should be recorded explicitly and passed forward intentionally.
+
+## The Result
+
+Effective systems do not remember everything. They do not rely on forgetting.
+
+They carry forward what matters, in a form that can be inspected, revised, and understood.
