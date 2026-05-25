@@ -65,3 +65,7 @@ Each of these is more than a prompt. Each is a packaged operating environment fo
 As agentic systems become more common, the winning pattern will not be who wrote the cleverest prompt. It will be who packaged the cleanest worker, exposed the right context, constrained the right tools, and made the task boundaries understandable. In other words, the durable advantage will come from turning model behavior into something more software-like.
 
 That is what context applications aim to do. They treat the LLM not as a magical thinker floating above the system, but as a worker operating inside a designed environment. Once you see it that way, the path forward becomes clearer: don’t just prompt the model. **Build the application it will work inside.**
+
+---
+
+More depth: [Context Applications on Substack](https://glcapps.substack.com/p/context-applications)
