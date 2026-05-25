@@ -43,7 +43,7 @@ This repo is here to help you **think clearly, build wisely, and prompt with pur
 
 ---
 
-📍 Built by [Gary Capps](https://github.com/glcapps) • May 2025
+📍 Built by [Gary Capps](https://github.com/glcapps) • Updated May 2026
 
 ---
 

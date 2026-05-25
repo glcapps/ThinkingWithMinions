@@ -2,7 +2,7 @@
 
 What if we told you that a single dollar could buy the equivalent of an assistant’s *focused effort* — for the length of a task, not just a reply?
 
-That’s what modern LLM usage now looks like in 2025. A dollar buys **minutes of focused problem‑solving**, not just a few lines of text. If used wisely, it can accomplish **an entire business chore**, not just a brainstorm.
+That’s what modern LLM usage looks like in 2026. A dollar often buys **minutes of focused problem‑solving**, not just a few lines of text. If used wisely, it can accomplish **an entire business chore**, not just a brainstorm.
 
 Let’s break it down.
 
@@ -16,8 +16,7 @@ Here are real-world examples by model tier:
 
 ---
 
-### 🧮 Small Models ($0.001–$0.01 per 1K tokens)
-*Examples: LLaMA 3 8B on Fireworks, DeepSeek-V3*
+### 🧮 Lower-Cost API Models
 
 **Chore**: Turn an 800-word messy email thread into a clean customer summary, highlighting the timeline, issues discussed, responses, and unresolved questions.
 
@@ -27,8 +26,7 @@ This typically produces a solid first draft that a human can quickly review or a
 
 ---
 
-### 📊 Medium Models ($0.03–$0.15 per 1K tokens)
-*Examples: Claude Sonnet, GPT-3.5 Turbo*
+### 📊 Mid-Tier Models
 
 **Chore**: Summarize a 2-page vendor contract into a plain-English email that highlights key obligations, options, and renewal conditions for a client stakeholder.
 
@@ -38,8 +36,8 @@ This usually yields a clear, usable draft suitable for internal or client-facing
 
 ---
 
-### 🧠 High-End Models (current top-tier hosted models)
-*Costs: typically on the order of dollars per million tokens, depending on provider and context size*
+### 🧠 Frontier Models
+*Costs vary sharply by provider, context size, and how much output you ask for*
 
 **Chore**: Given a formal customer complaint and 3 previous support logs (~3,000 words), generate an empathetic resolution email and an internal summary note with flagged risks.
 
@@ -66,4 +64,4 @@ Don’t think of your minion in terms of “how many words it can say.”
 Think in terms of:  
 > **“What job can it take a serious pass at?”**
 
-With just a dollar, the amount of progress you can make may surprise you.
+With just a dollar, the amount of progress you can make may still surprise you.

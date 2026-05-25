@@ -1,8 +1,8 @@
 ## Making LLM Use Frictionless: The Plug‑In Minion Pattern
 
-A foundational shift in user experience is underway. The idea of “asking an AI for help” is moving out of the browser tab and into your workspace. LLMs are evolving from separate destinations into integrated elements of everyday tools.
+A foundational shift in user experience is underway. The idea of “asking an AI for help” has been moving out of the browser tab and into the workspace itself. LLMs are evolving from separate destinations into integrated elements of everyday tools.
 
-That future is already showing signs of life in tools like the macOS version of the ChatGPT app. These integrations hint at a shift toward LLMs that feel *present* in your workspace—close at hand when you need help, but not demanding attention.
+That future is already visible in desktop assistant tools, companion windows, and app-level integrations. These patterns point toward LLMs that feel *present* in your workspace — close at hand when you need help, but not demanding attention.
 
 It’s not just for developers. Let’s talk about how even non-technical business users might soon see value in this shift, starting with a familiar but powerful example: **VS Code**.
 
@@ -10,7 +10,7 @@ It’s not just for developers. Let’s talk about how even non-technical busine
 
 ### VS Code: Not Just for Code Anymore
 
-VS Code is a text editor — but one flexible enough to become a personalized workspace for anyone who handles structured documents, notes, logs, drafts, or planning materials. With the ChatGPT desktop app plugged in, a business user can begin experimenting with **context-aware minions**—small, task-focused helpers that work directly on selected material.
+VS Code is a text editor — but one flexible enough to become a personalized workspace for anyone who handles structured documents, notes, logs, drafts, or planning materials. With a desktop assistant nearby, a business user can begin experimenting with **context-aware minions** — small, task-focused helpers that work directly on selected material.
 
 You can think of these minions as lightweight helpers that respond to clearly framed requests, rather than independent problem-solvers.
 
@@ -54,17 +54,18 @@ Instead, the model operates on what you have in front of you. It can *feel* like
 
 The ChatGPT app’s system-wide availability signals something deeper: assistance is becoming ambient. Not autonomous, not opinionated—but readily available when summoned.
 
-Today, this looks like:
-- Right-click and send to assistant
-- Summon in any app with a shortcut
-- Contextual memory of recent clipboard data
+Today, this can look like:
+- Summoning an assistant with a shortcut
+- Working in a companion window beside the active app
+- Reusing recent clipboard or nearby document context
+- Moving quickly between a draft, a note, and a response
 
-Tomorrow, it may look like:
-- Hover-to-suggest help in any text field  
-- Automatically recognizing patterns (e.g., draft contracts, invoices, reports)  
-- Offering suggestions based on app and file type  
+Sooner rather than later, it may look like:
+- Help offered from directly inside more business apps
+- Better recognition of document type and task type
+- Cleaner handoff between files, tools, and structured actions
 
-We’re moving toward a world where the assistant is part of the *workspace*, not the *workflow*.
+We’re moving toward a world where the assistant is part of the *workspace*, not a separate destination you visit only when stuck.
 
 ---
 

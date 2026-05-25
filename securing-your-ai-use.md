@@ -13,16 +13,16 @@ Many employees, excited by the usefulness of LLMs, are using their **personal AI
 But behind that convenience are **serious risks**:
 
 #### 📥 1. Company Data in Personal History
-Content run through a personal ChatGPT or Claude account is typically saved in that user’s history unless settings are changed or content is manually removed. That means your company’s customer list, strategy plan, or sensitive financial analysis could be stored within an individual’s unmanaged personal account.
+Content run through a personal ChatGPT or Claude account is often saved in that user’s history unless settings, retention controls, or temporary-chat modes are used correctly. That means your company’s customer list, strategy plan, or sensitive financial analysis could still end up inside an individual’s unmanaged personal account.
 
 #### 🫣 2. Shared Access and Unintended Eyes
 Some personal accounts are logged in on **shared or casually accessed devices**. A family member reviewing a resume or a friend borrowing a laptop could inadvertently access AI-generated records that contain confidential company prompts or results.
 
 #### 🧾 3. No Audit Trail, No Oversight
-Unlike email or internal chat, there is typically no centralized company visibility into how AI is being used. If sensitive material is shared or inappropriate results are generated, **there’s no paper trail**, no logs, and no ability to revoke access.
+Unlike a managed workspace, personal AI use usually gives the company little or no centralized visibility into how AI is being used. If sensitive material is shared or inappropriate results are generated, the organization may have no usable paper trail, weak logs, and no practical way to revoke access.
 
 #### 🧠 4. Data May Leave Your Control
-When you paste business information into a personal AI tool, that content is handled according to the provider’s terms and settings. In some cases, it may be retained for quality review or used to improve services unless opt‑out controls are in place. The key risk is loss of control, not intent.
+When you paste business information into a personal AI tool, that content is handled according to the provider’s terms, workspace type, and settings. In some cases, it may be retained, logged, or governed differently than your company expects. The key risk is loss of control, not intent.
 
 ---
 
@@ -31,7 +31,7 @@ When you paste business information into a personal AI tool, that content is han
 This doesn’t mean banning AI tools. It means **setting the right boundaries**:
 
 #### ✅ Use Managed or Org Accounts
-ChatGPT and Claude offer enterprise plans where data privacy is protected, histories are not used for training, and admin visibility is possible. Where available, use these or configure equivalent privacy controls.
+ChatGPT, Claude, and similar vendors offer business or enterprise options with stronger privacy controls, retention settings, and admin visibility. Where available, use these or configure equivalent controls rather than relying on personal accounts.
 
 #### ✅ Prefer API Access with Logging
 If your team is automating tasks with AI, consider using API keys tied to your business. These provide visibility, rate limiting, and log records.

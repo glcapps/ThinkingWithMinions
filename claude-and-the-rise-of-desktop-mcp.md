@@ -2,15 +2,15 @@
 
 Some language-model-based tools are moving beyond isolated conversation and toward direct interaction with software systems. This shift is less about dialogue and more about execution.
 
-Model Context Protocol (MCP) is one approach to structuring that interaction. It defines how a model can invoke tools with explicit inputs and outputs, enabling repeatable, inspectable operations rather than ad hoc prompting.
+Model Context Protocol (MCP) is one important approach to structuring that interaction. It defines how a model can use tools and context sources with explicit inputs and outputs, enabling repeatable, inspectable operations rather than ad hoc prompting.
 
 ---
 
 ### What Is MCP and Why Does It Matter?
 
-Model Context Protocol — or MCP — is a standard that allows language models to interact with external tools in a modular and composable way. MCP defines a contract between a model and external tools. Tools expose well-defined interfaces. The model selects and invokes them based on declared capabilities and supplied context. Instead of dumping long prompts, you define tools: a calendar, a document store, a search index, a calculator. Each tool has inputs, outputs, and logic. The model applies these interfaces within a session based on available context.
+Model Context Protocol — or MCP — is an open protocol, introduced by Anthropic and now broader than any single vendor, that allows language models to interact with external tools and context sources in a modular and composable way. MCP defines a contract between a model and external systems. Tools expose well-defined interfaces. The model selects and invokes them based on declared capabilities and supplied context. Instead of dumping long prompts, you define tools: a calendar, a document store, a search index, a calculator. Each tool has inputs, outputs, and logic. The model applies these interfaces within a session based on available context.
 
-In developer circles, this has been quietly transforming AI agents for months. This allows systems to support operations such as:
+In developer circles, this has been quietly transforming AI agents for some time. This allows systems to support operations such as:
 - Pull in data from APIs
 - Trigger workflows
 - Fill out forms based on structured input
@@ -22,7 +22,7 @@ Historically, this pattern has appeared in developer tooling and custom orchestr
 
 ### Desktop integrations
 
-Some desktop applications now expose local tools—such as file access or structured data retrieval—through MCP-style interfaces.
+Some desktop applications now expose local tools — such as file access or structured data retrieval — through MCP or MCP-like interfaces.
 
 From a user perspective, this enables task descriptions that combine multiple steps across files and applications, such as:
 - “Summarize these three PDFs and email the summary to my project team.”
@@ -69,7 +69,7 @@ The minion abstraction does not imply intelligence, judgment, responsibility, or
 
 Desktop MCP integrations demonstrate a shift toward treating delegation as a system capability rather than an interaction style.
 
-The significance lies not in any single product, but in the emergence of common patterns: explicit interfaces, tool invocation, and constrained execution.
+The significance now lies even less in any single product and more in the emergence of common patterns: explicit interfaces, tool invocation, and constrained execution.
 
 As with earlier productivity software, the impact comes from standardization and reuse rather than novelty.
 

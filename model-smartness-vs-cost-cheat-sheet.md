@@ -27,17 +27,16 @@ Don’t shop by size. Shop by **fit to task**.
 
 ## 💵 What Does $1 Buy You?
 
-Here’s a real-world breakdown of how far $1 can go in May 2025:
+By mid-2026, exact model pricing moves too quickly for a static table to stay trustworthy for long. The better cheat sheet is by **service tier**, not by yesterday’s model name.
 
-| Model                  | Size            | Quant.          | Price / 1K Tokens         | Ideal Use Cases                            | ~$1 Gets You                                     |
-|------------------------|-----------------|-----------------|--------------------------|--------------------------------------------|--------------------------------------------------|
-| GPT-4 Turbo (OpenAI)   | ~1–2T (est.)    | 16-bit          | $0.01 in / $0.03 out     | Legal drafting, strategic reasoning        | Drafting a substantial HR policy or executive‑level memo |
-| GPT-3.5 Turbo          | 175B            | 16-bit          | $0.0005 in / $0.0015 out | Rapid brainstorm, code support             | Ongoing chat-style support across many short interactions |
-| DeepSeek-V3 (Fireworks)| 40B             | Q4_K_M          | $0.0008 / $0.0015        | Spreadsheet formula reviews, doc summaries | Several solid task explanations or one medium‑to‑large document analysis |
-| LLaMA 3 8B (Fireworks) | 8B              | Q4_K_M          | ~$0.0005 / $0.001        | Short-form writing, command explanations   | One well-structured email + summary              |
-| Claude Haiku           | ~10B            | Mixed precision | Included / limited free tier | Lightweight summarization, basic planning    | 2-3 meeting note summaries                       |
+| Tier | Typical Cost Shape | Ideal Use Cases | What ~$1 Often Buys |
+|------------------------|--------------------|--------------------------------------------|--------------------------------------------------|
+| **Hosted mini models** | Usually well under $1 per 1M input tokens and a few dollars per 1M output tokens | Fast drafting, classification, summaries, light code help | A large volume of short interactions or several medium tasks |
+| **Hosted flagship models** | Usually a few dollars per 1M input tokens and materially more for output | Strategic writing, harder reasoning, higher-stakes review | One substantial task or a smaller number of careful back-and-forth turns |
+| **Hosted open-weight models** | Often priced between mini and flagship tiers, depending on provider | Operational text work, extraction, structure, lightweight analysis | Several practical chores if prompts stay disciplined |
+| **Desktop subscription tools** | Flat monthly subscription rather than per-call pricing | Ad hoc daily use, drafting, note cleanup, workspace support | Not best measured per dollar; value comes from frequency and convenience |
 
-_Note: Prices are rough market estimates as of May 2025._
+_Note: Check current provider pricing pages before budgeting precisely. Pricing and bundled features now change often enough that static per-model tables age badly._
 
 ---
 

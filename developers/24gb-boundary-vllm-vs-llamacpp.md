@@ -12,7 +12,7 @@ The concrete baseline we start from is specific and non‑negotiable:
 - No CPU offload
 - Single‑agent, CLI‑driven or service‑driven workflows
 
-That setup already works today with **llama.cpp**, including an **OpenAI‑compatible endpoint**, albeit with some ergonomic and API‑level rough edges.
+That setup already works today with **llama.cpp**, including an **OpenAI‑compatible endpoint** and increasingly serious function-calling support, albeit still with some ergonomic and API-level rough edges.
 
 So the question is not *whether* 24 GB is enough. It demonstrably is.
 
@@ -28,21 +28,21 @@ Before comparing stacks philosophically, it helps to ground the discussion in th
 
 For a single agent running ~65k context on a 24 GB GPU, the memory picture looks like this:
 
-### VRAM usage comparison (~65k context, batch=1)
+### VRAM usage comparison (~65k context, batch=1, illustrative)
 
 | Stack | Weights | KV cache | Attention / scratch / misc | Total VRAM | Outcome |
 |---|---|---|---|---|---|
 | **llama.cpp (Q4_K_M)** | ~13–14 GB | ~6–7 GB | ~3–4 GB | **~23–24 GB** | ✅ Proven, stable |
-| **vLLM (4‑bit weights, FP16 KV)** | ~13–14 GB | ~14–16 GB | ~3–4 GB | **~31–34 GB** | ❌ Impossible |
-| **vLLM + TurboQuant KV** | ~13–14 GB | ~4–5 GB | ~3–4 GB | **~20–23 GB** | ✅ Plausible |
-| **vLLM + TurboQuant KV + nvfp4** | ~11–12 GB | ~4–5 GB | ~3–4 GB | **~18–21 GB** | ✅ Comfortable |
+| **vLLM (4‑bit weights, default KV)** | ~13–14 GB | ~14–16 GB | ~3–4 GB | **~31–34 GB** | ❌ Historically too large |
+| **vLLM + TurboQuant-class KV compression** | ~13–14 GB | ~4–8 GB | ~3–4 GB | **~20–26 GB** | ⚠️ Potentially viable, model-dependent |
+| **vLLM + TurboQuant-class KV compression + lighter weights** | ~11–13 GB | ~4–8 GB | ~3–4 GB | **~18–25 GB** | ✅ More realistic with margin |
 
-This table is not theoretical. It matches what can be observed in practice when running real workloads.
+This table is illustrative rather than universal. Exact numbers now depend more heavily on model architecture, backend settings, and how aggressively you quantize both weights and KV state.
 
 Two conclusions fall directly out of it:
 
 1. **llama.cpp already occupies the maximum feasible envelope at 24 GB**.
-2. **vLLM was historically excluded from this envelope solely due to KV cache behavior**.
+2. **vLLM was historically excluded from this envelope primarily due to KV cache behavior**.
 
 Everything else in this article follows from those facts.
 
@@ -92,7 +92,7 @@ That trade‑off is acceptable if memory viability is the overriding concern —
 
 ### Why vLLM used to fail outright
 
-Prior to KV cache compression, vLLM simply could not meet the same constraints.
+Prior to KV cache quantization, vLLM generally could not meet the same constraints.
 
 The table makes this obvious:
 
@@ -122,34 +122,34 @@ This is the *control‑plane gap* that motivated the entire comparison.
 
 The table shows exactly where convergence happens.
 
-With modern KV compression (TurboQuant‑class approaches):
+With modern KV compression, including the kind of shift people often point to with **TurboQuant-class** approaches:
 
-- vLLM’s KV cache drops from ~15 GB to ~4–5 GB
-- Total VRAM usage drops below the 24 GB line
+- vLLM’s KV cache can shrink dramatically
+- Total VRAM usage can move from obviously impossible to plausibly workable
 
 This does **not** make vLLM superior to llama.cpp at the edge.
 
 It does something more subtle and more important:
 
-> **It allows vLLM to stand on the exact same narrow ledge that llama.cpp already occupies.**
+> **It allows vLLM to contest the same narrow ledge that llama.cpp already occupies, which is the whole point of bringing TurboQuant into the conversation at all.**
 
 At that point, the comparison stops being about feasibility and becomes architectural.
 
 ---
 
-## Where nvfp4 actually helps
+## Where lower-precision weights actually help
 
-Low‑precision formats like nvfp4 do not move the memory boundary. The table makes that clear.
+Low-precision weight formats do not abolish the memory boundary. The table makes that clear.
 
 Their contribution is different:
 
-- They trim ~1–2 GB from the weight budget
+- They can trim meaningful space from the weight budget
 - That space absorbs allocator overhead, tool metadata, and logging
 - The system moves from *knife‑edge* to *operable with margin*
 
 Put simply:
 
-> nvfp4 does not enable this workload — it makes it survivable in real systems.
+> Lower-precision weights do not magically enable this workload — they make it more survivable in real systems.
 
 For agent builders who add complexity incrementally, this matters.
 
@@ -167,14 +167,14 @@ With the memory gap closed, the decision becomes clearer.
 
 ### vLLM becomes viable if:
 
-- You want robust tool calling and orchestration
+- You want more robust tool calling and orchestration
 - You rely on clean OpenAI semantics
 - You accept operating near the memory edge
 - You are willing to trade some efficiency for control‑plane leverage
 
 Put differently:
 
-> llama.cpp defines the **floor of feasibility**. vLLM defines the **space above it**, now that it can finally reach the same floor.
+> llama.cpp defines the **floor of feasibility**. vLLM defines the **space above it**, now that it can at least approach the same floor on the right configuration.
 
 ---
 
@@ -196,7 +196,7 @@ That is the real significance of the current moment.
 
 ## Closing
 
-At the 24 GB boundary, **llama.cpp proves what is possible**. **vLLM is now approaching parity where it matters most**.
+At the 24 GB boundary, **llama.cpp proves what is possible**. **vLLM is now much closer to viability where it matters most**.
 
 The most interesting work ahead is not squeezing in more tokens, but deciding how much structure, scheduling, and abstraction you want layered onto a system that already just barely fits.
 

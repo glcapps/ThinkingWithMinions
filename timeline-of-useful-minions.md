@@ -23,26 +23,24 @@
 ### 🧠 Late 2023 – The Infrastructure Layer Appears
 - Widespread experimentation with **agentic systems** and **vector search tools**
 - Rise of “bring your docs to the model” workflows
-- Early, exploratory versions of **Model Context Protocols (MCP)** and memory-enhanced chat interfaces
+- Early pressure builds for standardized tool and context interfaces
 - First serious attempts to align LLMs with business logic and task structure
 
 ---
 
-### 🛠️ Early 2024 – Tooling Matures
+### 🛠️ 2024 – Tooling Matures
 - Fireworks, Groq, and others offer hosted open models at practical speeds and prices
-- **Desktop minions** arrive: ChatGPT app integrates with system clipboard, terminal, IDEs
+- **Desktop minions** arrive: desktop assistants move closer to files, shortcuts, and coding-adjacent workflows
 - **Developers create plugins for CRMs, spreadsheets, IDEs, and chat systems**
 - Internal tools quietly become AI-infused
 
 ---
 
-### 📂 Mid–Late 2024 – Quiet Embedding
+### 📂 Late 2024 – Quiet Embedding
 - AI moves inside workflows, not next to them
 - Business software starts shipping with built-in assistants by default
-- Claude on desktop explores **MCP as a native user capability**
+- Anthropic introduces **Model Context Protocol (MCP)** as a user-facing way to connect tools and context
 - Assistance becomes closer to the work, easier to invoke, and less theatrical
-
----
 
 ### 🤝 2025 – Delegation Becomes Common
 - Agents and memory features support **task threads** that persist context across sessions
@@ -52,10 +50,10 @@
 
 ---
 
-### 🔄 2026 and Beyond – Normalization and Differentiation
+### 🔄 2026 and Beyond – Normalization and Interoperability
 - AI assistance becomes expected in many tools, but varies widely in quality and reliability
 - Differentiation shifts from *having* AI to *how well it is integrated*
-- Attention moves from novelty to governance, cost control, and task fit
+- Attention moves from novelty to governance, cost control, task fit, and interoperability
 - Teams become more selective about when minions help — and when they get in the way
 
 ---
@@ -65,6 +63,6 @@
 - 2023: Possibility  
 - 2024: Tooling  
 - 2025: Delegation  
-- 2026+: Normalization  
+- 2026+: Normalization + interoperability  
 
 Each step marked by **greater integration, broader access, and more deliberate use.**

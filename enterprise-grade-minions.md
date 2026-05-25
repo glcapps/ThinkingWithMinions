@@ -42,18 +42,18 @@ This is what enterprise-grade minions represent: delegated system capabilities c
 
 ### What It Costs to Get Started
 
-This kind of power used to require an enterprise budget. Not anymore.
+This kind of power used to require an enterprise budget. The entry point is still real money, but it is no longer reserved only for very large organizations.
 
-Let’s break it down for a **small business team of four** experimenting with Fabric:
+For a **small business team of four** experimenting with Fabric, the better way to think about cost in 2026 is by budget category rather than by a frozen screenshot of last year’s SKU pricing:
 
-| Component               | Monthly Cost         | Notes                                        |
+| Component | Budget Shape | Notes |
 |------------------------|----------------------|----------------------------------------------|
-| **Fabric F2 (P-A-Y-G)**| ~$263                | On-demand performance, good for testing      |
-| **Fabric F2 (Reserved)**| ~$156               | More cost-effective with predictable use     |
-| **Power BI Pro Licenses** | $10/user ($40 total) | Needed for dashboard sharing                 |
-| **Total Range**         | ~$196–$303           | All-in starting point for meaningful use     |
+| **Fabric capacity** | Variable base platform cost | Depends on region, capacity choice, and whether usage is pay-as-you-go or committed |
+| **User licensing** | Per-user productivity and BI licensing | Sharing, authoring, and Copilot-style features may require separate licenses |
+| **Data estate overhead** | Sometimes overlooked | Storage, refresh patterns, governance setup, and connectors can matter as much as the headline SKU |
+| **Pilot total** | Usually best treated as a bounded experiment | Budget it like a serious software pilot, not like a casual app subscription |
 
-That’s roughly what you’d spend on a few software licenses or a cloud file-sharing service. But instead of storage, you gain **analytical visibility and streamlined decision-making.**
+The practical point is not the exact monthly number. It is that small teams can now test governed, integrated AI against real business workflows without pretending they need a Fortune 500 program to begin.
 
 ---
 
@@ -87,7 +87,7 @@ You’re not throwing prompts at a mystery box. You’re building with tools tha
 
 ### The Bottom Line
 
-AI isn’t just for the tech giants anymore. With a few hundred dollars a month, a small business can now:
+AI isn’t just for the tech giants anymore. With a bounded pilot budget, a small business can now:
 - Talk directly to its data  
 - Automate reporting and insight generation  
 - Integrate AI into everyday workflows  
