@@ -10,7 +10,7 @@ In business terms: if you ask a system to “make up an example” without clari
 
 ## The Disappearing Context
 
-Models do not persist context unless surrounding systems explicitly provide or store it. Context size is a hard limit, and what falls off the back of the conversation is gone. Referring to prior interactions only works when that information is explicitly included in the current input.
+Models do not persist context unless surrounding systems explicitly provide or store it. Many products now do some of that for you—compacting long conversations into summaries, or saving memories between chats. But the system decides what survives, and details you considered important may not be among them. Referring to prior interactions only works when that information is actually included in the current input.
 
 This kind of failure looks like flakiness—but it’s really a tradeoff. Keeping everything forever is costly and noisy. The better strategy is: feed it what it needs, every time. Build workflows that do this automatically.
 

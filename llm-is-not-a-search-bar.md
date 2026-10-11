@@ -1,17 +1,17 @@
 # LLMs Are Not Just Search Bars
 
-When you type something into Google, you're rewarded with a list of links. When you type something into an LLM, you're speaking to a generative tool that tries to construct a plausible response based on language patterns. These behaviors overlap in practice, but they are not the same—and confusing them is a common source of error.
+Search engines now lead with AI-written answers, and chat assistants now search the web and cite what they find. From the user’s side, the two experiences have nearly merged. Underneath, they are still different steps: retrieval finds material, and a generative model constructs a plausible response from it. Confusing the two is a common source of error.
 
 ## What Is Actually Happening
 
-A language model does not inherently perform retrieval. It generates output based on learned patterns and whatever context is explicitly supplied at runtime. When paired with retrieval systems, it may *appear* to search—but the retrieval and the generation remain distinct steps.
+A language model does not inherently perform retrieval. It generates output based on learned patterns and whatever context is explicitly supplied at runtime. When paired with retrieval systems, it may *appear* to search—but the retrieval and the generation remain distinct steps. That is how most AI search products work: one step finds pages, and another writes an answer from them.
 
 ## The Consequences of Misuse
 
 Treating generative output as authoritative lookup leads to several common failures:
 
 - **False confidence:** It may “guess” when it doesn’t know, and present its guess with full grammatical certainty.
-- **Lack of source:** There is no URL or document backing up the statement unless you structure your system to return one.
+- **Weak sourcing:** Without a retrieval step, there is no document behind the statement at all. With one, citations appear—but a citation shows where material came from, not that the sentence beside it says what the source says.
 - **Variability:** Outputs may differ between runs unless inputs and context are controlled.
 
 This isn't a bug—it’s a misunderstanding of the tool.
@@ -20,7 +20,7 @@ This isn't a bug—it’s a misunderstanding of the tool.
 
 Language models excel at synthesis: summarizing, rephrasing, comparing, and explaining material. When combined with retrieval, they can sit above search systems and transform retrieved information into usable artifacts.
 
-Problems arise when this synthesis layer is mistaken for a source of record.
+Problems arise when this synthesis layer is mistaken for a source of record. Citations make that mistake easier, because the answer now looks referenced. When a claim matters, check it against the source itself.
 
 ## Give It What It Needs
 

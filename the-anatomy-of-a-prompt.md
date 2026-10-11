@@ -17,7 +17,7 @@ Start by defining what kind of thinking or output you want. Be simple and honest
 
 This is the **framing**. You're not giving an answer or asking a question — you’re stating what the model should be doing, much like briefing a junior analyst on a specific deliverable.
 
-Avoid pretending the LLM already knows what’s going on. Begin fresh each time.
+Avoid pretending the LLM already knows what’s going on. Even when a tool has memory or project instructions, you can’t see exactly what it carried forward. Begin fresh each time, and state what matters for this task.
 
 ---
 

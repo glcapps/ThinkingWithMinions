@@ -1,6 +1,6 @@
 # Memory Costs and Context Loops
 
-One of the trickiest parts of working with LLMs is how their memory behaves. These tools can hold thousands of words in “context” during an interaction, but that context is typically reconstructed or re-supplied rather than retained automatically. Or worse, loops back on itself in unexpected ways.
+One of the trickiest parts of working with LLMs is how their memory behaves. These tools can now hold hundreds of pages in “context,” and many products add memory features that carry notes from one conversation to the next. But neither one is the model remembering. Context is re-supplied on every turn, and memory is a system deciding what to re-supply. Sometimes that process loops back on itself in unexpected ways.
 
 Let’s demystify how context windows, memory limits, and looping behavior affect the way we work with minions—and the systems around them.
 
@@ -8,7 +8,13 @@ Let’s demystify how context windows, memory limits, and looping behavior affec
 
 “Context” in LLMs is the rolling window of tokens (words, punctuation, formatting) that the model can see at once. It’s not memory in the traditional sense. It’s closer to a temporary working surface during a conversation.
 
-Once the buffer fills up, older content may be dropped or summarized—like a chalkboard where only the most recent lines remain visible. Newer input overwrites the oldest lines.
+When a long session nears the limit, many tools now compact it: older content is summarized, and the summary is carried forward in its place. That helps, but it is still a chalkboard. Something decided what got erased and what got rewritten in shorthand, and the model works from what is left.
+
+## Memory Features Are Context Too
+
+Saved memories, project files, and custom instructions feel like the assistant knowing you. Mechanically, they are inputs placed back into context before your request.
+
+That makes them useful for continuity. It also means they can carry stale preferences, outdated facts, or details from unrelated work into a task where they don’t belong. Treat memory like any other input: review what has been saved, scope it to the project where it applies, and clear what no longer matters.
 
 ## Looping Costs Time and Money
 
@@ -19,6 +25,8 @@ When you use looping processes to refine outputs, surrounding systems often have
 - **Possible drift in tone or interpretation**
 
 If not carefully managed, your system can loop in ways that reprocess the same context unnecessarily—burning budget and patience.
+
+Prompt caching can make repeated context cheaper. It does not make it more relevant. Stale material carries forward just as easily when it is discounted.
 
 ## Mitigating the Limits
 
@@ -39,6 +47,6 @@ In the same way that Twitter’s old 140-character limit led to punchier writing
 
 ## Summary
 
-Your minion’s “memory” isn’t broken—it’s deliberately limited.
+Your minion’s “memory” is not a mind. It is whatever the system chooses to put back in front of the model.
 
 Design with that in mind. Keep loops efficient, prompts focused, and history externalized. The more you respect the boundaries of context and design around them, the more effective these tools become in practice.
