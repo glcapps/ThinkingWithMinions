@@ -1,8 +1,8 @@
 ## Why Coding Tools Are Escaping Coding
 
-For years, tools like VS Code, terminals, markdown files, and structured editors were treated as developer territory. If you did not write software, these environments looked overly technical, narrow, or simply irrelevant. That assumption is getting weaker.
+For years, tools like VS Code, terminals, markdown files, and structured editors were treated as developer territory. If you did not write software, these environments looked overly technical, narrow, or simply irrelevant. That assumption no longer holds.
 
-What began as coding infrastructure is starting to become something broader: a set of **general-purpose work surfaces for structured thinking, drafting, analysis, and guided tool use**. The shift is not really about coding. It is about the growing value of environments that are explicit, editable, inspectable, and easy for both humans and software to operate on.
+What began as coding infrastructure has become something broader: a set of **general-purpose work surfaces for structured thinking, drafting, analysis, and guided tool use**. The shift is not really about coding. It is about the growing value of environments that are explicit, editable, inspectable, and easy for both humans and software to operate on.
 
 ---
 

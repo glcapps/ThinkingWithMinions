@@ -76,6 +76,6 @@ This is why the best integrations often feel less dramatic than the demos. They 
 
 ### Final Thought
 
-Minion integration is still coming, but the important question is no longer whether assistance will appear inside our tools. It already is. The better question is whether we will adapt our workflows intelligently enough to use that assistance without surrendering clarity, boundaries, or control.
+Minion integration has arrived, and the important question is no longer whether assistance will appear inside our tools. It already is. The better question is whether we will adapt our workflows intelligently enough to use that assistance without surrendering clarity, boundaries, or control.
 
 That is the real project: not putting minions everywhere, but learning where they belong.

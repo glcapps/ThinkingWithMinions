@@ -80,9 +80,9 @@ Structured content also supports reuse and controlled evolution. Changes can be 
 ### Use RAG as a Layer, Not a Substitute
 
 RAG isn’t bad — it’s just not a replacement for good information design. In fact, the best systems:
-- Explicit context for authoritative or high-trust tasks
-- Retrieval for exploration, discovery, and hypothesis generation
-- Routing logic that selects the appropriate mode per task
+- Use explicit context for authoritative or high-trust tasks
+- Use retrieval for exploration, discovery, and hypothesis generation
+- Use routing logic that selects the appropriate mode per task
 
 ---
 

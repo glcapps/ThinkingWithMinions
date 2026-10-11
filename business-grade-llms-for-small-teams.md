@@ -16,10 +16,10 @@ Their value comes from deep integration into productivity and reporting software
 
 Examples of this pattern include:
 
-- **In Excel**: It can generate formulas, summarize spreadsheets, or flag anomalies across complex data sets.
-- **In Teams**: It drafts meeting recaps, suggests action items, and tracks follow-ups.
-- **In Power BI**: It explains dashboards in plain English or suggests new charts based on your goals.
-- **In Outlook**: It drafts email responses in your voice, tailored to past conversations.
+- **In Excel**: The assistant can generate formulas, summarize spreadsheets, or flag anomalies across complex data sets.
+- **In Teams**: The assistant drafts meeting recaps, suggests action items, and tracks follow-ups.
+- **In Power BI**: The assistant explains dashboards in plain English or suggests new charts based on your goals.
+- **In Outlook**: The assistant drafts email responses in your voice, tailored to past conversations.
 
 This embodies the concept of a contextual assistant that understands your workflow and contributes meaningfully without requiring constant re-briefing.
 
@@ -27,7 +27,7 @@ This embodies the concept of a contextual assistant that understands your workfl
 
 ### Real Scenarios, Real Value
 
-Here’s what that could look like for a team of four exploring Fabric for the first time:
+Here’s what that could look like for a team of four trying Microsoft 365 Copilot for the first time:
 
 - A marketing coordinator uses Copilot to draft monthly newsletters based on last month’s campaigns and performance metrics.
 - A sales lead has Copilot generate follow-up summaries after calls, pulling CRM notes and past email threads together.

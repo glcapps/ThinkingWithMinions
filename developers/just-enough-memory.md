@@ -39,7 +39,7 @@ The table below maps typical configurations to the kinds of workloads they can s
 | 12GB | Mistral NeMo (12B) | Dense | Q4_K_M | 64k | Short-loop agent |
 | 16GB | Qwen2.5-Coder (14B) | Dense (Code) | Q6_K | 64k | Surgical coding tasks |
 | 16GB (Experimental) | Devstral-Small 2 (24B) | Dense (Agent-tuned) | IQ3_M | 64k | Limited step planning (guarded) |
-| 20GB | Gemma 4 26B | Dense | IQ3_M | 128k | Sustained debugging with context |
+| 20GB | Gemma 4 26B | MoE | IQ3_M | 128k | Sustained debugging with context |
 | 24GB | Devstral-Small 2 (24B) | Dense (Agent-tuned) | Q4_K_M | 128k | Multi-file coordination |
 | 32GB | Gemma 4 31B | Dense | IQ3_M | 128k | Planning and structured reasoning |
 | 48GB | Llama 3.1 70B | Dense | Q4_K_M | 128k | Cross-system reasoning |

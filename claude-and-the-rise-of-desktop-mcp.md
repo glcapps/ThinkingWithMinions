@@ -8,7 +8,7 @@ Model Context Protocol (MCP) is one important approach to structuring that inter
 
 ### What Is MCP and Why Does It Matter?
 
-Model Context Protocol — or MCP — is an open protocol, introduced by Anthropic and now broader than any single vendor, that allows language models to interact with external tools and context sources in a modular and composable way. MCP defines a contract between a model and external systems. Tools expose well-defined interfaces. The model selects and invokes them based on declared capabilities and supplied context. Instead of dumping long prompts, you define tools: a calendar, a document store, a search index, a calculator. Each tool has inputs, outputs, and logic. The model applies these interfaces within a session based on available context.
+Model Context Protocol — or MCP — is an open protocol, introduced by Anthropic in late 2024 and donated in December 2025 to a vendor-neutral foundation under the Linux Foundation, that allows language models to interact with external tools and context sources in a modular and composable way. MCP defines a contract between a model and external systems. Tools expose well-defined interfaces. The model selects and invokes them based on declared capabilities and supplied context. Instead of dumping long prompts, you define tools: a calendar, a document store, a search index, a calculator. Each tool has inputs, outputs, and logic. The model applies these interfaces within a session based on available context.
 
 In developer circles, this has been quietly transforming AI agents for some time. This allows systems to support operations such as:
 - Pull in data from APIs
@@ -22,7 +22,7 @@ Historically, this pattern has appeared in developer tooling and custom orchestr
 
 ### Desktop integrations
 
-Some desktop applications now expose local tools — such as file access or structured data retrieval — through MCP or MCP-like interfaces.
+Major desktop assistants now expose local tools — such as file access or structured data retrieval — through MCP or MCP-like interfaces.
 
 From a user perspective, this enables task descriptions that combine multiple steps across files and applications, such as:
 - “Summarize these three PDFs and email the summary to my project team.”
@@ -51,7 +51,7 @@ Granting tool access changes how systems must be designed and evaluated.
 
 ### Likely system evolutions
 
-This evolution points toward several near-future capabilities:
+This evolution has already produced, or is producing, several capabilities:
 
 - Increased use of routing and orchestration between tools
 - Reusable task definitions backed by explicit interfaces
@@ -65,7 +65,7 @@ This evolution points toward several near-future capabilities:
 
 In this context, “delegation” is often easiest to reason about using a human metaphor: assigning chores to a worker. This framing is intentional, but limited.
 
-The minion abstraction does not imply intelligence, judgment, responsibility, or liability. It exists as a cognitive aid that helps people think about task scoping, instruction quality, feedback, and iteration in linguistic terms rather than purely mechanical ones. The underlying system remains deterministic, bounded, and fully accountable to its designers and operators.
+The minion abstraction does not imply intelligence, judgment, responsibility, or liability. It exists as a cognitive aid that helps people think about task scoping, instruction quality, feedback, and iteration in linguistic terms rather than purely mechanical ones. The underlying system remains bounded and fully accountable to its designers and operators.
 
 Desktop MCP integrations demonstrate a shift toward treating delegation as a system capability rather than an interaction style.
 

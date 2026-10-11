@@ -12,7 +12,7 @@ The value comes not from conversational novelty, but from reducing manual analys
 
 ### What Is Microsoft Fabric?
 
-Microsoft Fabric is an integrated data platform that combines everything from data movement and lakehouses to real-time analytics and business intelligence—all in one unified product. It's not just a tool for data engineers or BI analysts anymore. With recent updates, it’s become deeply infused with **LLM-driven** capabilities that allow **natural language interaction with structured data**.
+Microsoft Fabric is an integrated data platform that combines everything from data movement and lakehouses to real-time analytics and business intelligence—all in one unified product. It's not just a tool for data engineers or BI analysts anymore. Since 2025, it has carried **LLM-driven** capabilities that allow **natural language interaction with structured data** — and Copilot and data agents now run on every paid capacity, not just the large ones that once put them out of reach for small teams.
 
 It provides a unified environment where data models, analytics, and automation can be composed and governed consistently.
 
@@ -94,5 +94,3 @@ AI isn’t just for the tech giants anymore. With a bounded pilot budget, a smal
 - Do it all securely, predictably, and professionally
 
 This is not general-purpose chat. It is language-model capability integrated into governed business systems to reduce friction in analysis and coordination.
-
----

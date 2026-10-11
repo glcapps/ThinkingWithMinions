@@ -42,6 +42,8 @@
 - Anthropic introduces **Model Context Protocol (MCP)** as a user-facing way to connect tools and context
 - Assistance becomes closer to the work, easier to invoke, and less theatrical
 
+---
+
 ### 🤝 2025 – Delegation Becomes Common
 - Agents and memory features support **task threads** that persist context across sessions
 - Some team workflows begin to incorporate human-plus-tool delegation patterns

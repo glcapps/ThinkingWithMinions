@@ -10,7 +10,7 @@ As language-model tooling has spread into business and technical discussions, it
 **How it’s *misused*:** “We trained ChatGPT to write our reports.”  
 No, you didn’t. You *used* ChatGPT. You may have *guided* it. But unless you're OpenAI, you're not doing training.
 
-**Common confusion:** People think every interaction “trains” the model. It doesn’t. That's called prompting — and the model forgets it as soon as you close the tab.
+**Common confusion:** People think every interaction “trains” the model. It doesn’t — not in the moment. That's called prompting, and it changes nothing about the model itself. Two things blur the line now: products with **memory features** carry notes forward between chats, and some consumer plans may use your conversations to train *future* models unless you opt out. Neither one is you training the model. Both are reasons to check your settings.
 
 ---
 
@@ -18,7 +18,7 @@ No, you didn’t. You *used* ChatGPT. You may have *guided* it. But unless you'r
 **What it *means*:** Taking a pre-trained model and adjusting it slightly to specialize it. Like teaching a fluent speaker technical jargon for your industry.
 
 **How it’s *misused*:** “Let’s fine-tune it with some emails.”  
-Fine-tuning requires specialized infrastructure and expertise and is not the same as providing examples at runtime.
+Fine-tuning is now available as a self-serve service from several vendors, but it still requires curated training data, evaluation, and ongoing maintenance — and it is not the same as providing examples at runtime.
 
 **Common confusion:** Fine-tuning is *not* copy-pasting your company wiki into the prompt box. That’s a different kind of enhancement — and usually not necessary.
 
@@ -48,17 +48,17 @@ No, it hallucinated. The model generates plausible output without verifying corr
 **What it *means*:** The total amount of information the model can “hold in mind” during a session — the information made available to the model during a single interaction.
 
 **How it’s *misused*:** “This model has lots of context, so it knows everything.”  
-Nope. Context is *temporary.* Once the chat ends or the limit is hit, it’s gone.
+Nope. Context is *working material*, not knowledge. Whatever isn’t in front of the model for this task isn’t being used — and memory features only carry forward what they chose to save.
 
-**Common confusion:** Many assume context is infinite — but every word you add eats into the limit. Managing context is a critical skill in LLM use.
+**Common confusion:** Windows are now very large, so many assume context is effectively infinite. But what a model can accept is not the same as what it can use well. Every word you add competes for attention. Managing context is a critical skill in LLM use.
 
 ---
 
 ### 🔡 Token  
 **What it *means*:** A chunk of text — not quite a word, not quite a syllable. Models read and respond in tokens.
 
-**How it’s *misused*:** “It can read my 100-page report.”  
-Not if that report is more tokens than the model’s limit. Know your model’s budget.
+**How it’s *misused*:** “It read my 100-page report, so it understood all of it.”  
+Modern models can usually *accept* a report that size. That doesn’t mean every page gets equal weight in the answer. Know your model’s budget — in cost, and in attention.
 
 **Common confusion:** Tokens represent processing units. Larger inputs consume more capacity.
 
@@ -87,7 +87,7 @@ RAG is helpful — but not a silver bullet. Poor documents in, poor answers out.
 ## 🚫 Buzzwords You’re Probably Misusing
 
 - **Training:** You’re *prompting*, not training.
-- **Fine-tuning:** Unless you hired a lab, you’re not.
+- **Fine-tuning:** Possible now, but rarely the first fix. Better context usually comes first.
 - **Hallucination:** It’s not lying. It’s guessing.
 - **Token:** Think of it like text budget, not words.
 - **Smart:** Specify the capability or behavior being referenced.

@@ -16,7 +16,7 @@ Context: You are a legal assistant for a small claims advisor.
 Task: Extract the following details...
 ```
 
-Doing this consistently trains the model, even session by session, to treat your input a certain way.
+Doing this consistently establishes a convention, session by session, so the model treats your input the same way each time. It doesn’t change the model — it gives every session the same starting frame.
 
 ---
 
