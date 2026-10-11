@@ -11,8 +11,19 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      // Old article names, kept so links shared before a rename still resolve
+      const renamedArticles = {
+        'the-shell-script-whisperer': 'making-shell-scripts-legible',
+        'smuggling-context-into-every-prompt': 'carrying-context-explicitly',
+        'long-context': 'intentional-context-design',
+        'smarter-ci-is-a-prompt-away': 'smarter-ci-starts-with-intent'
+      };
+      let initialHash = window.location.hash.slice(1);
+      if (renamedArticles[initialHash]) {
+        initialHash = renamedArticles[initialHash];
+        history.replaceState(null, "", "#" + initialHash);
+      }
       // Load article from hash if present on page load, or default to SemanticGrounding.png
-      const initialHash = window.location.hash.slice(1);
       let articlePath = initialHash || "SemanticGrounding.png";
       if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(articlePath)) {
         articlePath += ".md";
@@ -157,23 +168,23 @@
         { file: 'from-file-reader-to-catalog-surface.md', title: 'From File Reader to Catalog Surface' },
         { file: 'what-the-model-cant-see.md', title: 'What the Model Can’t See' },
         { file: 'ai-is-not-a-new-team-member.md', title: 'AI Is Not a New Team Member' },
-        { file: 'grep-but-make-it-curious.md', title: 'Grep but Make It Curious' },
+        { file: 'grep-but-make-it-curious.md', title: 'Grep, But Make It Curious' },
         { file: 'explain-this-commit-like-im-a-stakeholder.md', title: 'Explain This Commit Like I’m a Stakeholder' },
-        { file: 'the-shell-script-whisperer.md', title: 'The Shell Script Whisperer' },
+        { file: 'making-shell-scripts-legible.md', title: 'Making Shell Scripts Legible' },
         { file: 'semantic-logs.md', title: 'Semantic Logs' },
-        { file: 'smuggling-context-into-every-prompt.md', title: 'Smuggling Context into Every Prompt' },
-        { file: 'context-chains-not-retrieval-hacks.md', title: 'Context Chains Not Retrieval Hacks' },
+        { file: 'carrying-context-explicitly.md', title: 'Carrying Context Explicitly' },
+        { file: 'context-chains-not-retrieval-hacks.md', title: 'Context Chains, Not Retrieval Hacks' },
         { file: 'just-enough-memory.md', title: 'Just Enough Memory' },
-        { file: '24gb-boundary-vllm-vs-llamacpp.md', title: 'Agentic LLMs at the 24 GB Boundary' },
-        { file: 'long-context.md', title: 'Optimizing Long Contexts' },
+        { file: '24gb-boundary-vllm-vs-llamacpp.md', title: 'Agentic LLM Systems at the 24 GB Boundary' },
+        { file: 'intentional-context-design.md', title: 'Why Intentional Context Design Still Matters' },
         { file: 'budgeting-for-thinking.md', title: 'Budgeting for Thinking' },
         { file: 'the-postmortem-writes-itself.md', title: 'The Postmortem Writes Itself' },
         { file: 'explain-this-service-like-im-new-here.md', title: 'Explain This Service Like I’m New Here' },
         { file: 'documentation-that-feeds-back.md', title: 'Documentation That Feeds Back' },
-        { file: 'smarter-ci-is-a-prompt-away.md', title: 'Smarter CI Is a Prompt Away' },
+        { file: 'smarter-ci-starts-with-intent.md', title: 'Smarter CI Starts With Intent' },
         { file: 'semantic-prompts-beat-clever-ones.md', title: 'Semantic Prompts Beat Clever Ones' },
-        { file: 'think-aloud-mode-for-coders.md', title: 'Think Aloud Mode for Coders' },
-        { file: 'slow-down-summarize.md', title: 'Slow Down, Summarize' },
+        { file: 'think-aloud-mode-for-coders.md', title: 'Think-Aloud Mode for Coders' },
+        { file: 'slow-down-summarize.md', title: 'Slow Down and Summarize' },
         { file: 'assistant-interrupted.md', title: 'Assistant, Interrupted' }
       ]}">
         <template x-for="article in articles" :key="article.file">

@@ -30,7 +30,7 @@ The magazine works in three layers:
 
 ### 🏢 Business & Governance
 - **Securing Your AI Use** — Why business data and personal accounts don't mix
-- **Policies for LLM in the Workplace** — Guardrails that enable rather than block
+- **Policies for LLM Use in the Workplace** — Guardrails that enable rather than block
 - **The Office of LLMs** — Where coordination of AI use tends to land
 - **Business-Grade LLMs for Small Teams** — Integrated assistants inside tools you already use
 - **Enterprise-Grade Minions** — Governed AI over business data with Microsoft Fabric
@@ -38,7 +38,7 @@ The magazine works in three layers:
 ### 📓 Working With Minions
 - **Why Coding Tools Are Escaping Coding** — Developer workspaces as general work surfaces
 - **Making LLM Use Frictionless** — Assistance that lives in the workspace
-- **Claude and the Rise of Desktop MCP** — Tool-using assistants and what they change
+- **Desktop MCP and Tool-Oriented Assistants** — Tool-using assistants and what they change
 - **LLMs Are Not Just Search Bars** — Search retrieves; language models synthesize
 - **How LLMs Fail and Why That's OK** — Failure as feedback on the setup
 - **Memory Costs and Context Loops** — Designing around what the model carries

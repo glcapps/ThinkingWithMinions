@@ -11,8 +11,18 @@
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => {
+      // Old article names, kept so links shared before a rename still resolve
+      const renamedArticles = {
+        'claude-and-the-rise-of-desktop-mcp': 'desktop-mcp-and-tool-oriented-assistants',
+        'using-chatgpt-on-mac-with-vs-code': 'why-coding-tools-are-escaping-coding',
+        'minion-integration-is-coming': 'minion-integration-is-about-workflow'
+      };
+      let initialHash = window.location.hash.slice(1);
+      if (renamedArticles[initialHash]) {
+        initialHash = renamedArticles[initialHash];
+        history.replaceState(null, "", "#" + initialHash);
+      }
       // Load article from hash if present on page load, or default to SemanticGrounding.png
-      const initialHash = window.location.hash.slice(1);
       let articlePath = initialHash || "SemanticGrounding.png";
       if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(articlePath)) {
         articlePath += ".md";
@@ -155,24 +165,24 @@
         { file: 'avoiding-the-rag-trap.md', title: 'Avoiding the RAG Trap' },
         { file: 'the-new-spreadsheet-moment.md', title: 'The New Spreadsheet Moment' },
         { file: 'securing-your-ai-use.md', title: 'Securing Your AI Use' },
-        { file: 'minion-integration-is-coming.md', title: 'Minion Integration Is About Workflow, Not Hype' },
+        { file: 'minion-integration-is-about-workflow.md', title: 'Minion Integration Is About Workflow, Not Hype' },
         { file: 'business-grade-llms-for-small-teams.md', title: 'Business-Grade LLMs for Small Teams' },
-        { file: 'using-chatgpt-on-mac-with-vs-code.md', title: 'Why Coding Tools Are Escaping Coding' },
-        { file: 'buzzwords---use--misuse.md', title: 'Buzzwords — Use & Misuse' },
+        { file: 'why-coding-tools-are-escaping-coding.md', title: 'Why Coding Tools Are Escaping Coding' },
+        { file: 'buzzwords---use--misuse.md', title: 'Buzzwords: Use & Misuse' },
         { file: 'ArtisinalSynonyms.png', title: 'Artisanal Synonyms Cartoon' },
-        { file: 'claude-and-the-rise-of-desktop-mcp.md', title: 'Claude and the Rise of Desktop MCP' },
+        { file: 'desktop-mcp-and-tool-oriented-assistants.md', title: 'Desktop MCP and Tool-Oriented Assistants' },
         { file: 'dont-just-rag.md', title: 'Don\'t Just RAG' },
         { file: 'enterprise-grade-minions.md', title: 'Enterprise-Grade Minions' },
         { file: 'making-llm-use-frictionless.md', title: 'Making LLM Use Frictionless' },
         { file: 'model-smartness-vs-cost-cheat-sheet.md', title: 'Model Smartness vs. Cost Cheat Sheet' },
         { file: 'the-anatomy-of-a-prompt.md', title: 'The Anatomy of a Prompt' },
         { file: 'timeline-of-useful-minions.md', title: 'Timeline of Useful Minions' },
-        { file: 'policies-for-llm-in-the-workplace.md', title: 'Policies for LLM in the Workplace' },
-        { file: 'llm-is-not-a-search-bar.md', title: 'LLM is Not a Search Bar' },
+        { file: 'policies-for-llm-in-the-workplace.md', title: 'Policies for LLM Use in the Workplace' },
+        { file: 'llm-is-not-a-search-bar.md', title: 'LLMs Are Not Just Search Bars' },
         { file: 'how-llms-fail-and-why-thats-ok.md', title: 'How LLMs Fail and Why That’s OK' },
         { file: 'memory-costs-and-context-loops.md', title: 'Memory Costs and Context Loops' },
         { file: 'llms-as-thinking-partners.md', title: 'LLMs as Thinking Partners' },
-        { file: 'not-everything-is-a-minion-task.md', title: 'Not Everything is a Minion Task' },
+        { file: 'not-everything-is-a-minion-task.md', title: 'Not Everything Is a Minion Task' },
         { file: 'the-office-of-llms.md', title: 'The Office of LLMs' },
         { file: 'HalChart.png', title: 'Hal Chart Cartoon' }
       ]}">

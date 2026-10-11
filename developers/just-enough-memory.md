@@ -33,18 +33,18 @@ The available capacity is not abstract. It is bounded by hardware.
 
 The table below maps typical configurations to the kinds of workloads they can sustain.
 
-| VRAM / RAM | Smartest Choice Model | Architecture | Quantization | Context | Achievable Workload |
-|-----------|----------------------|-------------|--------------|--------|----------------------|
-| 8GB | Gemma 4 E4B | Dense | Q8_0 | 64k | Reactive CLI helper |
-| 12GB | Mistral NeMo (12B) | Dense | Q4_K_M | 64k | Short-loop agent |
-| 16GB | Qwen2.5-Coder (14B) | Dense (Code) | Q6_K | 64k | Surgical coding tasks |
-| 16GB (Experimental) | Devstral-Small 2 (24B) | Dense (Agent-tuned) | IQ3_M | 64k | Limited step planning (guarded) |
-| 20GB | Gemma 4 26B | MoE | IQ3_M | 128k | Sustained debugging with context |
-| 24GB | Devstral-Small 2 (24B) | Dense (Agent-tuned) | Q4_K_M | 128k | Multi-file coordination |
-| 32GB | Gemma 4 31B | Dense | IQ3_M | 128k | Planning and structured reasoning |
-| 48GB | Llama 3.1 70B | Dense | Q4_K_M | 128k | Cross-system reasoning |
-| 64GB | Mixtral 8x22B | MoE | IQ3_M | 128k | Domain-specialized orchestration |
-| 96GB | DeepSeek V3.2 / Nemotron-3 Super | MoE / Hybrid | Q4_K_M | 128k+ | Multi-system orchestration |
+| VRAM / RAM | Model Class That Fits | Example (Oct 2026) | Working Context | Achievable Workload |
+|-----------|----------------------|--------------------|-----------------|----------------------|
+| 8GB | Small edge model, 8-bit | Gemma 4 E4B | ~32–64k | Reactive CLI helper |
+| 12GB | 8B-class dense, 4–6-bit | Qwen3 8B | ~32–64k | Short-loop agent |
+| 16GB | 14B-class dense, or a small MoE | Qwen3 14B | ~64k | Surgical coding tasks |
+| 20GB | Mid-size MoE (few active parameters), 3–4-bit | Gemma 4 26B A4B | ~64–128k | Sustained debugging with context |
+| 24GB | 24–30B agent- or code-tuned, 4-bit | Devstral Small 2 (24B), Qwen3-Coder 30B-A3B | ~64–128k | Multi-file coordination |
+| 32GB | ~30B dense, 4–6-bit | Gemma 4 31B | ~128k | Planning and structured reasoning |
+| 48GB | 70–80B-class MoE, 4-bit | Qwen3-Next 80B-A3B | ~128k | Cross-system reasoning |
+| 64–96GB | ~100B-class MoE | gpt-oss-120b, GLM-4.5-Air | 128k+ | Multi-system orchestration |
+
+Examples are a snapshot. Open-weight releases move quickly, so treat the *model class* column as the durable guide and swap in current models as they appear. Mixture-of-experts models need memory for all of their weights but run at the speed of their active parameters, which is why they now dominate the middle and upper tiers.
 
 This is not a performance ranking. It is a constraint map. Each tier reflects how much working state can be maintained before reasoning degrades.
 

@@ -1,5 +1,5 @@
+## Model Smartness vs. Cost Cheat Sheet
 
-## Understanding Model “Smartness” — Beyond Just Size
 Here, “smartness” is a practical shorthand for how capable a model feels in real use: how well it reasons, adapts, and delivers useful output for a given task.
 
 When people hear that a model has 7 billion or 600 billion parameters, it’s easy to assume that more = better. But that’s only part of the story. Here’s what actually determines a model’s intelligence, efficiency, and cost in real-world tasks.
@@ -27,7 +27,7 @@ Don’t shop by size. Shop by **fit to task**.
 
 ---
 
-## 💵 What Does $1 Buy You?
+### 💵 What Does $1 Buy You?
 
 By mid-2026, exact model pricing moves too quickly for a static table to stay trustworthy for long. The better cheat sheet is by **service tier**, not by yesterday’s model name.
 
