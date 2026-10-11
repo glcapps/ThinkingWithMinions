@@ -18,27 +18,52 @@
         'long-context': 'intentional-context-design',
         'smarter-ci-is-a-prompt-away': 'smarter-ci-starts-with-intent'
       };
-      let initialHash = window.location.hash.slice(1);
-      if (renamedArticles[initialHash]) {
-        initialHash = renamedArticles[initialHash];
-        history.replaceState(null, "", "#" + initialHash);
-      }
-      // Load article from hash if present on page load, or default to SemanticGrounding.png
-      let articlePath = initialHash || "SemanticGrounding.png";
-      if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(articlePath)) {
-        articlePath += ".md";
-      }
-      htmx.ajax("GET", articlePath, "#content");
+      // Load an article by name into #content, or default to SemanticGrounding.png
+      let currentArticle = null;
+      const loadArticle = (name) => {
+        const articleName = renamedArticles[name] || name;
+        currentArticle = articleName;
+        let articlePath = articleName || "SemanticGrounding.png";
+        if (!/\.(png|jpg|jpeg|gif|webp)$/i.test(articlePath)) {
+          articlePath += ".md";
+        }
+        htmx.ajax("GET", articlePath, "#content");
+        return articleName;
+      };
 
-      // Update hash on navigation click
-      document.querySelectorAll("a[hx-get]").forEach(link => {
-        link.addEventListener("click", (e) => {
-          const fileName = link.getAttribute("hx-get");
-          if (fileName) {
-            const articleName = fileName.replace(/\.md$/, "");
-            history.replaceState(null, "", "#" + articleName);
-          }
-        });
+      const initialHash = window.location.hash.slice(1);
+      const initialArticle = loadArticle(initialHash);
+      if (initialArticle !== initialHash) {
+        history.replaceState(null, "", "#" + initialArticle);
+      }
+
+      // Handle article links anywhere on the page: the nav, and links inside articles
+      document.body.addEventListener("click", (e) => {
+        const link = e.target.closest("a");
+        if (!link) return;
+        const fileName = link.getAttribute("hx-get");
+        if (fileName) {
+          // Nav links load through htmx; just record the article in the hash
+          currentArticle = fileName.replace(/\.md$/, "");
+          history.replaceState(null, "", "#" + currentArticle);
+          return;
+        }
+        const href = link.getAttribute("href") || "";
+        if (href.startsWith("#") && href.length > 1) {
+          e.preventDefault();
+          const articleName = loadArticle(href.slice(1));
+          history.replaceState(null, "", "#" + articleName);
+        }
+      });
+
+      // Load the matching article when the hash is changed directly
+      window.addEventListener("hashchange", () => {
+        const name = window.location.hash.slice(1);
+        if ((renamedArticles[name] || name) === currentArticle) return;
+        const articleName = loadArticle(name);
+        if (articleName !== name) {
+          history.replaceState(null, "", "#" + articleName);
+        }
       });
 
       htmx.on("htmx:afterSwap", (e) => {
@@ -120,6 +145,11 @@
           });
           tempDiv.querySelectorAll("li").forEach(li => {
             li.classList.add("mb-1");
+          });
+          // Keep links to other articles on this site in the same tab
+          tempDiv.querySelectorAll("a[href^='#'], a[href^='/']").forEach(a => {
+            a.removeAttribute("target");
+            a.removeAttribute("rel");
           });
           const firstHeading = tempDiv.querySelector("h1, h2");
           if (firstHeading) {
