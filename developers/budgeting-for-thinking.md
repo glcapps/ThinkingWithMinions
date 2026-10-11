@@ -27,6 +27,12 @@ Most complex uses of AI can be decomposed into distinct phases of work:
 
 Each phase has a different interaction profile. Exploration is usually light. Evaluation can become heavy if it requires revisiting large amounts of prior context. Designing with these differences in mind keeps systems responsive and predictable.
 
+## Thinking is now a setting
+
+Many models now expose this effort directly. Reasoning modes, thinking budgets, and effort levels let you choose how much the model works through a problem before it answers.
+
+More thinking costs more time and more tokens. It helps most where a task genuinely requires multi-step reasoning: a rewrite rarely benefits, while a tricky debugging trace often does. The same phase model applies. Keep effort low while scouting, and raise it where execution or evaluation depends on getting the reasoning right.
+
 ## Think in terms of workload
 
 Every interaction places load on the system. Broad prompts, long histories, and unfocused goals increase that load without guaranteeing better results.

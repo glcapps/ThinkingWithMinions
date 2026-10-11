@@ -2,7 +2,7 @@
 
 Most developer documentation is written once and read passively. It explains, but it does not participate.
 
-When LLMs are part of the toolchain, documentation can become an input to ongoing work rather than a static artifact.
+When LLMs are part of the toolchain, documentation can become an input to ongoing work rather than a static artifact. This is no longer speculative. Coding agents now read repository instruction files—AGENTS.md, CLAUDE.md, and similar—before they start work, and many tools pull in project docs on request.
 
 ## Start with structured notes
 
@@ -22,13 +22,19 @@ This does not require retraining models.
 
 - Prompt inputs: documentation is incorporated into structured instructions
 - Retrieval material: architecture and usage notes support lookup and reference
-- Memory cues: prior explanations are reused to maintain continuity
+- Agent instructions: conventions and constraints that agents load before they start
 
 Over time, this allows tools to reflect established explanations and conventions without inventing new ones.
 
+## Put intent where the work happens
+
+Agents often meet code through a search hit or a narrow edit, not a full read. Intent that lives only in a distant design doc may never reach them.
+
+Durable comments near the point of change—an invariant, an environmental constraint, a warning against a tempting cleanup—do work a README can’t. Temporary working notes are different. Once the uncertainty they track is resolved, remove them. A stale hypothesis left in the code becomes false authority for the next reader.
+
 ## Examples
 
-- A GitHub Copilot variant that suggests not just syntax but reasoning steps, based on design docs
+- A repository instruction file that tells coding agents how to build, test, and stay inside the architecture
 - A CI tool that explains test failures using comments from past commits
 - A CLI helper that draws usage tips from the most up-to-date README
 

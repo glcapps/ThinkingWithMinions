@@ -1,16 +1,16 @@
 # What the Model Can’t See
 
-Large language models operate within strict boundaries. Some of those boundaries are obvious—such as not having access to your screen or running processes. Others are more subtle and are often overlooked in practice.
+Large language models operate within strict boundaries. Some of those boundaries used to be obvious: a chat window could not see your screen or your running processes. Coding agents now work in terminals, read editor state, run tests, and in some setups operate a browser or desktop. The boundary has moved, but it has not disappeared. Other boundaries are more subtle and are often overlooked in practice.
 
 This article describes those boundaries, with a focus on how missing context, state, and signals affect reliability in development and IT workflows.
 
 ---
 
-## No direct access to your environment
+## Only what the tools surface
 
-A model can’t read your terminal, your screen, or your editor window. It doesn’t see which file you’re in, which variable is highlighted, or what output just scrolled by. This is different from human collaboration, where even a glance can change everything.
+A model does not see your environment directly. It sees what its tools return: the file an agent opened, the command output it captured, the screenshot it took. It does not see the file it didn’t open, the log it didn’t read, or the output that scrolled by before it looked. This is different from human collaboration, where even a glance can change everything.
 
-If information is not explicitly provided, it is not available. The model may infer or approximate, but inference is not access.
+If information is not surfaced, it is not available. The model may infer or approximate, but inference is not access. Choosing the tools is choosing what the model can see.
 
 ---
 
@@ -24,9 +24,9 @@ This matters especially when you're working across multiple sessions or switchin
 
 ## No Real-Time Awareness
 
-Unlike your IDE or your debugger, the model isn’t connected to the execution state of your application. It can’t tell which breakpoints are set, what your stack trace says, or what line threw the error. That has to be relayed manually, or through tools that bind model interaction to your environment.
+An agent that can run commands can observe a failing test or a stack trace—at the moment it runs them. It still isn’t watching the execution state of your application. It can’t tell which breakpoints are set or what changed between runs unless a tool reports it. Its view is a series of snapshots, not a live connection.
 
-Execution state, breakpoints, and runtime errors are not visible unless they are surfaced as input. Integration can bridge this gap, but the limitation exists by default.
+Execution state, breakpoints, and runtime errors are visible only when they are surfaced as input. Integration narrows this gap. It does not close it.
 
 ---
 
@@ -44,11 +44,12 @@ This is not a flaw to be fixed. It is a constraint to design around.
 - Provide relevant output, logs, or traces as text.
 - Refer to concrete files, functions, or symbols rather than pronouns.
 - Treat prompts as environment descriptions, not questions alone.
+- Know which tools the agent has, and what each one can and cannot show it.
 
 ---
 
 ## Closing
 
-Models do not observe your work. They operate on what is presented.
+Models do not observe your work. They operate on what is presented—by you, or by the tools you gave them.
 
 Making context explicit is not verbosity. It is how reliability is achieved.
