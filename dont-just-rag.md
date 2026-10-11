@@ -1,6 +1,6 @@
 ## Don’t Just RAG: Why Retrieval Isn’t Enough for Serious Work
 
-Retrieval-Augmented Generation (RAG) has become the go-to acronym in the AI playbook. If you've heard a pitch about “smarter AI” or “context-aware assistants,” chances are it leaned on RAG: a system where your assistant looks up relevant documents or snippets and uses them to answer your question.
+Retrieval-Augmented Generation (RAG) became the go-to acronym in the AI playbook. If you've heard a pitch about “smarter AI” or “context-aware assistants,” chances are it leaned on RAG: a system where your assistant looks up relevant documents or snippets and uses them to answer your question.
 
 RAG is a useful tool, but it has clear limitations. And it’s not enough — not if you care about **repeatability**, **clarity**, or **precision**. When it comes to real business processes, RAG should be treated as an exploratory mechanism, not a source of authority.
 
@@ -58,6 +58,14 @@ Here’s how to think about it:
 | Legal review of clauses | RAG may omit legally critical clauses | Use structured inputs and match logic |
 | Sales data analysis | RAG may misinterpret tables | Use tool-generated summaries or charts |
 | Writing emails from meeting notes | RAG works well here | Let it flow creatively |
+
+---
+
+### Agentic Search Doesn’t Change the Question
+
+Many systems have moved past classic RAG. Instead of retrieving the top few chunks once, an agent searches, opens files, follows references, and searches again. That often finds better material.
+
+It does not decide which material governs. An agent that turns up three versions of the leave policy still has to be told which one is current. Better gathering is still gathering.
 
 ---
 

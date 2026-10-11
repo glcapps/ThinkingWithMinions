@@ -14,6 +14,8 @@ When people hear that a model has 7 billion or 600 billion parameters, it’s ea
 | **Quantization**    | Reducing precision (e.g. 16-bit → 4-bit) | Makes models smaller and faster to run; can drastically lower cost |
 | **Version/Generation** | Iteration and refinement over time | A new 7B model may outperform an older 30B one — smarter isn’t just size |
 | **Architecture Improvements** | Specialized attention mechanisms, data filtering, training mix | New tricks can make small models punch above their weight |
+| **Active Parameters (MoE)** | Many large models are mixtures of experts that use only a fraction of their weights for each token | Total size sets memory needs; active size drives speed and cost. Compare like with like |
+| **Reasoning Effort** | How much the model works through a problem before it answers, often an adjustable setting | The same model can be cheap and quick or slow and thorough. Match effort to the task |
 
 ---
 
@@ -51,6 +53,7 @@ If your task is simple (rewriting instructions, summarizing an email, checking a
 - ✅ Newer versions beat older giants
 - ✅ Quantized models are cheaper & still strong
 - ✅ $1 gets more than you think — but only with the right match
+- ✅ Active parameters and reasoning effort matter as much as headline size
 - ✅ Task fit > model size
 
 ---

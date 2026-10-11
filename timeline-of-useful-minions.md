@@ -45,15 +45,20 @@
 ---
 
 ### 🤝 2025 – Delegation Becomes Common
+- **Reasoning models** that work through a problem before answering become standard, often with adjustable effort
+- **Coding agents** move from autocomplete to multi-file changes that run their own tests
 - Agents and memory features support **task threads** that persist context across sessions
+- MCP is adopted across major AI vendors, and in December moves to a vendor-neutral foundation alongside the AGENTS.md convention
 - Some team workflows begin to incorporate human-plus-tool delegation patterns
 - Phrases like “I’ll have the minion draft it” enter everyday language in some orgs
 - Business leaders increasingly budget for AI utility alongside other productivity tools
 
 ---
 
-### 🔄 2026 and Beyond – Normalization and Interoperability
+### 🔄 2026 – Normalization and Interoperability
 - AI assistance becomes expected in many tools, but varies widely in quality and reliability
+- General-purpose agents that work across files, browsers, and desktops reach non-developers
+- Governance questions shift from what people paste into chats to what agents are permitted to do
 - Differentiation shifts from *having* AI to *how well it is integrated*
 - Attention moves from novelty to governance, cost control, task fit, and interoperability
 - Teams become more selective about when minions help — and when they get in the way
@@ -65,6 +70,6 @@
 - 2023: Possibility  
 - 2024: Tooling  
 - 2025: Delegation  
-- 2026+: Normalization + interoperability  
+- 2026: Normalization + interoperability  
 
 Each step marked by **greater integration, broader access, and more deliberate use.**

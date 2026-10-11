@@ -8,8 +8,8 @@ The Office of LLMs isn’t always literal. In some businesses, it might be one p
 
 This includes:
 - Coordinating use of LLM tools across departments
-- Maintaining prompt libraries
-- Testing tools and plugins
+- Maintaining shared prompts, instructions, and reusable skills
+- Testing tools, connectors, and agents
 - Educating staff on LLM capabilities
 - Building bridges between business needs and model affordances
 
@@ -26,7 +26,7 @@ The Office of LLMs helps a business scale its *use* of language tools in a more 
 
 - **Governance**: Align usage with data policy and tool access
 - **Enablement**: Help teams get started, answer questions, track good examples
-- **Tool Vetting**: Evaluate plugins, hosted options, and hosted models
+- **Tool Vetting**: Evaluate connectors, agents, and hosted models—including what each is permitted to access and do
 - **Internal Learning**: Track what works and what doesn’t in real tasks
 - **Feedback**: Close the loop between users, tools, and internal stakeholders
 

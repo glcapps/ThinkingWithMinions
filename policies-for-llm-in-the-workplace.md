@@ -30,7 +30,12 @@ A good policy reduces risk, increases consistency, and builds trust.
    - Review provider policies to understand data retention, training usage, and access controls.
    - Prefer vendors offering data isolation, encryption, and opt-outs from model training.
 
-5. **Training and Literacy**
+5. **Agents and Tool Access**
+   - Define what assistants may *do*, not just what they may read: which connectors, accounts, and actions are allowed.
+   - Grant the narrowest permissions a task needs, and require approval before agents send, purchase, delete, or publish.
+   - Keep a record of what agents did, not only what they produced.
+
+6. **Training and Literacy**
    - Teach staff what LLMs are good at, where they struggle, and where human judgment remains essential.
    - Provide guidance on prompt framing, context limits, review practices, and bias awareness.
 
